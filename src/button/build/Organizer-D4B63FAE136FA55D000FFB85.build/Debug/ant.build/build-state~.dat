@@ -1,0 +1,1000 @@
+Tant
+v7
+r0
+t326083967.172010
+cCheck dependencies
+cExternalBuildToolExecution ant
+
+N/var/folders/js/jsgobF45GCGkO9-7u4Ctmk+++TI/-Tmp-/D4B63FAE136FA55D000FFB85
+c000000004DBF6DDE000000000000002E
+t1304391134
+s46
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies326083934#326083934#0(0"0(0#1#0"3834887952298684416#0"0#
+
+CExternalBuildToolExecution ant
+s326083934.831276
+e326083967.171903
+r1
+xExternalBuildToolExecution
+xant
+oBuildfile: /Users/skyler/Sites/yui/yui3-gallery/src/button/build.xml
+o     [echo] Starting Build For button
+o     [echo] Ant Properties
+o     [echo]     Home : /usr/share/ant
+o     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011
+o     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/build.xml
+o     [echo] Local Build Properties
+o     [echo]     version : 3
+o     [echo]     srcdir : /Users/skyler/Sites/yui/yui3-gallery
+o     [echo]     builddir : ../../../builder/componentbuild
+o     [echo]     component : button
+o     [echo]     component.basefilename : button
+o     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button
+o     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp
+o     [echo] Global Build Properties
+o     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build
+o     [echo]     global.build.component : /Users/skyler/Sites/yui/yui3-gallery/build/button
+o     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets
+o
+oclean:
+o   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp
+o
+oinit:
+o    [mkdir] Created dir: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp
+o     [echo] Starting Build For button
+o     [echo] Ant Properties
+o     [echo]     Home : /usr/share/ant
+o     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011
+o     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/build.xml
+o     [echo] Local Build Properties
+o     [echo]     version : 3
+o     [echo]     srcdir : /Users/skyler/Sites/yui/yui3-gallery
+o     [echo]     builddir : ../../../builder/componentbuild
+o     [echo]     component : button
+o     [echo]     component.basefilename : button
+o     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button
+o     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp
+o     [echo] Global Build Properties
+o     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build
+o     [echo]     global.build.component : /Users/skyler/Sites/yui/yui3-gallery/build/button
+o     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets
+o
+o-lint-server:
+o     [echo] Starting Build For button
+o     [echo] Ant Properties
+o     [echo]     Home : /usr/share/ant
+o     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011
+o     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/build.xml
+o     [echo] Local Build Properties
+o     [echo]     version : 3
+o     [echo]     srcdir : /Users/skyler/Sites/yui/yui3-gallery
+o     [echo]     builddir : ../../../builder/componentbuild
+o     [echo]     component : button
+o     [echo]     component.basefilename : button
+o     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button
+o     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp
+o     [echo] Global Build Properties
+o     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build
+o     [echo]     global.build.component : /Users/skyler/Sites/yui/yui3-gallery/build/button
+o     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets
+o
+o-node:
+o     [exec] Execute failed: java.io.IOException: Cannot run program "node": error=2, No such file or directory
+o     [echo] For faster builds, install Node.js.
+o
+o-buildmodules:
+o     [echo] Starting Build For button-base
+o     [echo] Ant Properties
+o     [echo]     Home : /usr/share/ant
+o     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011
+o     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-base.xml
+o     [echo] Local Build Properties
+o     [echo]     version : 3
+o     [echo]     srcdir : ../..
+o     [echo]     builddir : ../../../builder/componentbuild
+o     [echo]     component : button-base
+o     [echo]     component.basefilename : button-base
+o     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button
+o     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o     [echo] Global Build Properties
+o     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build
+o     [echo]     global.build.component : ../../build/button
+o     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets
+o
+oclean:
+o   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o
+oinit:
+o    [mkdir] Created dir: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o     [echo] Starting Build For button-base
+o     [echo] Ant Properties
+o     [echo]     Home : /usr/share/ant
+o     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011
+o     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-base.xml
+o     [echo] Local Build Properties
+o     [echo]     version : 3
+o     [echo]     srcdir : ../..
+o     [echo]     builddir : ../../../builder/componentbuild
+o     [echo]     component : button-base
+o     [echo]     component.basefilename : button-base
+o     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button
+o     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o     [echo] Global Build Properties
+o     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build
+o     [echo]     global.build.component : ../../build/button
+o     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets
+o
+o-lint-server:
+o     [echo] Starting Build For button-base
+o     [echo] Ant Properties
+o     [echo]     Home : /usr/share/ant
+o     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011
+o     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-base.xml
+o     [echo] Local Build Properties
+o     [echo]     version : 3
+o     [echo]     srcdir : ../..
+o     [echo]     builddir : ../../../builder/componentbuild
+o     [echo]     component : button-base
+o     [echo]     component.basefilename : button-base
+o     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button
+o     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o     [echo] Global Build Properties
+o     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build
+o     [echo]     global.build.component : ../../build/button
+o     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets
+o
+o-node:
+o     [exec] Execute failed: java.io.IOException: Cannot run program "node": error=2, No such file or directory
+o     [echo] For faster builds, install Node.js.
+o
+o-concatdebug:
+o     [echo] Concatenating
+o     [echo]     Source Files : button-base.js
+o     [echo]     In Source Dir : /Users/skyler/Sites/yui/yui3-gallery/src/button/js
+o     [echo]     To : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base-debug.js
+o     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant
+o   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant
+o
+o-registerdebug:
+o     [echo] Wrapping /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base-debug.js in YUI.add module
+o     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o
+o-prependdebug:
+o
+o-appenddebug:
+o
+obuilddebug:
+o
+o-createcore:
+o     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o
+o-loggerregex:
+o     [echo] Replacing Logger Statements in /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base.js
+o
+obuildcore:
+o
+o-rollupjs:
+o     [echo] Module: Rolling up button-base-debug.js into button-debug.js
+o
+o-concatskins:
+o
+o-buildskins:
+o
+o-rollupcss:
+o
+obuildskins:
+o
+o-buildlangs:
+o
+o-rolluplangs:
+o
+obuildlangs:
+o
+obuild:
+o
+ominify:
+o[yuicompressor] Compressing /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base.js
+o[yuicompressor] Compressed to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base-min.js
+o
+olint:
+o     [echo] Using Rhino. Install nodejs to improve jslint speed, or skip with -Dlint.skip=true
+o     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base-debug.js
+o     [java] - OK
+o     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base-min.js
+o     [java] - OK
+o     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base.js
+o     [java] - OK
+o
+olocal:
+o
+odeploybuild:
+o     [copy] Copying 3 files to /Users/skyler/Sites/yui/yui3-gallery/build/button
+o     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base-debug.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-base-debug.js
+o     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base-min.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-base-min.js
+o     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-base.js
+o
+odeployassets:
+o
+odeployskins:
+o
+odeploylang:
+o     [copy] Warning: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/lang does not exist.
+o
+odeploydocs:
+o
+odeploy:
+o
+oall:
+o     [echo] Starting Build For button-simple
+o     [echo] Ant Properties
+o     [echo]     Home : /usr/share/ant
+o     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011
+o     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-simple.xml
+o     [echo] Local Build Properties
+o     [echo]     version : 3
+o     [echo]     srcdir : ../..
+o     [echo]     builddir : ../../../builder/componentbuild
+o     [echo]     component : button-simple
+o     [echo]     component.basefilename : button-simple
+o     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button
+o     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o     [echo] Global Build Properties
+o     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build
+o     [echo]     global.build.component : ../../build/button
+o     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets
+o
+oclean:
+o   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o
+oinit:
+o    [mkdir] Created dir: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o     [echo] Starting Build For button-simple
+o     [echo] Ant Properties
+o     [echo]     Home : /usr/share/ant
+o     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011
+o     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-simple.xml
+o     [echo] Local Build Properties
+o     [echo]     version : 3
+o     [echo]     srcdir : ../..
+o     [echo]     builddir : ../../../builder/componentbuild
+o     [echo]     component : button-simple
+o     [echo]     component.basefilename : button-simple
+o     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button
+o     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o     [echo] Global Build Properties
+o     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build
+o     [echo]     global.build.component : ../../build/button
+o     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets
+o
+o-lint-server:
+o     [echo] Starting Build For button-simple
+o     [echo] Ant Properties
+o     [echo]     Home : /usr/share/ant
+o     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011
+o     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-simple.xml
+o     [echo] Local Build Properties
+o     [echo]     version : 3
+o     [echo]     srcdir : ../..
+o     [echo]     builddir : ../../../builder/componentbuild
+o     [echo]     component : button-simple
+o     [echo]     component.basefilename : button-simple
+o     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button
+o     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o     [echo] Global Build Properties
+o     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build
+o     [echo]     global.build.component : ../../build/button
+o     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets
+o
+o-node:
+o     [exec] Execute failed: java.io.IOException: Cannot run program "node": error=2, No such file or directory
+o     [echo] For faster builds, install Node.js.
+o
+o-concatdebug:
+o     [echo] Concatenating
+o     [echo]     Source Files : button-simple.js
+o     [echo]     In Source Dir : /Users/skyler/Sites/yui/yui3-gallery/src/button/js
+o     [echo]     To : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple-debug.js
+o     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant
+o   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant
+o
+o-registerdebug:
+o     [echo] Wrapping /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple-debug.js in YUI.add module
+o     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o
+o-prependdebug:
+o
+o-appenddebug:
+o
+obuilddebug:
+o
+o-createcore:
+o     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o
+o-loggerregex:
+o     [echo] Replacing Logger Statements in /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple.js
+o
+obuildcore:
+o
+o-rollupjs:
+o     [echo] Module: Rolling up button-simple-debug.js into button-debug.js
+o
+o-concatskins:
+o
+o-buildskins:
+o
+o-rollupcss:
+o
+obuildskins:
+o
+o-buildlangs:
+o
+o-rolluplangs:
+o
+obuildlangs:
+o
+obuild:
+o
+ominify:
+o[yuicompressor] Compressing /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple.js
+o[yuicompressor] Compressed to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple-min.js
+o
+olint:
+o     [echo] Using Rhino. Install nodejs to improve jslint speed, or skip with -Dlint.skip=true
+o     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple-debug.js
+o     [java] - OK
+o     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple-min.js
+o     [java] - OK
+o     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple.js
+o     [java] - OK
+o
+olocal:
+o
+odeploybuild:
+o     [copy] Copying 3 files to /Users/skyler/Sites/yui/yui3-gallery/build/button
+o     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple-debug.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-simple-debug.js
+o     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple-min.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-simple-min.js
+o     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-simple.js
+o
+odeployassets:
+o
+odeployskins:
+o
+odeploylang:
+o     [copy] Warning: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/lang does not exist.
+o
+odeploydocs:
+o
+odeploy:
+o
+oall:
+o     [echo] Starting Build For button-advanced
+o     [echo] Ant Properties
+o     [echo]     Home : /usr/share/ant
+o     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011
+o     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-advanced.xml
+o     [echo] Local Build Properties
+o     [echo]     version : 3
+o     [echo]     srcdir : ../..
+o     [echo]     builddir : ../../../builder/componentbuild
+o     [echo]     component : button-advanced
+o     [echo]     component.basefilename : button-advanced
+o     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button
+o     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o     [echo] Global Build Properties
+o     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build
+o     [echo]     global.build.component : ../../build/button
+o     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets
+o
+oclean:
+o   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o
+oinit:
+o    [mkdir] Created dir: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o     [echo] Starting Build For button-advanced
+o     [echo] Ant Properties
+o     [echo]     Home : /usr/share/ant
+o     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011
+o     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-advanced.xml
+o     [echo] Local Build Properties
+o     [echo]     version : 3
+o     [echo]     srcdir : ../..
+o     [echo]     builddir : ../../../builder/componentbuild
+o     [echo]     component : button-advanced
+o     [echo]     component.basefilename : button-advanced
+o     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button
+o     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o     [echo] Global Build Properties
+o     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build
+o     [echo]     global.build.component : ../../build/button
+o     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets
+o
+o-lint-server:
+o     [echo] Starting Build For button-advanced
+o     [echo] Ant Properties
+o     [echo]     Home : /usr/share/ant
+o     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011
+o     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-advanced.xml
+o     [echo] Local Build Properties
+o     [echo]     version : 3
+o     [echo]     srcdir : ../..
+o     [echo]     builddir : ../../../builder/componentbuild
+o     [echo]     component : button-advanced
+o     [echo]     component.basefilename : button-advanced
+o     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button
+o     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o     [echo] Global Build Properties
+o     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build
+o     [echo]     global.build.component : ../../build/button
+o     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets
+o
+o-node:
+o     [exec] Execute failed: java.io.IOException: Cannot run program "node": error=2, No such file or directory
+o     [echo] For faster builds, install Node.js.
+o
+o-concatdebug:
+o     [echo] Concatenating
+o     [echo]     Source Files : button-advanced.js
+o     [echo]     In Source Dir : /Users/skyler/Sites/yui/yui3-gallery/src/button/js
+o     [echo]     To : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced-debug.js
+o     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant
+o   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant
+o
+o-registerdebug:
+o     [echo] Wrapping /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced-debug.js in YUI.add module
+o     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o
+o-prependdebug:
+o
+o-appenddebug:
+o
+obuilddebug:
+o
+o-createcore:
+o     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o
+o-loggerregex:
+o     [echo] Replacing Logger Statements in /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced.js
+o
+obuildcore:
+o
+o-rollupjs:
+o     [echo] Module: Rolling up button-advanced-debug.js into button-debug.js
+o
+o-concatskins:
+o
+o-buildskins:
+o
+o-rollupcss:
+o
+obuildskins:
+o
+o-buildlangs:
+o
+o-rolluplangs:
+o
+obuildlangs:
+o
+obuild:
+o
+ominify:
+o[yuicompressor] Compressing /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced.js
+o[yuicompressor] Compressed to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced-min.js
+o
+olint:
+o     [echo] Using Rhino. Install nodejs to improve jslint speed, or skip with -Dlint.skip=true
+o     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced-debug.js
+o     [java] - OK
+o     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced-min.js
+o     [java] - OK
+o     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced.js
+o     [java] - OK
+o
+olocal:
+o
+odeploybuild:
+o     [copy] Copying 3 files to /Users/skyler/Sites/yui/yui3-gallery/build/button
+o     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced-debug.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-advanced-debug.js
+o     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced-min.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-advanced-min.js
+o     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-advanced.js
+o
+odeployassets:
+o
+odeployskins:
+o
+odeploylang:
+o     [copy] Warning: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/lang does not exist.
+o
+odeploydocs:
+o
+odeploy:
+o
+oall:
+o     [echo] Starting Build For button-toggle
+o     [echo] Ant Properties
+o     [echo]     Home : /usr/share/ant
+o     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011
+o     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-toggle.xml
+o     [echo] Local Build Properties
+o     [echo]     version : 3
+o     [echo]     srcdir : ../..
+o     [echo]     builddir : ../../../builder/componentbuild
+o     [echo]     component : button-toggle
+o     [echo]     component.basefilename : button-toggle
+o     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button
+o     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o     [echo] Global Build Properties
+o     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build
+o     [echo]     global.build.component : ../../build/button
+o     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets
+o
+oclean:
+o   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o
+oinit:
+o    [mkdir] Created dir: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o     [echo] Starting Build For button-toggle
+o     [echo] Ant Properties
+o     [echo]     Home : /usr/share/ant
+o     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011
+o     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-toggle.xml
+o     [echo] Local Build Properties
+o     [echo]     version : 3
+o     [echo]     srcdir : ../..
+o     [echo]     builddir : ../../../builder/componentbuild
+o     [echo]     component : button-toggle
+o     [echo]     component.basefilename : button-toggle
+o     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button
+o     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o     [echo] Global Build Properties
+o     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build
+o     [echo]     global.build.component : ../../build/button
+o     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets
+o
+o-lint-server:
+o     [echo] Starting Build For button-toggle
+o     [echo] Ant Properties
+o     [echo]     Home : /usr/share/ant
+o     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011
+o     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-toggle.xml
+o     [echo] Local Build Properties
+o     [echo]     version : 3
+o     [echo]     srcdir : ../..
+o     [echo]     builddir : ../../../builder/componentbuild
+o     [echo]     component : button-toggle
+o     [echo]     component.basefilename : button-toggle
+o     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button
+o     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o     [echo] Global Build Properties
+o     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build
+o     [echo]     global.build.component : ../../build/button
+o     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets
+o
+o-node:
+o     [exec] Execute failed: java.io.IOException: Cannot run program "node": error=2, No such file or directory
+o     [echo] For faster builds, install Node.js.
+o
+o-concatdebug:
+o     [echo] Concatenating
+o     [echo]     Source Files : button-toggle.js
+o     [echo]     In Source Dir : /Users/skyler/Sites/yui/yui3-gallery/src/button/js
+o     [echo]     To : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle-debug.js
+o     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant
+o   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant
+o
+o-registerdebug:
+o     [echo] Wrapping /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle-debug.js in YUI.add module
+o     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o
+o-prependdebug:
+o
+o-appenddebug:
+o
+obuilddebug:
+o
+o-createcore:
+o     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o
+o-loggerregex:
+o     [echo] Replacing Logger Statements in /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle.js
+o
+obuildcore:
+o
+o-rollupjs:
+o     [echo] Module: Rolling up button-toggle-debug.js into button-debug.js
+o
+o-concatskins:
+o
+o-buildskins:
+o
+o-rollupcss:
+o
+obuildskins:
+o
+o-buildlangs:
+o
+o-rolluplangs:
+o
+obuildlangs:
+o
+obuild:
+o
+ominify:
+o[yuicompressor] Compressing /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle.js
+o[yuicompressor] 
+o[yuicompressor] [WARNING] Try to use a single 'var' statement per scope.
+o[yuicompressor] namespace("Button.Plugin").Toggle=TogglePlugin; ---> var  <--- Toggle=Y.Base.create("button",
+o[yuicompressor] 
+o[yuicompressor] [WARNING] The symbol LANG is declared but is apparently never used.
+o[yuicompressor] This code can probably be written in a more compact way.
+o[yuicompressor] ("button-toggle",function(Y){var  ---> LANG <--- =Y.Lang,DESELECTED_CALLBACK="deselectedCallback",SELECTED
+o[yuicompressor] Compressed to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle-min.js
+o
+olint:
+o     [echo] Using Rhino. Install nodejs to improve jslint speed, or skip with -Dlint.skip=true
+o     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle-debug.js
+o     [java] - OK
+o     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle-min.js
+o     [java] - OK
+o     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle.js
+o     [java] - OK
+o
+olocal:
+o
+odeploybuild:
+o     [copy] Copying 3 files to /Users/skyler/Sites/yui/yui3-gallery/build/button
+o     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle-debug.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-toggle-debug.js
+o     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle-min.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-toggle-min.js
+o     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-toggle.js
+o
+odeployassets:
+o
+odeployskins:
+o
+odeploylang:
+o     [copy] Warning: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/lang does not exist.
+o
+odeploydocs:
+o
+odeploy:
+o
+oall:
+o     [echo] Starting Build For button-panel
+o     [echo] Ant Properties
+o     [echo]     Home : /usr/share/ant
+o     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011
+o     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-panel.xml
+o     [echo] Local Build Properties
+o     [echo]     version : 3
+o     [echo]     srcdir : ../..
+o     [echo]     builddir : ../../../builder/componentbuild
+o     [echo]     component : button-panel
+o     [echo]     component.basefilename : button-panel
+o     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button
+o     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o     [echo] Global Build Properties
+o     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build
+o     [echo]     global.build.component : ../../build/button
+o     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets
+o
+oclean:
+o   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o
+oinit:
+o    [mkdir] Created dir: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o     [echo] Starting Build For button-panel
+o     [echo] Ant Properties
+o     [echo]     Home : /usr/share/ant
+o     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011
+o     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-panel.xml
+o     [echo] Local Build Properties
+o     [echo]     version : 3
+o     [echo]     srcdir : ../..
+o     [echo]     builddir : ../../../builder/componentbuild
+o     [echo]     component : button-panel
+o     [echo]     component.basefilename : button-panel
+o     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button
+o     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o     [echo] Global Build Properties
+o     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build
+o     [echo]     global.build.component : ../../build/button
+o     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets
+o
+o-lint-server:
+o     [echo] Starting Build For button-panel
+o     [echo] Ant Properties
+o     [echo]     Home : /usr/share/ant
+o     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011
+o     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-panel.xml
+o     [echo] Local Build Properties
+o     [echo]     version : 3
+o     [echo]     srcdir : ../..
+o     [echo]     builddir : ../../../builder/componentbuild
+o     [echo]     component : button-panel
+o     [echo]     component.basefilename : button-panel
+o     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button
+o     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o     [echo] Global Build Properties
+o     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build
+o     [echo]     global.build.component : ../../build/button
+o     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets
+o
+o-node:
+o     [exec] Execute failed: java.io.IOException: Cannot run program "node": error=2, No such file or directory
+o     [echo] For faster builds, install Node.js.
+o
+o-concatdebug:
+o     [echo] Concatenating
+o     [echo]     Source Files : button-panel.js
+o     [echo]     In Source Dir : /Users/skyler/Sites/yui/yui3-gallery/src/button/js
+o     [echo]     To : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel-debug.js
+o     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant
+o   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant
+o
+o-registerdebug:
+o     [echo] Wrapping /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel-debug.js in YUI.add module
+o     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o
+o-prependdebug:
+o
+o-appenddebug:
+o
+obuilddebug:
+o
+o-createcore:
+o     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o
+o-loggerregex:
+o     [echo] Replacing Logger Statements in /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel.js
+o
+obuildcore:
+o
+o-rollupjs:
+o     [echo] Module: Rolling up button-panel-debug.js into button-debug.js
+o
+o-concatskins:
+o
+o-buildskins:
+o
+o-rollupcss:
+o
+obuildskins:
+o
+o-buildlangs:
+o
+o-rolluplangs:
+o
+obuildlangs:
+o
+obuild:
+o
+ominify:
+o[yuicompressor] Compressing /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel.js
+o[yuicompressor] Compressed to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel-min.js
+o
+olint:
+o     [echo] Using Rhino. Install nodejs to improve jslint speed, or skip with -Dlint.skip=true
+o     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel-debug.js
+o     [java] - OK
+o     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel-min.js
+o     [java] - OK
+o     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel.js
+o     [java] - OK
+o
+olocal:
+o
+odeploybuild:
+o     [copy] Copying 3 files to /Users/skyler/Sites/yui/yui3-gallery/build/button
+o     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel-debug.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-panel-debug.js
+o     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel-min.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-panel-min.js
+o     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-panel.js
+o
+odeployassets:
+o
+odeployskins:
+o
+odeploylang:
+o     [copy] Warning: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/lang does not exist.
+o
+odeploydocs:
+o
+odeploy:
+o
+oall:
+o     [echo] Starting Build For button-group
+o     [echo] Ant Properties
+o     [echo]     Home : /usr/share/ant
+o     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011
+o     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-group.xml
+o     [echo] Local Build Properties
+o     [echo]     version : 3
+o     [echo]     srcdir : ../..
+o     [echo]     builddir : ../../../builder/componentbuild
+o     [echo]     component : button-group
+o     [echo]     component.basefilename : button-group
+o     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button
+o     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o     [echo] Global Build Properties
+o     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build
+o     [echo]     global.build.component : ../../build/button
+o     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets
+o
+oclean:
+o   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o
+oinit:
+o    [mkdir] Created dir: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o     [echo] Starting Build For button-group
+o     [echo] Ant Properties
+o     [echo]     Home : /usr/share/ant
+o     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011
+o     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-group.xml
+o     [echo] Local Build Properties
+o     [echo]     version : 3
+o     [echo]     srcdir : ../..
+o     [echo]     builddir : ../../../builder/componentbuild
+o     [echo]     component : button-group
+o     [echo]     component.basefilename : button-group
+o     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button
+o     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o     [echo] Global Build Properties
+o     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build
+o     [echo]     global.build.component : ../../build/button
+o     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets
+o
+o-lint-server:
+o     [echo] Starting Build For button-group
+o     [echo] Ant Properties
+o     [echo]     Home : /usr/share/ant
+o     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011
+o     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-group.xml
+o     [echo] Local Build Properties
+o     [echo]     version : 3
+o     [echo]     srcdir : ../..
+o     [echo]     builddir : ../../../builder/componentbuild
+o     [echo]     component : button-group
+o     [echo]     component.basefilename : button-group
+o     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button
+o     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o     [echo] Global Build Properties
+o     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build
+o     [echo]     global.build.component : ../../build/button
+o     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets
+o
+o-node:
+o     [exec] Execute failed: java.io.IOException: Cannot run program "node": error=2, No such file or directory
+o     [echo] For faster builds, install Node.js.
+o
+o-concatdebug:
+o     [echo] Concatenating
+o     [echo]     Source Files : button-group.js
+o     [echo]     In Source Dir : /Users/skyler/Sites/yui/yui3-gallery/src/button/js
+o     [echo]     To : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group-debug.js
+o     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant
+o   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant
+o
+o-registerdebug:
+o     [echo] Wrapping /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group-debug.js in YUI.add module
+o     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o
+o-prependdebug:
+o
+o-appenddebug:
+o
+obuilddebug:
+o
+o-createcore:
+o     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp
+o
+o-loggerregex:
+o     [echo] Replacing Logger Statements in /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group.js
+o
+obuildcore:
+o
+o-rollupjs:
+o     [echo] Module: Rolling up button-group-debug.js into button-debug.js
+o
+o-concatskins:
+o
+o-buildskins:
+o
+o-rollupcss:
+o
+obuildskins:
+o
+o-buildlangs:
+o
+o-rolluplangs:
+o
+obuildlangs:
+o
+obuild:
+o
+ominify:
+o[yuicompressor] Compressing /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group.js
+o[yuicompressor] Compressed to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group-min.js
+o
+olint:
+o     [echo] Using Rhino. Install nodejs to improve jslint speed, or skip with -Dlint.skip=true
+o     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group-debug.js
+o     [java] - OK
+o     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group-min.js
+o     [java] - OK
+o     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group.js
+o     [java] - OK
+o
+olocal:
+o
+odeploybuild:
+o     [copy] Copying 3 files to /Users/skyler/Sites/yui/yui3-gallery/build/button
+o     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group-debug.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-group-debug.js
+o     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group-min.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-group-min.js
+o     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-group.js
+o
+odeployassets:
+o
+odeployskins:
+o
+odeploylang:
+o     [copy] Warning: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/lang does not exist.
+o
+odeploydocs:
+o
+odeploy:
+o
+oall:
+o
+o-registerall:
+o     [echo] Adding Rollup /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp/button-debug.js using YUI.add
+o     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp
+o     [echo] Adding Rollup /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp/button.js using YUI.add
+o     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp
+o
+o-prependdebug:
+o
+o-prepend:
+o
+o-prependall:
+o
+o-appenddebug:
+o
+o-append:
+o
+o-appendall:
+o
+o-rollupjs:
+o
+o-rolluplangs:
+o
+obuildmodules:
+o
+obuild:
+o
+ominify:
+o[yuicompressor] Compressing /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp/button.js
+o[yuicompressor] 
+o[yuicompressor] [WARNING] Try to use a single 'var' statement per scope.
+o[yuicompressor] namespace("Button.Plugin").Toggle=TogglePlugin; ---> var  <--- Toggle=Y.Base.create("button",
+o[yuicompressor] 
+o[yuicompressor] [WARNING] The symbol LANG is declared but is apparently never used.
+o[yuicompressor] This code can probably be written in a more compact way.
+o[yuicompressor] ("button-toggle",function(Y){var  ---> LANG <--- =Y.Lang,DESELECTED_CALLBACK="deselectedCallback",SELECTED
+o[yuicompressor] Compressed to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp/button-min.js
+o
+olint:
+o     [echo] Using Rhino. Install nodejs to improve jslint speed, or skip with -Dlint.skip=true
+o     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp/button-debug.js
+o     [java] - OK
+o     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp/button-min.js
+o     [java] - OK
+o     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp/button.js
+o     [java] - OK
+o
+olocal:
+o
+oBUILD SUCCESSFUL
+oTotal time: 31 seconds
+lSLF07#2@23"Run external build tool326083934#326083967#0(42066"Buildfile: /Users/skyler/Sites/yui/yui3-gallery/src/button/build.xml     [echo] Starting Build For button     [echo] Ant Properties     [echo]     Home : /usr/share/ant     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/build.xml     [echo] Local Build Properties     [echo]     version : 3     [echo]     srcdir : /Users/skyler/Sites/yui/yui3-gallery     [echo]     builddir : ../../../builder/componentbuild     [echo]     component : button     [echo]     component.basefilename : button     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp     [echo] Global Build Properties     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build     [echo]     global.build.component : /Users/skyler/Sites/yui/yui3-gallery/build/button     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assetsclean:   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmpinit:    [mkdir] Created dir: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp     [echo] Starting Build For button     [echo] Ant Properties     [echo]     Home : /usr/share/ant     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/build.xml     [echo] Local Build Properties     [echo]     version : 3     [echo]     srcdir : /Users/skyler/Sites/yui/yui3-gallery     [echo]     builddir : ../../../builder/componentbuild     [echo]     component : button     [echo]     component.basefilename : button     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp     [echo] Global Build Properties     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build     [echo]     global.build.component : /Users/skyler/Sites/yui/yui3-gallery/build/button     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets-lint-server:     [echo] Starting Build For button     [echo] Ant Properties     [echo]     Home : /usr/share/ant     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/build.xml     [echo] Local Build Properties     [echo]     version : 3     [echo]     srcdir : /Users/skyler/Sites/yui/yui3-gallery     [echo]     builddir : ../../../builder/componentbuild     [echo]     component : button     [echo]     component.basefilename : button     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp     [echo] Global Build Properties     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build     [echo]     global.build.component : /Users/skyler/Sites/yui/yui3-gallery/build/button     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets-node:     [exec] Execute failed: java.io.IOException: Cannot run program "node": error=2, No such file or directory     [echo] For faster builds, install Node.js.-buildmodules:     [echo] Starting Build For button-base     [echo] Ant Properties     [echo]     Home : /usr/share/ant     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-base.xml     [echo] Local Build Properties     [echo]     version : 3     [echo]     srcdir : ../..     [echo]     builddir : ../../../builder/componentbuild     [echo]     component : button-base     [echo]     component.basefilename : button-base     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp     [echo] Global Build Properties     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build     [echo]     global.build.component : ../../build/button     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assetsclean:   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmpinit:    [mkdir] Created dir: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp     [echo] Starting Build For button-base     [echo] Ant Properties     [echo]     Home : /usr/share/ant     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-base.xml     [echo] Local Build Properties     [echo]     version : 3     [echo]     srcdir : ../..     [echo]     builddir : ../../../builder/componentbuild     [echo]     component : button-base     [echo]     component.basefilename : button-base     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp     [echo] Global Build Properties     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build     [echo]     global.build.component : ../../build/button     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets-lint-server:     [echo] Starting Build For button-base     [echo] Ant Properties     [echo]     Home : /usr/share/ant     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-base.xml     [echo] Local Build Properties     [echo]     version : 3     [echo]     srcdir : ../..     [echo]     builddir : ../../../builder/componentbuild     [echo]     component : button-base     [echo]     component.basefilename : button-base     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp     [echo] Global Build Properties     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build     [echo]     global.build.component : ../../build/button     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets-node:     [exec] Execute failed: java.io.IOException: Cannot run program "node": error=2, No such file or directory     [echo] For faster builds, install Node.js.-concatdebug:     [echo] Concatenating     [echo]     Source Files : button-base.js     [echo]     In Source Dir : /Users/skyler/Sites/yui/yui3-gallery/src/button/js     [echo]     To : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base-debug.js     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant-registerdebug:     [echo] Wrapping /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base-debug.js in YUI.add module     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp-prependdebug:-appenddebug:builddebug:-createcore:     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp-loggerregex:     [echo] Replacing Logger Statements in /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base.jsbuildcore:-rollupjs:     [echo] Module: Rolling up button-base-debug.js into button-debug.js-concatskins:-buildskins:-rollupcss:buildskins:-buildlangs:-rolluplangs:buildlangs:build:minify:[yuicompressor] Compressing /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base.js[yuicompressor] Compressed to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base-min.jslint:     [echo] Using Rhino. Install nodejs to improve jslint speed, or skip with -Dlint.skip=true     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base-debug.js     [java] - OK     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base-min.js     [java] - OK     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base.js     [java] - OKlocal:deploybuild:     [copy] Copying 3 files to /Users/skyler/Sites/yui/yui3-gallery/build/button     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base-debug.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-base-debug.js     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base-min.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-base-min.js     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-base.jsdeployassets:deployskins:deploylang:     [copy] Warning: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/lang does not exist.deploydocs:deploy:all:     [echo] Starting Build For button-simple     [echo] Ant Properties     [echo]     Home : /usr/share/ant     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-simple.xml     [echo] Local Build Properties     [echo]     version : 3     [echo]     srcdir : ../..     [echo]     builddir : ../../../builder/componentbuild     [echo]     component : button-simple     [echo]     component.basefilename : button-simple     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp     [echo] Global Build Properties     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build     [echo]     global.build.component : ../../build/button     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assetsclean:   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmpinit:    [mkdir] Created dir: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp     [echo] Starting Build For button-simple     [echo] Ant Properties     [echo]     Home : /usr/share/ant     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-simple.xml     [echo] Local Build Properties     [echo]     version : 3     [echo]     srcdir : ../..     [echo]     builddir : ../../../builder/componentbuild     [echo]     component : button-simple     [echo]     component.basefilename : button-simple     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp     [echo] Global Build Properties     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build     [echo]     global.build.component : ../../build/button     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets-lint-server:     [echo] Starting Build For button-simple     [echo] Ant Properties     [echo]     Home : /usr/share/ant     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-simple.xml     [echo] Local Build Properties     [echo]     version : 3     [echo]     srcdir : ../..     [echo]     builddir : ../../../builder/componentbuild     [echo]     component : button-simple     [echo]     component.basefilename : button-simple     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp     [echo] Global Build Properties     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build     [echo]     global.build.component : ../../build/button     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets-node:     [exec] Execute failed: java.io.IOException: Cannot run program "node": error=2, No such file or directory     [echo] For faster builds, install Node.js.-concatdebug:     [echo] Concatenating     [echo]     Source Files : button-simple.js     [echo]     In Source Dir : /Users/skyler/Sites/yui/yui3-gallery/src/button/js     [echo]     To : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple-debug.js     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant-registerdebug:     [echo] Wrapping /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple-debug.js in YUI.add module     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp-prependdebug:-appenddebug:builddebug:-createcore:     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp-loggerregex:     [echo] Replacing Logger Statements in /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple.jsbuildcore:-rollupjs:     [echo] Module: Rolling up button-simple-debug.js into button-debug.js-concatskins:-buildskins:-rollupcss:buildskins:-buildlangs:-rolluplangs:buildlangs:build:minify:[yuicompressor] Compressing /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple.js[yuicompressor] Compressed to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple-min.jslint:     [echo] Using Rhino. Install nodejs to improve jslint speed, or skip with -Dlint.skip=true     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple-debug.js     [java] - OK     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple-min.js     [java] - OK     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple.js     [java] - OKlocal:deploybuild:     [copy] Copying 3 files to /Users/skyler/Sites/yui/yui3-gallery/build/button     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple-debug.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-simple-debug.js     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple-min.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-simple-min.js     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-simple.jsdeployassets:deployskins:deploylang:     [copy] Warning: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/lang does not exist.deploydocs:deploy:all:     [echo] Starting Build For button-advanced     [echo] Ant Properties     [echo]     Home : /usr/share/ant     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-advanced.xml     [echo] Local Build Properties     [echo]     version : 3     [echo]     srcdir : ../..     [echo]     builddir : ../../../builder/componentbuild     [echo]     component : button-advanced     [echo]     component.basefilename : button-advanced     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp     [echo] Global Build Properties     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build     [echo]     global.build.component : ../../build/button     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assetsclean:   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmpinit:    [mkdir] Created dir: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp     [echo] Starting Build For button-advanced     [echo] Ant Properties     [echo]     Home : /usr/share/ant     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-advanced.xml     [echo] Local Build Properties     [echo]     version : 3     [echo]     srcdir : ../..     [echo]     builddir : ../../../builder/componentbuild     [echo]     component : button-advanced     [echo]     component.basefilename : button-advanced     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp     [echo] Global Build Properties     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build     [echo]     global.build.component : ../../build/button     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets-lint-server:     [echo] Starting Build For button-advanced     [echo] Ant Properties     [echo]     Home : /usr/share/ant     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-advanced.xml     [echo] Local Build Properties     [echo]     version : 3     [echo]     srcdir : ../..     [echo]     builddir : ../../../builder/componentbuild     [echo]     component : button-advanced     [echo]     component.basefilename : button-advanced     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp     [echo] Global Build Properties     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build     [echo]     global.build.component : ../../build/button     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets-node:     [exec] Execute failed: java.io.IOException: Cannot run program "node": error=2, No such file or directory     [echo] For faster builds, install Node.js.-concatdebug:     [echo] Concatenating     [echo]     Source Files : button-advanced.js     [echo]     In Source Dir : /Users/skyler/Sites/yui/yui3-gallery/src/button/js     [echo]     To : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced-debug.js     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant-registerdebug:     [echo] Wrapping /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced-debug.js in YUI.add module     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp-prependdebug:-appenddebug:builddebug:-createcore:     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp-loggerregex:     [echo] Replacing Logger Statements in /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced.jsbuildcore:-rollupjs:     [echo] Module: Rolling up button-advanced-debug.js into button-debug.js-concatskins:-buildskins:-rollupcss:buildskins:-buildlangs:-rolluplangs:buildlangs:build:minify:[yuicompressor] Compressing /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced.js[yuicompressor] Compressed to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced-min.jslint:     [echo] Using Rhino. Install nodejs to improve jslint speed, or skip with -Dlint.skip=true     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced-debug.js     [java] - OK     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced-min.js     [java] - OK     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced.js     [java] - OKlocal:deploybuild:     [copy] Copying 3 files to /Users/skyler/Sites/yui/yui3-gallery/build/button     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced-debug.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-advanced-debug.js     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced-min.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-advanced-min.js     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-advanced.jsdeployassets:deployskins:deploylang:     [copy] Warning: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/lang does not exist.deploydocs:deploy:all:     [echo] Starting Build For button-toggle     [echo] Ant Properties     [echo]     Home : /usr/share/ant     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-toggle.xml     [echo] Local Build Properties     [echo]     version : 3     [echo]     srcdir : ../..     [echo]     builddir : ../../../builder/componentbuild     [echo]     component : button-toggle     [echo]     component.basefilename : button-toggle     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp     [echo] Global Build Properties     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build     [echo]     global.build.component : ../../build/button     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assetsclean:   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmpinit:    [mkdir] Created dir: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp     [echo] Starting Build For button-toggle     [echo] Ant Properties     [echo]     Home : /usr/share/ant     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-toggle.xml     [echo] Local Build Properties     [echo]     version : 3     [echo]     srcdir : ../..     [echo]     builddir : ../../../builder/componentbuild     [echo]     component : button-toggle     [echo]     component.basefilename : button-toggle     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp     [echo] Global Build Properties     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build     [echo]     global.build.component : ../../build/button     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets-lint-server:     [echo] Starting Build For button-toggle     [echo] Ant Properties     [echo]     Home : /usr/share/ant     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-toggle.xml     [echo] Local Build Properties     [echo]     version : 3     [echo]     srcdir : ../..     [echo]     builddir : ../../../builder/componentbuild     [echo]     component : button-toggle     [echo]     component.basefilename : button-toggle     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp     [echo] Global Build Properties     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build     [echo]     global.build.component : ../../build/button     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets-node:     [exec] Execute failed: java.io.IOException: Cannot run program "node": error=2, No such file or directory     [echo] For faster builds, install Node.js.-concatdebug:     [echo] Concatenating     [echo]     Source Files : button-toggle.js     [echo]     In Source Dir : /Users/skyler/Sites/yui/yui3-gallery/src/button/js     [echo]     To : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle-debug.js     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant-registerdebug:     [echo] Wrapping /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle-debug.js in YUI.add module     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp-prependdebug:-appenddebug:builddebug:-createcore:     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp-loggerregex:     [echo] Replacing Logger Statements in /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle.jsbuildcore:-rollupjs:     [echo] Module: Rolling up button-toggle-debug.js into button-debug.js-concatskins:-buildskins:-rollupcss:buildskins:-buildlangs:-rolluplangs:buildlangs:build:minify:[yuicompressor] Compressing /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle.js[yuicompressor] [yuicompressor] [WARNING] Try to use a single 'var' statement per scope.[yuicompressor] namespace("Button.Plugin").Toggle=TogglePlugin; ---> var  <--- Toggle=Y.Base.create("button",[yuicompressor] [yuicompressor] [WARNING] The symbol LANG is declared but is apparently never used.[yuicompressor] This code can probably be written in a more compact way.[yuicompressor] ("button-toggle",function(Y){var  ---> LANG <--- =Y.Lang,DESELECTED_CALLBACK="deselectedCallback",SELECTED[yuicompressor] Compressed to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle-min.jslint:     [echo] Using Rhino. Install nodejs to improve jslint speed, or skip with -Dlint.skip=true     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle-debug.js     [java] - OK     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle-min.js     [java] - OK     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle.js     [java] - OKlocal:deploybuild:     [copy] Copying 3 files to /Users/skyler/Sites/yui/yui3-gallery/build/button     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle-debug.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-toggle-debug.js     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle-min.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-toggle-min.js     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-toggle.jsdeployassets:deployskins:deploylang:     [copy] Warning: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/lang does not exist.deploydocs:deploy:all:     [echo] Starting Build For button-panel     [echo] Ant Properties     [echo]     Home : /usr/share/ant     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-panel.xml     [echo] Local Build Properties     [echo]     version : 3     [echo]     srcdir : ../..     [echo]     builddir : ../../../builder/componentbuild     [echo]     component : button-panel     [echo]     component.basefilename : button-panel     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp     [echo] Global Build Properties     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build     [echo]     global.build.component : ../../build/button     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assetsclean:   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmpinit:    [mkdir] Created dir: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp     [echo] Starting Build For button-panel     [echo] Ant Properties     [echo]     Home : /usr/share/ant     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-panel.xml     [echo] Local Build Properties     [echo]     version : 3     [echo]     srcdir : ../..     [echo]     builddir : ../../../builder/componentbuild     [echo]     component : button-panel     [echo]     component.basefilename : button-panel     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp     [echo] Global Build Properties     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build     [echo]     global.build.component : ../../build/button     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets-lint-server:     [echo] Starting Build For button-panel     [echo] Ant Properties     [echo]     Home : /usr/share/ant     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-panel.xml     [echo] Local Build Properties     [echo]     version : 3     [echo]     srcdir : ../..     [echo]     builddir : ../../../builder/componentbuild     [echo]     component : button-panel     [echo]     component.basefilename : button-panel     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp     [echo] Global Build Properties     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build     [echo]     global.build.component : ../../build/button     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets-node:     [exec] Execute failed: java.io.IOException: Cannot run program "node": error=2, No such file or directory     [echo] For faster builds, install Node.js.-concatdebug:     [echo] Concatenating     [echo]     Source Files : button-panel.js     [echo]     In Source Dir : /Users/skyler/Sites/yui/yui3-gallery/src/button/js     [echo]     To : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel-debug.js     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant-registerdebug:     [echo] Wrapping /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel-debug.js in YUI.add module     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp-prependdebug:-appenddebug:builddebug:-createcore:     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp-loggerregex:     [echo] Replacing Logger Statements in /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel.jsbuildcore:-rollupjs:     [echo] Module: Rolling up button-panel-debug.js into button-debug.js-concatskins:-buildskins:-rollupcss:buildskins:-buildlangs:-rolluplangs:buildlangs:build:minify:[yuicompressor] Compressing /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel.js[yuicompressor] Compressed to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel-min.jslint:     [echo] Using Rhino. Install nodejs to improve jslint speed, or skip with -Dlint.skip=true     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel-debug.js     [java] - OK     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel-min.js     [java] - OK     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel.js     [java] - OKlocal:deploybuild:     [copy] Copying 3 files to /Users/skyler/Sites/yui/yui3-gallery/build/button     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel-debug.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-panel-debug.js     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel-min.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-panel-min.js     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-panel.jsdeployassets:deployskins:deploylang:     [copy] Warning: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/lang does not exist.deploydocs:deploy:all:     [echo] Starting Build For button-group     [echo] Ant Properties     [echo]     Home : /usr/share/ant     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-group.xml     [echo] Local Build Properties     [echo]     version : 3     [echo]     srcdir : ../..     [echo]     builddir : ../../../builder/componentbuild     [echo]     component : button-group     [echo]     component.basefilename : button-group     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp     [echo] Global Build Properties     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build     [echo]     global.build.component : ../../build/button     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assetsclean:   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmpinit:    [mkdir] Created dir: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp     [echo] Starting Build For button-group     [echo] Ant Properties     [echo]     Home : /usr/share/ant     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-group.xml     [echo] Local Build Properties     [echo]     version : 3     [echo]     srcdir : ../..     [echo]     builddir : ../../../builder/componentbuild     [echo]     component : button-group     [echo]     component.basefilename : button-group     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp     [echo] Global Build Properties     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build     [echo]     global.build.component : ../../build/button     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets-lint-server:     [echo] Starting Build For button-group     [echo] Ant Properties     [echo]     Home : /usr/share/ant     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-group.xml     [echo] Local Build Properties     [echo]     version : 3     [echo]     srcdir : ../..     [echo]     builddir : ../../../builder/componentbuild     [echo]     component : button-group     [echo]     component.basefilename : button-group     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp     [echo] Global Build Properties     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build     [echo]     global.build.component : ../../build/button     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets-node:     [exec] Execute failed: java.io.IOException: Cannot run program "node": error=2, No such file or directory     [echo] For faster builds, install Node.js.-concatdebug:     [echo] Concatenating     [echo]     Source Files : button-group.js     [echo]     In Source Dir : /Users/skyler/Sites/yui/yui3-gallery/src/button/js     [echo]     To : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group-debug.js     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant-registerdebug:     [echo] Wrapping /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group-debug.js in YUI.add module     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp-prependdebug:-appenddebug:builddebug:-createcore:     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp-loggerregex:     [echo] Replacing Logger Statements in /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group.jsbuildcore:-rollupjs:     [echo] Module: Rolling up button-group-debug.js into button-debug.js-concatskins:-buildskins:-rollupcss:buildskins:-buildlangs:-rolluplangs:buildlangs:build:minify:[yuicompressor] Compressing /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group.js[yuicompressor] Compressed to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group-min.jslint:     [echo] Using Rhino. Install nodejs to improve jslint speed, or skip with -Dlint.skip=true     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group-debug.js     [java] - OK     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group-min.js     [java] - OK     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group.js     [java] - OKlocal:deploybuild:     [copy] Copying 3 files to /Users/skyler/Sites/yui/yui3-gallery/build/button     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group-debug.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-group-debug.js     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group-min.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-group-min.js     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-group.jsdeployassets:deployskins:deploylang:     [copy] Warning: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/lang does not exist.deploydocs:deploy:all:-registerall:     [echo] Adding Rollup /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp/button-debug.js using YUI.add     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp     [echo] Adding Rollup /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp/button.js using YUI.add     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp-prependdebug:-prepend:-prependall:-appenddebug:-append:-appendall:-rollupjs:-rolluplangs:buildmodules:build:minify:[yuicompressor] Compressing /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp/button.js[yuicompressor] [yuicompressor] [WARNING] Try to use a single 'var' statement per scope.[yuicompressor] namespace("Button.Plugin").Toggle=TogglePlugin; ---> var  <--- Toggle=Y.Base.create("button",[yuicompressor] [yuicompressor] [WARNING] The symbol LANG is declared but is apparently never used.[yuicompressor] This code can probably be written in a more compact way.[yuicompressor] ("button-toggle",function(Y){var  ---> LANG <--- =Y.Lang,DESELECTED_CALLBACK="deselectedCallback",SELECTED[yuicompressor] Compressed to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp/button-min.jslint:     [echo] Using Rhino. Install nodejs to improve jslint speed, or skip with -Dlint.skip=true     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp/button-debug.js     [java] - OK     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp/button-min.js     [java] - OK     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp/button.js     [java] - OKlocal:BUILD SUCCESSFULTotal time: 31 seconds770(13@69"Buildfile: /Users/skyler/Sites/yui/yui3-gallery/src/button/build.xml326083936#0#69#0(1@0"0(13@38"     [echo] Starting Build For button326083936#69#38#0(1@0"0(13@27"     [echo] Ant Properties326083936#107#27#0(1@0"0(13@38"     [echo]     Home : /usr/share/ant326083936#134#38#0(1@0"0(13@88"     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011326083936#172#88#0(1@0"0(13@87"     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/build.xml326083936#260#87#0(1@0"0(13@35"     [echo] Local Build Properties326083936#347#35#0(1@0"0(13@28"     [echo]     version : 3326083936#382#28#0(1@0"0(13@62"     [echo]     srcdir : /Users/skyler/Sites/yui/yui3-gallery326083936#410#62#0(1@0"0(13@59"     [echo]     builddir : ../../../builder/componentbuild326083936#472#59#0(1@0"0(13@35"     [echo]     component : button326083936#531#35#0(1@0"0(13@48"     [echo]     component.basefilename : button326083936#566#48#0(1@0"0(13@84"     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button326083936#614#84#0(1@0"0(13@102"     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp326083936#698#102#0(1@0"0(13@36"     [echo] Global Build Properties326083936#800#36#0(1@0"0(13@79"     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build326083936#836#79#0(1@0"0(13@91"     [echo]     global.build.component : /Users/skyler/Sites/yui/yui3-gallery/build/button326083936#915#91#0(1@0"0(13@105"     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets326083936#1006#105#0(1@0"0(13@7"clean:326083936#1112#7#0(1@0"0(13@96"   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp326083936#1119#96#0(1@0"0(13@6"init:326083936#1216#6#0(1@0"0(13@90"    [mkdir] Created dir: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp326083936#1222#90#0(1@0"0(13@38"     [echo] Starting Build For button326083937#1312#38#0(1@0"0(13@27"     [echo] Ant Properties326083937#1350#27#0(1@0"0(13@38"     [echo]     Home : /usr/share/ant326083937#1377#38#0(1@0"0(13@88"     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011326083937#1415#88#0(1@0"0(13@87"     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/build.xml326083937#1503#87#0(1@0"0(13@35"     [echo] Local Build Properties326083937#1590#35#0(1@0"0(13@28"     [echo]     version : 3326083937#1625#28#0(1@0"0(13@62"     [echo]     srcdir : /Users/skyler/Sites/yui/yui3-gallery326083937#1653#62#0(1@0"0(13@59"     [echo]     builddir : ../../../builder/componentbuild326083937#1715#59#0(1@0"0(13@35"     [echo]     component : button326083937#1774#35#0(1@0"0(13@48"     [echo]     component.basefilename : button326083937#1809#48#0(1@0"0(13@84"     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button326083937#1857#84#0(1@0"0(13@102"     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp326083937#1941#102#0(1@0"0(13@36"     [echo] Global Build Properties326083937#2043#36#0(1@0"0(13@79"     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build326083937#2079#79#0(1@0"0(13@91"     [echo]     global.build.component : /Users/skyler/Sites/yui/yui3-gallery/build/button326083937#2158#91#0(1@0"0(13@105"     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets326083937#2249#105#0(1@0"0(13@14"-lint-server:326083937#2355#14#0(1@0"0(13@38"     [echo] Starting Build For button326083937#2369#38#0(1@0"0(13@27"     [echo] Ant Properties326083937#2407#27#0(1@0"0(13@38"     [echo]     Home : /usr/share/ant326083937#2434#38#0(1@0"0(13@88"     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011326083937#2472#88#0(1@0"0(13@87"     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/build.xml326083937#2560#87#0(1@0"0(13@35"     [echo] Local Build Properties326083937#2647#35#0(1@0"0(13@28"     [echo]     version : 3326083937#2682#28#0(1@0"0(13@62"     [echo]     srcdir : /Users/skyler/Sites/yui/yui3-gallery326083937#2710#62#0(1@0"0(13@59"     [echo]     builddir : ../../../builder/componentbuild326083937#2772#59#0(1@0"0(13@35"     [echo]     component : button326083937#2831#35#0(1@0"0(13@48"     [echo]     component.basefilename : button326083937#2866#48#0(1@0"0(13@84"     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button326083937#2914#84#0(1@0"0(13@102"     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp326083937#2998#102#0(1@0"0(13@36"     [echo] Global Build Properties326083937#3100#36#0(1@0"0(13@79"     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build326083937#3136#79#0(1@0"0(13@91"     [echo]     global.build.component : /Users/skyler/Sites/yui/yui3-gallery/build/button326083937#3215#91#0(1@0"0(13@105"     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets326083937#3306#105#0(1@0"0(13@7"-node:326083937#3412#7#0(1@0"0(4@105"[exec] Execute failed: java.io.IOException: Cannot run program "node": error=2, No such file or directory326083937#3419#111#0(1@0"0(13@48"     [echo] For faster builds, install Node.js.326083937#3530#48#0(1@0"0(13@15"-buildmodules:326083937#3579#15#0(1@0"0(13@43"     [echo] Starting Build For button-base326083937#3594#43#0(1@0"0(13@27"     [echo] Ant Properties326083937#3637#27#0(1@0"0(13@38"     [echo]     Home : /usr/share/ant326083937#3664#38#0(1@0"0(13@88"     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011326083937#3702#88#0(1@0"0(13@93"     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-base.xml326083937#3790#93#0(1@0"0(13@35"     [echo] Local Build Properties326083937#3883#35#0(1@0"0(13@28"     [echo]     version : 3326083937#3918#28#0(1@0"0(13@31"     [echo]     srcdir : ../..326083937#3946#31#0(1@0"0(13@59"     [echo]     builddir : ../../../builder/componentbuild326083937#3977#59#0(1@0"0(13@40"     [echo]     component : button-base326083937#4036#40#0(1@0"0(13@53"     [echo]     component.basefilename : button-base326083937#4076#53#0(1@0"0(13@84"     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button326083937#4129#84#0(1@0"0(13@95"     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083937#4213#95#0(1@0"0(13@36"     [echo] Global Build Properties326083937#4308#36#0(1@0"0(13@79"     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build326083937#4344#79#0(1@0"0(13@60"     [echo]     global.build.component : ../../build/button326083937#4423#60#0(1@0"0(13@105"     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets326083937#4483#105#0(1@0"0(13@7"clean:326083937#4589#7#0(1@0"0(13@89"   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083937#4596#89#0(1@0"0(13@6"init:326083937#4686#6#0(1@0"0(13@83"    [mkdir] Created dir: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083937#4692#83#0(1@0"0(13@43"     [echo] Starting Build For button-base326083937#4775#43#0(1@0"0(13@27"     [echo] Ant Properties326083937#4818#27#0(1@0"0(13@38"     [echo]     Home : /usr/share/ant326083937#4845#38#0(1@0"0(13@88"     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011326083937#4883#88#0(1@0"0(13@93"     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-base.xml326083937#4971#93#0(1@0"0(13@35"     [echo] Local Build Properties326083937#5064#35#0(1@0"0(13@28"     [echo]     version : 3326083937#5099#28#0(1@0"0(13@31"     [echo]     srcdir : ../..326083937#5127#31#0(1@0"0(13@59"     [echo]     builddir : ../../../builder/componentbuild326083937#5158#59#0(1@0"0(13@40"     [echo]     component : button-base326083937#5217#40#0(1@0"0(13@53"     [echo]     component.basefilename : button-base326083937#5257#53#0(1@0"0(13@84"     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button326083937#5310#84#0(1@0"0(13@95"     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083937#5394#95#0(1@0"0(13@36"     [echo] Global Build Properties326083937#5489#36#0(1@0"0(13@79"     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build326083937#5525#79#0(1@0"0(13@60"     [echo]     global.build.component : ../../build/button326083937#5604#60#0(1@0"0(13@105"     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets326083937#5664#105#0(1@0"0(13@14"-lint-server:326083937#5770#14#0(1@0"0(13@43"     [echo] Starting Build For button-base326083938#5784#43#0(1@0"0(13@27"     [echo] Ant Properties326083938#5827#27#0(1@0"0(13@38"     [echo]     Home : /usr/share/ant326083938#5854#38#0(1@0"0(13@88"     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011326083938#5892#88#0(1@0"0(13@93"     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-base.xml326083938#5980#93#0(1@0"0(13@35"     [echo] Local Build Properties326083938#6073#35#0(1@0"0(13@28"     [echo]     version : 3326083938#6108#28#0(1@0"0(13@31"     [echo]     srcdir : ../..326083938#6136#31#0(1@0"0(13@59"     [echo]     builddir : ../../../builder/componentbuild326083938#6167#59#0(1@0"0(13@40"     [echo]     component : button-base326083938#6226#40#0(1@0"0(13@53"     [echo]     component.basefilename : button-base326083938#6266#53#0(1@0"0(13@84"     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button326083938#6319#84#0(1@0"0(13@95"     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083938#6403#95#0(1@0"0(13@36"     [echo] Global Build Properties326083938#6498#36#0(1@0"0(13@79"     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build326083938#6534#79#0(1@0"0(13@60"     [echo]     global.build.component : ../../build/button326083938#6613#60#0(1@0"0(13@105"     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets326083938#6673#105#0(1@0"0(13@7"-node:326083938#6779#7#0(1@0"0(4@105"[exec] Execute failed: java.io.IOException: Cannot run program "node": error=2, No such file or directory326083938#6786#111#0(1@0"0(13@48"     [echo] For faster builds, install Node.js.326083938#6897#48#0(1@0"0(13@14"-concatdebug:326083938#6946#14#0(1@0"0(13@26"     [echo] Concatenating326083938#6960#26#0(1@0"0(13@46"     [echo]     Source Files : button-base.js326083938#6986#46#0(1@0"0(13@83"     [echo]     In Source Dir : /Users/skyler/Sites/yui/yui3-gallery/src/button/js326083938#7032#83#0(1@0"0(13@100"     [echo]     To : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base-debug.js326083938#7115#100#0(1@0"0(13@92"     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant326083938#7215#92#0(1@0"0(13@93"   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant326083938#7307#93#0(1@0"0(13@16"-registerdebug:326083938#7401#16#0(1@0"0(13@118"     [echo] Wrapping /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base-debug.js in YUI.add module326083938#7417#118#0(1@0"0(13@88"     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083938#7535#88#0(1@0"0(13@15"-prependdebug:326083938#7624#15#0(1@0"0(13@14"-appenddebug:326083938#7640#14#0(1@0"0(13@12"builddebug:326083938#7655#12#0(1@0"0(13@13"-createcore:326083938#7668#13#0(1@0"0(13@88"     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083938#7681#88#0(1@0"0(13@14"-loggerregex:326083938#7770#14#0(1@0"0(13@116"     [echo] Replacing Logger Statements in /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base.js326083938#7784#116#0(1@0"0(13@11"buildcore:326083938#7901#11#0(1@0"0(13@11"-rollupjs:326083938#7913#11#0(1@0"0(13@73"     [echo] Module: Rolling up button-base-debug.js into button-debug.js326083938#7924#73#0(1@0"0(13@14"-concatskins:326083938#7998#14#0(1@0"0(13@13"-buildskins:326083938#8013#13#0(1@0"0(13@12"-rollupcss:326083938#8027#12#0(1@0"0(13@12"buildskins:326083938#8040#12#0(1@0"0(13@13"-buildlangs:326083938#8053#13#0(1@0"0(13@14"-rolluplangs:326083938#8067#14#0(1@0"0(13@12"buildlangs:326083938#8082#12#0(1@0"0(13@7"build:326083938#8095#7#0(1@0"0(13@8"minify:326083938#8103#8#0(1@0"0(13@101"[yuicompressor] Compressing /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base.js326083938#8111#101#0(1@0"0(13@107"[yuicompressor] Compressed to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base-min.js326083939#8212#107#0(1@0"0(13@6"lint:326083939#8320#6#0(1@0"0(13@95"     [echo] Using Rhino. Install nodejs to improve jslint speed, or skip with -Dlint.skip=true326083939#8326#95#0(1@0"0(13@111"     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base-debug.js326083940#8421#111#0(1@0"0(13@17"     [java] - OK326083941#8532#17#0(1@0"0(13@109"     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base-min.js326083941#8549#109#0(1@0"0(13@17"     [java] - OK326083941#8658#17#0(1@0"0(13@105"     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base.js326083941#8675#105#0(1@0"0(13@17"     [java] - OK326083941#8780#17#0(1@0"0(13@7"local:326083942#8798#7#0(1@0"0(13@13"deploybuild:326083942#8806#13#0(1@0"0(13@81"     [copy] Copying 3 files to /Users/skyler/Sites/yui/yui3-gallery/build/button326083942#8819#81#0(1@0"0(13@173"     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base-debug.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-base-debug.js326083942#8900#173#0(1@0"0(13@169"     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base-min.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-base-min.js326083942#9073#169#0(1@0"0(13@161"     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-base.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-base.js326083942#9242#161#0(1@0"0(13@14"deployassets:326083942#9404#14#0(1@0"0(13@13"deployskins:326083942#9419#13#0(1@0"0(13@12"deploylang:326083942#9433#12#0(1@0"0(13@100"     [copy] Warning: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/lang does not exist.326083942#9445#100#0(1@0"0(13@12"deploydocs:326083942#9546#12#0(1@0"0(13@8"deploy:326083942#9559#8#0(1@0"0(13@5"all:326083942#9568#5#0(1@0"0(13@45"     [echo] Starting Build For button-simple326083942#9573#45#0(1@0"0(13@27"     [echo] Ant Properties326083942#9618#27#0(1@0"0(13@38"     [echo]     Home : /usr/share/ant326083942#9645#38#0(1@0"0(13@88"     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011326083942#9683#88#0(1@0"0(13@95"     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-simple.xml326083942#9771#95#0(1@0"0(13@35"     [echo] Local Build Properties326083942#9866#35#0(1@0"0(13@28"     [echo]     version : 3326083942#9901#28#0(1@0"0(13@31"     [echo]     srcdir : ../..326083942#9929#31#0(1@0"0(13@59"     [echo]     builddir : ../../../builder/componentbuild326083942#9960#59#0(1@0"0(13@42"     [echo]     component : button-simple326083942#10019#42#0(1@0"0(13@55"     [echo]     component.basefilename : button-simple326083942#10061#55#0(1@0"0(13@84"     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button326083942#10116#84#0(1@0"0(13@95"     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083942#10200#95#0(1@0"0(13@36"     [echo] Global Build Properties326083942#10295#36#0(1@0"0(13@79"     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build326083942#10331#79#0(1@0"0(13@60"     [echo]     global.build.component : ../../build/button326083942#10410#60#0(1@0"0(13@105"     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets326083942#10470#105#0(1@0"0(13@7"clean:326083942#10576#7#0(1@0"0(13@89"   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083942#10583#89#0(1@0"0(13@6"init:326083942#10673#6#0(1@0"0(13@83"    [mkdir] Created dir: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083942#10679#83#0(1@0"0(13@45"     [echo] Starting Build For button-simple326083942#10762#45#0(1@0"0(13@27"     [echo] Ant Properties326083942#10807#27#0(1@0"0(13@38"     [echo]     Home : /usr/share/ant326083942#10834#38#0(1@0"0(13@88"     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011326083942#10872#88#0(1@0"0(13@95"     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-simple.xml326083942#10960#95#0(1@0"0(13@35"     [echo] Local Build Properties326083942#11055#35#0(1@0"0(13@28"     [echo]     version : 3326083942#11090#28#0(1@0"0(13@31"     [echo]     srcdir : ../..326083942#11118#31#0(1@0"0(13@59"     [echo]     builddir : ../../../builder/componentbuild326083942#11149#59#0(1@0"0(13@42"     [echo]     component : button-simple326083942#11208#42#0(1@0"0(13@55"     [echo]     component.basefilename : button-simple326083942#11250#55#0(1@0"0(13@84"     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button326083942#11305#84#0(1@0"0(13@95"     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083942#11389#95#0(1@0"0(13@36"     [echo] Global Build Properties326083942#11484#36#0(1@0"0(13@79"     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build326083942#11520#79#0(1@0"0(13@60"     [echo]     global.build.component : ../../build/button326083942#11599#60#0(1@0"0(13@105"     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets326083942#11659#105#0(1@0"0(13@14"-lint-server:326083942#11765#14#0(1@0"0(13@45"     [echo] Starting Build For button-simple326083942#11779#45#0(1@0"0(13@27"     [echo] Ant Properties326083942#11824#27#0(1@0"0(13@38"     [echo]     Home : /usr/share/ant326083942#11851#38#0(1@0"0(13@88"     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011326083942#11889#88#0(1@0"0(13@95"     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-simple.xml326083942#11977#95#0(1@0"0(13@35"     [echo] Local Build Properties326083942#12072#35#0(1@0"0(13@28"     [echo]     version : 3326083942#12107#28#0(1@0"0(13@31"     [echo]     srcdir : ../..326083942#12135#31#0(1@0"0(13@59"     [echo]     builddir : ../../../builder/componentbuild326083942#12166#59#0(1@0"0(13@42"     [echo]     component : button-simple326083942#12225#42#0(1@0"0(13@55"     [echo]     component.basefilename : button-simple326083942#12267#55#0(1@0"0(13@84"     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button326083942#12322#84#0(1@0"0(13@95"     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083942#12406#95#0(1@0"0(13@36"     [echo] Global Build Properties326083942#12501#36#0(1@0"0(13@79"     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build326083942#12537#79#0(1@0"0(13@60"     [echo]     global.build.component : ../../build/button326083942#12616#60#0(1@0"0(13@105"     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets326083942#12676#105#0(1@0"0(13@7"-node:326083942#12782#7#0(1@0"0(4@105"[exec] Execute failed: java.io.IOException: Cannot run program "node": error=2, No such file or directory326083943#12789#111#0(1@0"0(13@48"     [echo] For faster builds, install Node.js.326083943#12900#48#0(1@0"0(13@14"-concatdebug:326083943#12949#14#0(1@0"0(13@26"     [echo] Concatenating326083943#12963#26#0(1@0"0(13@48"     [echo]     Source Files : button-simple.js326083943#12989#48#0(1@0"0(13@83"     [echo]     In Source Dir : /Users/skyler/Sites/yui/yui3-gallery/src/button/js326083943#13037#83#0(1@0"0(13@102"     [echo]     To : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple-debug.js326083943#13120#102#0(1@0"0(13@92"     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant326083943#13222#92#0(1@0"0(13@93"   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant326083943#13314#93#0(1@0"0(13@16"-registerdebug:326083943#13408#16#0(1@0"0(13@120"     [echo] Wrapping /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple-debug.js in YUI.add module326083943#13424#120#0(1@0"0(13@88"     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083943#13544#88#0(1@0"0(13@15"-prependdebug:326083943#13633#15#0(1@0"0(13@14"-appenddebug:326083943#13649#14#0(1@0"0(13@12"builddebug:326083943#13664#12#0(1@0"0(13@13"-createcore:326083943#13677#13#0(1@0"0(13@88"     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083943#13690#88#0(1@0"0(13@14"-loggerregex:326083943#13779#14#0(1@0"0(13@118"     [echo] Replacing Logger Statements in /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple.js326083943#13793#118#0(1@0"0(13@11"buildcore:326083943#13912#11#0(1@0"0(13@11"-rollupjs:326083943#13924#11#0(1@0"0(13@75"     [echo] Module: Rolling up button-simple-debug.js into button-debug.js326083943#13935#75#0(1@0"0(13@14"-concatskins:326083943#14011#14#0(1@0"0(13@13"-buildskins:326083943#14026#13#0(1@0"0(13@12"-rollupcss:326083943#14040#12#0(1@0"0(13@12"buildskins:326083943#14053#12#0(1@0"0(13@13"-buildlangs:326083943#14066#13#0(1@0"0(13@14"-rolluplangs:326083943#14080#14#0(1@0"0(13@12"buildlangs:326083943#14095#12#0(1@0"0(13@7"build:326083943#14108#7#0(1@0"0(13@8"minify:326083943#14116#8#0(1@0"0(13@103"[yuicompressor] Compressing /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple.js326083943#14124#103#0(1@0"0(13@109"[yuicompressor] Compressed to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple-min.js326083943#14227#109#0(1@0"0(13@6"lint:326083943#14337#6#0(1@0"0(13@95"     [echo] Using Rhino. Install nodejs to improve jslint speed, or skip with -Dlint.skip=true326083943#14343#95#0(1@0"0(13@113"     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple-debug.js326083944#14438#113#0(1@0"0(13@17"     [java] - OK326083945#14551#17#0(1@0"0(13@111"     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple-min.js326083945#14568#111#0(1@0"0(13@17"     [java] - OK326083945#14679#17#0(1@0"0(13@107"     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple.js326083945#14696#107#0(1@0"0(13@17"     [java] - OK326083945#14803#17#0(1@0"0(13@7"local:326083946#14821#7#0(1@0"0(13@13"deploybuild:326083946#14829#13#0(1@0"0(13@81"     [copy] Copying 3 files to /Users/skyler/Sites/yui/yui3-gallery/build/button326083946#14842#81#0(1@0"0(13@177"     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple-debug.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-simple-debug.js326083946#14923#177#0(1@0"0(13@173"     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple-min.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-simple-min.js326083946#15100#173#0(1@0"0(13@165"     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-simple.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-simple.js326083946#15273#165#0(1@0"0(13@14"deployassets:326083946#15439#14#0(1@0"0(13@13"deployskins:326083946#15454#13#0(1@0"0(13@12"deploylang:326083946#15468#12#0(1@0"0(13@100"     [copy] Warning: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/lang does not exist.326083946#15480#100#0(1@0"0(13@12"deploydocs:326083946#15581#12#0(1@0"0(13@8"deploy:326083946#15594#8#0(1@0"0(13@5"all:326083946#15603#5#0(1@0"0(13@47"     [echo] Starting Build For button-advanced326083946#15608#47#0(1@0"0(13@27"     [echo] Ant Properties326083946#15655#27#0(1@0"0(13@38"     [echo]     Home : /usr/share/ant326083946#15682#38#0(1@0"0(13@88"     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011326083946#15720#88#0(1@0"0(13@97"     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-advanced.xml326083946#15808#97#0(1@0"0(13@35"     [echo] Local Build Properties326083946#15905#35#0(1@0"0(13@28"     [echo]     version : 3326083946#15940#28#0(1@0"0(13@31"     [echo]     srcdir : ../..326083946#15968#31#0(1@0"0(13@59"     [echo]     builddir : ../../../builder/componentbuild326083946#15999#59#0(1@0"0(13@44"     [echo]     component : button-advanced326083946#16058#44#0(1@0"0(13@57"     [echo]     component.basefilename : button-advanced326083946#16102#57#0(1@0"0(13@84"     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button326083946#16159#84#0(1@0"0(13@95"     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083946#16243#95#0(1@0"0(13@36"     [echo] Global Build Properties326083946#16338#36#0(1@0"0(13@79"     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build326083946#16374#79#0(1@0"0(13@60"     [echo]     global.build.component : ../../build/button326083946#16453#60#0(1@0"0(13@105"     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets326083946#16513#105#0(1@0"0(13@7"clean:326083946#16619#7#0(1@0"0(13@89"   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083946#16626#89#0(1@0"0(13@6"init:326083946#16716#6#0(1@0"0(13@83"    [mkdir] Created dir: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083946#16722#83#0(1@0"0(13@47"     [echo] Starting Build For button-advanced326083946#16805#47#0(1@0"0(13@27"     [echo] Ant Properties326083946#16852#27#0(1@0"0(13@38"     [echo]     Home : /usr/share/ant326083946#16879#38#0(1@0"0(13@88"     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011326083946#16917#88#0(1@0"0(13@97"     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-advanced.xml326083946#17005#97#0(1@0"0(13@35"     [echo] Local Build Properties326083946#17102#35#0(1@0"0(13@28"     [echo]     version : 3326083946#17137#28#0(1@0"0(13@31"     [echo]     srcdir : ../..326083946#17165#31#0(1@0"0(13@59"     [echo]     builddir : ../../../builder/componentbuild326083946#17196#59#0(1@0"0(13@44"     [echo]     component : button-advanced326083946#17255#44#0(1@0"0(13@57"     [echo]     component.basefilename : button-advanced326083946#17299#57#0(1@0"0(13@84"     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button326083946#17356#84#0(1@0"0(13@95"     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083946#17440#95#0(1@0"0(13@36"     [echo] Global Build Properties326083946#17535#36#0(1@0"0(13@79"     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build326083946#17571#79#0(1@0"0(13@60"     [echo]     global.build.component : ../../build/button326083946#17650#60#0(1@0"0(13@105"     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets326083946#17710#105#0(1@0"0(13@14"-lint-server:326083946#17816#14#0(1@0"0(13@47"     [echo] Starting Build For button-advanced326083947#17830#47#0(1@0"0(13@27"     [echo] Ant Properties326083947#17877#27#0(1@0"0(13@38"     [echo]     Home : /usr/share/ant326083947#17904#38#0(1@0"0(13@88"     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011326083947#17942#88#0(1@0"0(13@97"     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-advanced.xml326083947#18030#97#0(1@0"0(13@35"     [echo] Local Build Properties326083947#18127#35#0(1@0"0(13@28"     [echo]     version : 3326083947#18162#28#0(1@0"0(13@31"     [echo]     srcdir : ../..326083947#18190#31#0(1@0"0(13@59"     [echo]     builddir : ../../../builder/componentbuild326083947#18221#59#0(1@0"0(13@44"     [echo]     component : button-advanced326083947#18280#44#0(1@0"0(13@57"     [echo]     component.basefilename : button-advanced326083947#18324#57#0(1@0"0(13@84"     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button326083947#18381#84#0(1@0"0(13@95"     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083947#18465#95#0(1@0"0(13@36"     [echo] Global Build Properties326083947#18560#36#0(1@0"0(13@79"     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build326083947#18596#79#0(1@0"0(13@60"     [echo]     global.build.component : ../../build/button326083947#18675#60#0(1@0"0(13@105"     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets326083947#18735#105#0(1@0"0(13@7"-node:326083947#18841#7#0(1@0"0(4@105"[exec] Execute failed: java.io.IOException: Cannot run program "node": error=2, No such file or directory326083947#18848#111#0(1@0"0(13@48"     [echo] For faster builds, install Node.js.326083947#18959#48#0(1@0"0(13@14"-concatdebug:326083947#19008#14#0(1@0"0(13@26"     [echo] Concatenating326083947#19022#26#0(1@0"0(13@50"     [echo]     Source Files : button-advanced.js326083947#19048#50#0(1@0"0(13@83"     [echo]     In Source Dir : /Users/skyler/Sites/yui/yui3-gallery/src/button/js326083947#19098#83#0(1@0"0(13@104"     [echo]     To : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced-debug.js326083947#19181#104#0(1@0"0(13@92"     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant326083947#19285#92#0(1@0"0(13@93"   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant326083947#19377#93#0(1@0"0(13@16"-registerdebug:326083947#19471#16#0(1@0"0(13@122"     [echo] Wrapping /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced-debug.js in YUI.add module326083947#19487#122#0(1@0"0(13@88"     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083947#19609#88#0(1@0"0(13@15"-prependdebug:326083947#19698#15#0(1@0"0(13@14"-appenddebug:326083947#19714#14#0(1@0"0(13@12"builddebug:326083947#19729#12#0(1@0"0(13@13"-createcore:326083947#19742#13#0(1@0"0(13@88"     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083947#19755#88#0(1@0"0(13@14"-loggerregex:326083947#19844#14#0(1@0"0(13@120"     [echo] Replacing Logger Statements in /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced.js326083947#19858#120#0(1@0"0(13@11"buildcore:326083947#19979#11#0(1@0"0(13@11"-rollupjs:326083947#19991#11#0(1@0"0(13@77"     [echo] Module: Rolling up button-advanced-debug.js into button-debug.js326083947#20002#77#0(1@0"0(13@14"-concatskins:326083947#20080#14#0(1@0"0(13@13"-buildskins:326083947#20095#13#0(1@0"0(13@12"-rollupcss:326083947#20109#12#0(1@0"0(13@12"buildskins:326083947#20122#12#0(1@0"0(13@13"-buildlangs:326083947#20135#13#0(1@0"0(13@14"-rolluplangs:326083947#20149#14#0(1@0"0(13@12"buildlangs:326083947#20164#12#0(1@0"0(13@7"build:326083947#20177#7#0(1@0"0(13@8"minify:326083947#20185#8#0(1@0"0(13@105"[yuicompressor] Compressing /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced.js326083947#20193#105#0(1@0"0(13@111"[yuicompressor] Compressed to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced-min.js326083947#20298#111#0(1@0"0(13@6"lint:326083947#20410#6#0(1@0"0(13@95"     [echo] Using Rhino. Install nodejs to improve jslint speed, or skip with -Dlint.skip=true326083947#20416#95#0(1@0"0(13@115"     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced-debug.js326083948#20511#115#0(1@0"0(13@17"     [java] - OK326083949#20626#17#0(1@0"0(13@113"     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced-min.js326083949#20643#113#0(1@0"0(13@17"     [java] - OK326083949#20756#17#0(1@0"0(13@109"     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced.js326083949#20773#109#0(1@0"0(13@17"     [java] - OK326083949#20882#17#0(1@0"0(13@7"local:326083950#20900#7#0(1@0"0(13@13"deploybuild:326083950#20908#13#0(1@0"0(13@81"     [copy] Copying 3 files to /Users/skyler/Sites/yui/yui3-gallery/build/button326083950#20921#81#0(1@0"0(13@181"     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced-debug.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-advanced-debug.js326083950#21002#181#0(1@0"0(13@177"     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced-min.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-advanced-min.js326083950#21183#177#0(1@0"0(13@169"     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-advanced.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-advanced.js326083950#21360#169#0(1@0"0(13@14"deployassets:326083950#21530#14#0(1@0"0(13@13"deployskins:326083950#21545#13#0(1@0"0(13@12"deploylang:326083950#21559#12#0(1@0"0(13@100"     [copy] Warning: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/lang does not exist.326083950#21571#100#0(1@0"0(13@12"deploydocs:326083950#21672#12#0(1@0"0(13@8"deploy:326083950#21685#8#0(1@0"0(13@5"all:326083950#21694#5#0(1@0"0(13@45"     [echo] Starting Build For button-toggle326083950#21699#45#0(1@0"0(13@27"     [echo] Ant Properties326083950#21744#27#0(1@0"0(13@38"     [echo]     Home : /usr/share/ant326083950#21771#38#0(1@0"0(13@88"     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011326083950#21809#88#0(1@0"0(13@95"     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-toggle.xml326083950#21897#95#0(1@0"0(13@35"     [echo] Local Build Properties326083950#21992#35#0(1@0"0(13@28"     [echo]     version : 3326083950#22027#28#0(1@0"0(13@31"     [echo]     srcdir : ../..326083950#22055#31#0(1@0"0(13@59"     [echo]     builddir : ../../../builder/componentbuild326083950#22086#59#0(1@0"0(13@42"     [echo]     component : button-toggle326083950#22145#42#0(1@0"0(13@55"     [echo]     component.basefilename : button-toggle326083950#22187#55#0(1@0"0(13@84"     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button326083950#22242#84#0(1@0"0(13@95"     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083950#22326#95#0(1@0"0(13@36"     [echo] Global Build Properties326083950#22421#36#0(1@0"0(13@79"     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build326083950#22457#79#0(1@0"0(13@60"     [echo]     global.build.component : ../../build/button326083950#22536#60#0(1@0"0(13@105"     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets326083950#22596#105#0(1@0"0(13@7"clean:326083950#22702#7#0(1@0"0(13@89"   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083950#22709#89#0(1@0"0(13@6"init:326083950#22799#6#0(1@0"0(13@83"    [mkdir] Created dir: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083950#22805#83#0(1@0"0(13@45"     [echo] Starting Build For button-toggle326083950#22888#45#0(1@0"0(13@27"     [echo] Ant Properties326083950#22933#27#0(1@0"0(13@38"     [echo]     Home : /usr/share/ant326083950#22960#38#0(1@0"0(13@88"     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011326083950#22998#88#0(1@0"0(13@95"     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-toggle.xml326083950#23086#95#0(1@0"0(13@35"     [echo] Local Build Properties326083950#23181#35#0(1@0"0(13@28"     [echo]     version : 3326083950#23216#28#0(1@0"0(13@31"     [echo]     srcdir : ../..326083950#23244#31#0(1@0"0(13@59"     [echo]     builddir : ../../../builder/componentbuild326083950#23275#59#0(1@0"0(13@42"     [echo]     component : button-toggle326083950#23334#42#0(1@0"0(13@55"     [echo]     component.basefilename : button-toggle326083950#23376#55#0(1@0"0(13@84"     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button326083950#23431#84#0(1@0"0(13@95"     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083950#23515#95#0(1@0"0(13@36"     [echo] Global Build Properties326083950#23610#36#0(1@0"0(13@79"     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build326083950#23646#79#0(1@0"0(13@60"     [echo]     global.build.component : ../../build/button326083950#23725#60#0(1@0"0(13@105"     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets326083950#23785#105#0(1@0"0(13@14"-lint-server:326083950#23891#14#0(1@0"0(13@45"     [echo] Starting Build For button-toggle326083951#23905#45#0(1@0"0(13@27"     [echo] Ant Properties326083951#23950#27#0(1@0"0(13@38"     [echo]     Home : /usr/share/ant326083951#23977#38#0(1@0"0(13@88"     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011326083951#24015#88#0(1@0"0(13@95"     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-toggle.xml326083951#24103#95#0(1@0"0(13@35"     [echo] Local Build Properties326083951#24198#35#0(1@0"0(13@28"     [echo]     version : 3326083951#24233#28#0(1@0"0(13@31"     [echo]     srcdir : ../..326083951#24261#31#0(1@0"0(13@59"     [echo]     builddir : ../../../builder/componentbuild326083951#24292#59#0(1@0"0(13@42"     [echo]     component : button-toggle326083951#24351#42#0(1@0"0(13@55"     [echo]     component.basefilename : button-toggle326083951#24393#55#0(1@0"0(13@84"     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button326083951#24448#84#0(1@0"0(13@95"     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083951#24532#95#0(1@0"0(13@36"     [echo] Global Build Properties326083951#24627#36#0(1@0"0(13@79"     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build326083951#24663#79#0(1@0"0(13@60"     [echo]     global.build.component : ../../build/button326083951#24742#60#0(1@0"0(13@105"     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets326083951#24802#105#0(1@0"0(13@7"-node:326083951#24908#7#0(1@0"0(4@105"[exec] Execute failed: java.io.IOException: Cannot run program "node": error=2, No such file or directory326083951#24915#111#0(1@0"0(13@48"     [echo] For faster builds, install Node.js.326083951#25026#48#0(1@0"0(13@14"-concatdebug:326083951#25075#14#0(1@0"0(13@26"     [echo] Concatenating326083951#25089#26#0(1@0"0(13@48"     [echo]     Source Files : button-toggle.js326083951#25115#48#0(1@0"0(13@83"     [echo]     In Source Dir : /Users/skyler/Sites/yui/yui3-gallery/src/button/js326083951#25163#83#0(1@0"0(13@102"     [echo]     To : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle-debug.js326083951#25246#102#0(1@0"0(13@92"     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant326083951#25348#92#0(1@0"0(13@93"   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant326083951#25440#93#0(1@0"0(13@16"-registerdebug:326083951#25534#16#0(1@0"0(13@120"     [echo] Wrapping /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle-debug.js in YUI.add module326083951#25550#120#0(1@0"0(13@88"     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083951#25670#88#0(1@0"0(13@15"-prependdebug:326083951#25759#15#0(1@0"0(13@14"-appenddebug:326083951#25775#14#0(1@0"0(13@12"builddebug:326083951#25790#12#0(1@0"0(13@13"-createcore:326083951#25803#13#0(1@0"0(13@88"     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083951#25816#88#0(1@0"0(13@14"-loggerregex:326083951#25905#14#0(1@0"0(13@118"     [echo] Replacing Logger Statements in /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle.js326083951#25919#118#0(1@0"0(13@11"buildcore:326083951#26038#11#0(1@0"0(13@11"-rollupjs:326083951#26050#11#0(1@0"0(13@75"     [echo] Module: Rolling up button-toggle-debug.js into button-debug.js326083951#26061#75#0(1@0"0(13@14"-concatskins:326083951#26137#14#0(1@0"0(13@13"-buildskins:326083951#26152#13#0(1@0"0(13@12"-rollupcss:326083951#26166#12#0(1@0"0(13@12"buildskins:326083951#26179#12#0(1@0"0(13@13"-buildlangs:326083951#26192#13#0(1@0"0(13@14"-rolluplangs:326083951#26206#14#0(1@0"0(13@12"buildlangs:326083951#26221#12#0(1@0"0(13@7"build:326083951#26234#7#0(1@0"0(13@8"minify:326083951#26242#8#0(1@0"0(13@103"[yuicompressor] Compressing /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle.js326083951#26250#103#0(1@0"0(13@17"[yuicompressor] 326083951#26353#17#0(1@0"0(13@73"[yuicompressor] [WARNING] Try to use a single 'var' statement per scope.326083951#26370#73#0(1@0"0(13@110"[yuicompressor] namespace("Button.Plugin").Toggle=TogglePlugin; ---> var  <--- Toggle=Y.Base.create("button",326083951#26443#110#0(1@0"0(13@17"[yuicompressor] 326083951#26553#17#0(1@0"0(13@84"[yuicompressor] [WARNING] The symbol LANG is declared but is apparently never used.326083951#26570#84#0(1@0"0(13@73"[yuicompressor] This code can probably be written in a more compact way.326083951#26654#73#0(1@0"0(13@123"[yuicompressor] ("button-toggle",function(Y){var  ---> LANG <--- =Y.Lang,DESELECTED_CALLBACK="deselectedCallback",SELECTED326083951#26727#123#0(1@0"0(13@109"[yuicompressor] Compressed to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle-min.js326083951#26850#109#0(1@0"0(13@6"lint:326083951#26960#6#0(1@0"0(13@95"     [echo] Using Rhino. Install nodejs to improve jslint speed, or skip with -Dlint.skip=true326083951#26966#95#0(1@0"0(13@113"     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle-debug.js326083953#27061#113#0(1@0"0(13@17"     [java] - OK326083953#27174#17#0(1@0"0(13@111"     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle-min.js326083953#27191#111#0(1@0"0(13@17"     [java] - OK326083953#27302#17#0(1@0"0(13@107"     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle.js326083953#27319#107#0(1@0"0(13@17"     [java] - OK326083954#27426#17#0(1@0"0(13@7"local:326083954#27444#7#0(1@0"0(13@13"deploybuild:326083954#27452#13#0(1@0"0(13@81"     [copy] Copying 3 files to /Users/skyler/Sites/yui/yui3-gallery/build/button326083954#27465#81#0(1@0"0(13@177"     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle-debug.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-toggle-debug.js326083954#27546#177#0(1@0"0(13@173"     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle-min.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-toggle-min.js326083954#27723#173#0(1@0"0(13@165"     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-toggle.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-toggle.js326083954#27896#165#0(1@0"0(13@14"deployassets:326083954#28062#14#0(1@0"0(13@13"deployskins:326083954#28077#13#0(1@0"0(13@12"deploylang:326083954#28091#12#0(1@0"0(13@100"     [copy] Warning: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/lang does not exist.326083954#28103#100#0(1@0"0(13@12"deploydocs:326083954#28204#12#0(1@0"0(13@8"deploy:326083954#28217#8#0(1@0"0(13@5"all:326083954#28226#5#0(1@0"0(13@44"     [echo] Starting Build For button-panel326083954#28231#44#0(1@0"0(13@27"     [echo] Ant Properties326083954#28275#27#0(1@0"0(13@38"     [echo]     Home : /usr/share/ant326083954#28302#38#0(1@0"0(13@88"     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011326083954#28340#88#0(1@0"0(13@94"     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-panel.xml326083954#28428#94#0(1@0"0(13@35"     [echo] Local Build Properties326083954#28522#35#0(1@0"0(13@28"     [echo]     version : 3326083954#28557#28#0(1@0"0(13@31"     [echo]     srcdir : ../..326083954#28585#31#0(1@0"0(13@59"     [echo]     builddir : ../../../builder/componentbuild326083954#28616#59#0(1@0"0(13@41"     [echo]     component : button-panel326083954#28675#41#0(1@0"0(13@54"     [echo]     component.basefilename : button-panel326083954#28716#54#0(1@0"0(13@84"     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button326083954#28770#84#0(1@0"0(13@95"     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083954#28854#95#0(1@0"0(13@36"     [echo] Global Build Properties326083954#28949#36#0(1@0"0(13@79"     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build326083954#28985#79#0(1@0"0(13@60"     [echo]     global.build.component : ../../build/button326083954#29064#60#0(1@0"0(13@105"     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets326083954#29124#105#0(1@0"0(13@7"clean:326083954#29230#7#0(1@0"0(13@89"   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083954#29237#89#0(1@0"0(13@6"init:326083954#29327#6#0(1@0"0(13@83"    [mkdir] Created dir: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083954#29333#83#0(1@0"0(13@44"     [echo] Starting Build For button-panel326083954#29416#44#0(1@0"0(13@27"     [echo] Ant Properties326083954#29460#27#0(1@0"0(13@38"     [echo]     Home : /usr/share/ant326083954#29487#38#0(1@0"0(13@88"     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011326083954#29525#88#0(1@0"0(13@94"     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-panel.xml326083954#29613#94#0(1@0"0(13@35"     [echo] Local Build Properties326083954#29707#35#0(1@0"0(13@28"     [echo]     version : 3326083954#29742#28#0(1@0"0(13@31"     [echo]     srcdir : ../..326083954#29770#31#0(1@0"0(13@59"     [echo]     builddir : ../../../builder/componentbuild326083954#29801#59#0(1@0"0(13@41"     [echo]     component : button-panel326083954#29860#41#0(1@0"0(13@54"     [echo]     component.basefilename : button-panel326083954#29901#54#0(1@0"0(13@84"     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button326083954#29955#84#0(1@0"0(13@95"     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083954#30039#95#0(1@0"0(13@36"     [echo] Global Build Properties326083954#30134#36#0(1@0"0(13@79"     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build326083954#30170#79#0(1@0"0(13@60"     [echo]     global.build.component : ../../build/button326083954#30249#60#0(1@0"0(13@105"     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets326083954#30309#105#0(1@0"0(13@14"-lint-server:326083954#30415#14#0(1@0"0(13@44"     [echo] Starting Build For button-panel326083955#30429#44#0(1@0"0(13@27"     [echo] Ant Properties326083955#30473#27#0(1@0"0(13@38"     [echo]     Home : /usr/share/ant326083955#30500#38#0(1@0"0(13@88"     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011326083955#30538#88#0(1@0"0(13@94"     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-panel.xml326083955#30626#94#0(1@0"0(13@35"     [echo] Local Build Properties326083955#30720#35#0(1@0"0(13@28"     [echo]     version : 3326083955#30755#28#0(1@0"0(13@31"     [echo]     srcdir : ../..326083955#30783#31#0(1@0"0(13@59"     [echo]     builddir : ../../../builder/componentbuild326083955#30814#59#0(1@0"0(13@41"     [echo]     component : button-panel326083955#30873#41#0(1@0"0(13@54"     [echo]     component.basefilename : button-panel326083955#30914#54#0(1@0"0(13@84"     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button326083955#30968#84#0(1@0"0(13@95"     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083955#31052#95#0(1@0"0(13@36"     [echo] Global Build Properties326083955#31147#36#0(1@0"0(13@79"     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build326083955#31183#79#0(1@0"0(13@60"     [echo]     global.build.component : ../../build/button326083955#31262#60#0(1@0"0(13@105"     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets326083955#31322#105#0(1@0"0(13@7"-node:326083955#31428#7#0(1@0"0(4@105"[exec] Execute failed: java.io.IOException: Cannot run program "node": error=2, No such file or directory326083955#31435#111#0(1@0"0(13@48"     [echo] For faster builds, install Node.js.326083955#31546#48#0(1@0"0(13@14"-concatdebug:326083955#31595#14#0(1@0"0(13@26"     [echo] Concatenating326083955#31609#26#0(1@0"0(13@47"     [echo]     Source Files : button-panel.js326083955#31635#47#0(1@0"0(13@83"     [echo]     In Source Dir : /Users/skyler/Sites/yui/yui3-gallery/src/button/js326083955#31682#83#0(1@0"0(13@101"     [echo]     To : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel-debug.js326083955#31765#101#0(1@0"0(13@92"     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant326083955#31866#92#0(1@0"0(13@93"   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant326083955#31958#93#0(1@0"0(13@16"-registerdebug:326083955#32052#16#0(1@0"0(13@119"     [echo] Wrapping /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel-debug.js in YUI.add module326083955#32068#119#0(1@0"0(13@88"     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083955#32187#88#0(1@0"0(13@15"-prependdebug:326083955#32276#15#0(1@0"0(13@14"-appenddebug:326083955#32292#14#0(1@0"0(13@12"builddebug:326083955#32307#12#0(1@0"0(13@13"-createcore:326083955#32320#13#0(1@0"0(13@88"     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083955#32333#88#0(1@0"0(13@14"-loggerregex:326083955#32422#14#0(1@0"0(13@117"     [echo] Replacing Logger Statements in /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel.js326083955#32436#117#0(1@0"0(13@11"buildcore:326083955#32554#11#0(1@0"0(13@11"-rollupjs:326083955#32566#11#0(1@0"0(13@74"     [echo] Module: Rolling up button-panel-debug.js into button-debug.js326083955#32577#74#0(1@0"0(13@14"-concatskins:326083955#32652#14#0(1@0"0(13@13"-buildskins:326083955#32667#13#0(1@0"0(13@12"-rollupcss:326083955#32681#12#0(1@0"0(13@12"buildskins:326083955#32694#12#0(1@0"0(13@13"-buildlangs:326083955#32707#13#0(1@0"0(13@14"-rolluplangs:326083955#32721#14#0(1@0"0(13@12"buildlangs:326083955#32736#12#0(1@0"0(13@7"build:326083955#32749#7#0(1@0"0(13@8"minify:326083955#32757#8#0(1@0"0(13@102"[yuicompressor] Compressing /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel.js326083955#32765#102#0(1@0"0(13@108"[yuicompressor] Compressed to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel-min.js326083955#32867#108#0(1@0"0(13@6"lint:326083955#32976#6#0(1@0"0(13@95"     [echo] Using Rhino. Install nodejs to improve jslint speed, or skip with -Dlint.skip=true326083955#32982#95#0(1@0"0(13@112"     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel-debug.js326083956#33077#112#0(1@0"0(13@17"     [java] - OK326083957#33189#17#0(1@0"0(13@110"     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel-min.js326083957#33206#110#0(1@0"0(13@17"     [java] - OK326083957#33316#17#0(1@0"0(13@106"     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel.js326083957#33333#106#0(1@0"0(13@17"     [java] - OK326083957#33439#17#0(1@0"0(13@7"local:326083958#33457#7#0(1@0"0(13@13"deploybuild:326083958#33465#13#0(1@0"0(13@81"     [copy] Copying 3 files to /Users/skyler/Sites/yui/yui3-gallery/build/button326083958#33478#81#0(1@0"0(13@175"     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel-debug.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-panel-debug.js326083958#33559#175#0(1@0"0(13@171"     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel-min.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-panel-min.js326083958#33734#171#0(1@0"0(13@163"     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-panel.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-panel.js326083958#33905#163#0(1@0"0(13@14"deployassets:326083958#34069#14#0(1@0"0(13@13"deployskins:326083958#34084#13#0(1@0"0(13@12"deploylang:326083958#34098#12#0(1@0"0(13@100"     [copy] Warning: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/lang does not exist.326083958#34110#100#0(1@0"0(13@12"deploydocs:326083958#34211#12#0(1@0"0(13@8"deploy:326083958#34224#8#0(1@0"0(13@5"all:326083958#34233#5#0(1@0"0(13@44"     [echo] Starting Build For button-group326083958#34238#44#0(1@0"0(13@27"     [echo] Ant Properties326083958#34282#27#0(1@0"0(13@38"     [echo]     Home : /usr/share/ant326083958#34309#38#0(1@0"0(13@88"     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011326083958#34347#88#0(1@0"0(13@94"     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-group.xml326083958#34435#94#0(1@0"0(13@35"     [echo] Local Build Properties326083958#34529#35#0(1@0"0(13@28"     [echo]     version : 3326083958#34564#28#0(1@0"0(13@31"     [echo]     srcdir : ../..326083958#34592#31#0(1@0"0(13@59"     [echo]     builddir : ../../../builder/componentbuild326083958#34623#59#0(1@0"0(13@41"     [echo]     component : button-group326083958#34682#41#0(1@0"0(13@54"     [echo]     component.basefilename : button-group326083958#34723#54#0(1@0"0(13@84"     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button326083958#34777#84#0(1@0"0(13@95"     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083958#34861#95#0(1@0"0(13@36"     [echo] Global Build Properties326083958#34956#36#0(1@0"0(13@79"     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build326083958#34992#79#0(1@0"0(13@60"     [echo]     global.build.component : ../../build/button326083958#35071#60#0(1@0"0(13@105"     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets326083958#35131#105#0(1@0"0(13@7"clean:326083958#35237#7#0(1@0"0(13@89"   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083958#35244#89#0(1@0"0(13@6"init:326083958#35334#6#0(1@0"0(13@83"    [mkdir] Created dir: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083958#35340#83#0(1@0"0(13@44"     [echo] Starting Build For button-group326083959#35423#44#0(1@0"0(13@27"     [echo] Ant Properties326083959#35467#27#0(1@0"0(13@38"     [echo]     Home : /usr/share/ant326083959#35494#38#0(1@0"0(13@88"     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011326083959#35532#88#0(1@0"0(13@94"     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-group.xml326083959#35620#94#0(1@0"0(13@35"     [echo] Local Build Properties326083959#35714#35#0(1@0"0(13@28"     [echo]     version : 3326083959#35749#28#0(1@0"0(13@31"     [echo]     srcdir : ../..326083959#35777#31#0(1@0"0(13@59"     [echo]     builddir : ../../../builder/componentbuild326083959#35808#59#0(1@0"0(13@41"     [echo]     component : button-group326083959#35867#41#0(1@0"0(13@54"     [echo]     component.basefilename : button-group326083959#35908#54#0(1@0"0(13@84"     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button326083959#35962#84#0(1@0"0(13@95"     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083959#36046#95#0(1@0"0(13@36"     [echo] Global Build Properties326083959#36141#36#0(1@0"0(13@79"     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build326083959#36177#79#0(1@0"0(13@60"     [echo]     global.build.component : ../../build/button326083959#36256#60#0(1@0"0(13@105"     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets326083959#36316#105#0(1@0"0(13@14"-lint-server:326083959#36422#14#0(1@0"0(13@44"     [echo] Starting Build For button-group326083959#36436#44#0(1@0"0(13@27"     [echo] Ant Properties326083959#36480#27#0(1@0"0(13@38"     [echo]     Home : /usr/share/ant326083959#36507#38#0(1@0"0(13@88"     [echo]     Ant Version : Apache Ant(TM) version 1.8.2 compiled on February 28 2011326083959#36545#88#0(1@0"0(13@94"     [echo]     Build File : /Users/skyler/Sites/yui/yui3-gallery/src/button/button-group.xml326083959#36633#94#0(1@0"0(13@35"     [echo] Local Build Properties326083959#36727#35#0(1@0"0(13@28"     [echo]     version : 3326083959#36762#28#0(1@0"0(13@31"     [echo]     srcdir : ../..326083959#36790#31#0(1@0"0(13@59"     [echo]     builddir : ../../../builder/componentbuild326083959#36821#59#0(1@0"0(13@41"     [echo]     component : button-group326083959#36880#41#0(1@0"0(13@54"     [echo]     component.basefilename : button-group326083959#36921#54#0(1@0"0(13@84"     [echo]     component.basedir : /Users/skyler/Sites/yui/yui3-gallery/src/button326083959#36975#84#0(1@0"0(13@95"     [echo]     component.builddir : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083959#37059#95#0(1@0"0(13@36"     [echo] Global Build Properties326083959#37154#36#0(1@0"0(13@79"     [echo]     global.build.base : /Users/skyler/Sites/yui/yui3-gallery/build326083959#37190#79#0(1@0"0(13@60"     [echo]     global.build.component : ../../build/button326083959#37269#60#0(1@0"0(13@105"     [echo]     global.build.component.assets : /Users/skyler/Sites/yui/yui3-gallery/build/button/assets326083959#37329#105#0(1@0"0(13@7"-node:326083959#37435#7#0(1@0"0(4@105"[exec] Execute failed: java.io.IOException: Cannot run program "node": error=2, No such file or directory326083959#37442#111#0(1@0"0(13@48"     [echo] For faster builds, install Node.js.326083959#37553#48#0(1@0"0(13@14"-concatdebug:326083959#37602#14#0(1@0"0(13@26"     [echo] Concatenating326083959#37616#26#0(1@0"0(13@47"     [echo]     Source Files : button-group.js326083959#37642#47#0(1@0"0(13@83"     [echo]     In Source Dir : /Users/skyler/Sites/yui/yui3-gallery/src/button/js326083959#37689#83#0(1@0"0(13@101"     [echo]     To : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group-debug.js326083959#37772#101#0(1@0"0(13@92"     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant326083959#37873#92#0(1@0"0(13@93"   [delete] Deleting directory /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/ant326083959#37965#93#0(1@0"0(13@16"-registerdebug:326083959#38059#16#0(1@0"0(13@119"     [echo] Wrapping /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group-debug.js in YUI.add module326083959#38075#119#0(1@0"0(13@88"     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083959#38194#88#0(1@0"0(13@15"-prependdebug:326083959#38283#15#0(1@0"0(13@14"-appenddebug:326083959#38299#14#0(1@0"0(13@12"builddebug:326083959#38314#12#0(1@0"0(13@13"-createcore:326083959#38327#13#0(1@0"0(13@88"     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp326083959#38340#88#0(1@0"0(13@14"-loggerregex:326083959#38429#14#0(1@0"0(13@117"     [echo] Replacing Logger Statements in /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group.js326083959#38443#117#0(1@0"0(13@11"buildcore:326083959#38561#11#0(1@0"0(13@11"-rollupjs:326083959#38573#11#0(1@0"0(13@74"     [echo] Module: Rolling up button-group-debug.js into button-debug.js326083959#38584#74#0(1@0"0(13@14"-concatskins:326083959#38659#14#0(1@0"0(13@13"-buildskins:326083959#38674#13#0(1@0"0(13@12"-rollupcss:326083959#38688#12#0(1@0"0(13@12"buildskins:326083959#38701#12#0(1@0"0(13@13"-buildlangs:326083959#38714#13#0(1@0"0(13@14"-rolluplangs:326083959#38728#14#0(1@0"0(13@12"buildlangs:326083959#38743#12#0(1@0"0(13@7"build:326083959#38756#7#0(1@0"0(13@8"minify:326083959#38764#8#0(1@0"0(13@102"[yuicompressor] Compressing /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group.js326083959#38772#102#0(1@0"0(13@108"[yuicompressor] Compressed to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group-min.js326083959#38874#108#0(1@0"0(13@6"lint:326083959#38983#6#0(1@0"0(13@95"     [echo] Using Rhino. Install nodejs to improve jslint speed, or skip with -Dlint.skip=true326083959#38989#95#0(1@0"0(13@112"     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group-debug.js326083961#39084#112#0(1@0"0(13@17"     [java] - OK326083961#39196#17#0(1@0"0(13@110"     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group-min.js326083961#39213#110#0(1@0"0(13@17"     [java] - OK326083961#39323#17#0(1@0"0(13@106"     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group.js326083961#39340#106#0(1@0"0(13@17"     [java] - OK326083962#39446#17#0(1@0"0(13@7"local:326083962#39464#7#0(1@0"0(13@13"deploybuild:326083962#39472#13#0(1@0"0(13@81"     [copy] Copying 3 files to /Users/skyler/Sites/yui/yui3-gallery/build/button326083962#39485#81#0(1@0"0(13@175"     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group-debug.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-group-debug.js326083962#39566#175#0(1@0"0(13@171"     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group-min.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-group-min.js326083962#39741#171#0(1@0"0(13@163"     [copy] Copying /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/button-group.js to /Users/skyler/Sites/yui/yui3-gallery/build/button/button-group.js326083962#39912#163#0(1@0"0(13@14"deployassets:326083962#40076#14#0(1@0"0(13@13"deployskins:326083962#40091#13#0(1@0"0(13@12"deploylang:326083962#40105#12#0(1@0"0(13@100"     [copy] Warning: /Users/skyler/Sites/yui/yui3-gallery/src/button/build_tmp/lang does not exist.326083962#40117#100#0(1@0"0(13@12"deploydocs:326083962#40218#12#0(1@0"0(13@8"deploy:326083962#40231#8#0(1@0"0(13@5"all:326083962#40240#5#0(1@0"0(13@14"-registerall:326083962#40246#14#0(1@0"0(13@121"     [echo] Adding Rollup /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp/button-debug.js using YUI.add326083962#40260#121#0(1@0"0(13@95"     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp326083962#40381#95#0(1@0"0(13@115"     [echo] Adding Rollup /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp/button.js using YUI.add326083962#40476#115#0(1@0"0(13@95"     [copy] Copying 1 file to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp326083962#40591#95#0(1@0"0(13@15"-prependdebug:326083962#40687#15#0(1@0"0(13@10"-prepend:326083962#40703#10#0(1@0"0(13@13"-prependall:326083962#40714#13#0(1@0"0(13@14"-appenddebug:326083962#40728#14#0(1@0"0(13@9"-append:326083962#40743#9#0(1@0"0(13@12"-appendall:326083962#40753#12#0(1@0"0(13@11"-rollupjs:326083962#40766#11#0(1@0"0(13@14"-rolluplangs:326083962#40778#14#0(1@0"0(13@14"buildmodules:326083962#40793#14#0(1@0"0(13@7"build:326083962#40808#7#0(1@0"0(13@8"minify:326083962#40816#8#0(1@0"0(13@103"[yuicompressor] Compressing /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp/button.js326083962#40824#103#0(1@0"0(13@17"[yuicompressor] 326083963#40927#17#0(1@0"0(13@73"[yuicompressor] [WARNING] Try to use a single 'var' statement per scope.326083963#40944#73#0(1@0"0(13@110"[yuicompressor] namespace("Button.Plugin").Toggle=TogglePlugin; ---> var  <--- Toggle=Y.Base.create("button",326083963#41017#110#0(1@0"0(13@17"[yuicompressor] 326083963#41127#17#0(1@0"0(13@84"[yuicompressor] [WARNING] The symbol LANG is declared but is apparently never used.326083963#41144#84#0(1@0"0(13@73"[yuicompressor] This code can probably be written in a more compact way.326083963#41228#73#0(1@0"0(13@123"[yuicompressor] ("button-toggle",function(Y){var  ---> LANG <--- =Y.Lang,DESELECTED_CALLBACK="deselectedCallback",SELECTED326083963#41301#123#0(1@0"0(13@109"[yuicompressor] Compressed to /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp/button-min.js326083963#41424#109#0(1@0"0(13@6"lint:326083963#41534#6#0(1@0"0(13@95"     [echo] Using Rhino. Install nodejs to improve jslint speed, or skip with -Dlint.skip=true326083963#41540#95#0(1@0"0(13@113"     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp/button-debug.js326083964#41635#113#0(1@0"0(13@17"     [java] - OK326083965#41748#17#0(1@0"0(13@111"     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp/button-min.js326083965#41765#111#0(1@0"0(13@17"     [java] - OK326083966#41876#17#0(1@0"0(13@107"     [java] Running JSLint on : /Users/skyler/Sites/yui/yui3-gallery/src/button/build_rollup_tmp/button.js326083966#41893#107#0(1@0"0(13@17"     [java] - OK326083966#42000#17#0(1@0"0(13@7"local:326083967#42018#7#0(1@0"0(13@17"BUILD SUCCESSFUL326083967#42026#17#0(1@0"0(13@23"Total time: 31 seconds326083967#42043#23#0(1@0"0(0#0#0"8295753032397060096#153"    cd /Users/skyler/Sites/yui/yui3-gallery/src/button    setenv ACTION     /var/folders/js/jsgobF45GCGkO9-7u4Ctmk+++TI/-Tmp-/D4B63FAE136FA55D000FFB850#
+

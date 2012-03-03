@@ -1,21 +1,44 @@
+/**
+ * @author Anthony Pipkin
+ * @class Y.ButtonGroup
+ * @module button-group
+ * @extends Y.Widget
+ */
+
 var YL = Y.Lang;
 
 Y.ButtonGroup = Y.Base.create('button-group', Y.Widget, [Y.WidgetParent,Y.WidgetChild], {
 
+  /**
+   * @property {String} labelNode
+   * @public
+   */
   labelNode : null,
 
+  /**
+   * @method initializer
+   * @public
+   */
   initializer : function(config) {
     Y.log('Y.ButtonGroup::initializer');
 
     this.labelNode = Y.Node.create('<span class="' + this.getClassName('label') + '"/>');
   },
 
+  /**
+   * @method renderUI
+   * @public
+   */
   renderUI : function() {
     Y.log('Y.ButtonGroup::renderUI');
 
     this.get('boundingBox').prepend(this.labelNode);
   },
 
+  /**
+   * @method bindUI
+   * @public
+   */
   bindUI : function() {
     Y.log('Y.ButtonGroup::bindUI');
 
@@ -36,6 +59,10 @@ Y.ButtonGroup = Y.Base.create('button-group', Y.Widget, [Y.WidgetParent,Y.Widget
     },this);
   },
 
+  /**
+   * @method syncUI
+   * @public
+   */
   syncUI : function() {
     Y.log('Y.ButtonGroup::syncUI');
 
@@ -45,6 +72,9 @@ Y.ButtonGroup = Y.Base.create('button-group', Y.Widget, [Y.WidgetParent,Y.Widget
 }, {
   ATTRS : {
 
+    /**
+     * @attribute {String} label
+     */
     label : {
       validator : YL.isString,
       setter : function(val) {
@@ -53,10 +83,16 @@ Y.ButtonGroup = Y.Base.create('button-group', Y.Widget, [Y.WidgetParent,Y.Widget
       }
     },
 
+    /**
+     * @attribute {Object} defaultChildType
+     */
     defaultChildType : {
       value : Y.Button
     },
 
+    /**
+     * @attribute {Boolean} alwaysSelected 
+     */
     alwaysSelected : {
       value : false
     }

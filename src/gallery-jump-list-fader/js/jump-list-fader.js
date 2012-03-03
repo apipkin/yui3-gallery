@@ -96,25 +96,10 @@ Y.namespace('Plugin').JumpListFader = Y.Base.create('jump-list-fader', Y.Plugin.
     var mH = 0, styles = {},
         animConfig = this._animBase;
 
-    styles.height = node.getStyle('height');
-    styles.overflow = node.getStyle('overflow');
-    styles.opactiy = node.getStyle('opacity');
-    styles.visibility = node.getStyle('visibility');
+    mH = node.get('scrollHeight');
 
-    // record max height
-    node.setStyles({
-      'height' : 'auto',
-      'overflow' : 'auto',
-      'opacity' : 1,
-      'visibility' : 'visible'
-    });
 
-    mH = node.get('offsetHeight');
-
-    // set styles changed back to what they were
-    node.setStyles(styles);
-
-    animConfig.to = this._animShowTo;
+    animConfig.to = Y.clone(this._animShowTo);
     animConfig.to.height = mH + 'px';
     animConfig.node = node;
     return new Y.Anim(animConfig);

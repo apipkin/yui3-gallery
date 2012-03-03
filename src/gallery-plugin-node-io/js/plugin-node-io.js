@@ -1,9 +1,10 @@
   /**
    * Node IO provides a simple interface to load text into a node
    *
-   * @class NodeIo
-   * @extends Base
-   * @version 1.1.0
+   * @module node-io
+   * @class Y.Plugin.NodeIo
+   * @extends Y.Base
+   * @author Anthony Pipkin
    */
   var YL = Y.Lang;
 

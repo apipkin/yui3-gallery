@@ -1,3 +1,10 @@
+/**
+ * @author Anthony Pipkin
+ * @class Y.Dialog
+ * @module dialog
+ * @extends Y.Overlay
+ */
+
 var YL = Y.Lang,
     LABEL_CANCEL = 'Cancel',
 	LABEL_OK = 'OK',
@@ -12,17 +19,24 @@ var YL = Y.Lang,
 
 Y.Dialog = Y.Base.create('dialog', Y.Overlay, [], {
 
+  /**
+   * @property {Object} handleEnter
+   * @public
+   */
   handleEnter : null,
 
+  /**
+   * @property {Object} handleEscape
+   * @public
+   */
   handleEscape : null,
 
   /**
    * Plugs in Gallery_Overlay_Extras binds hide to the escape key
    *
-   * @param config Object
-   *
-   * @see _visibleChanged
-   * @see hide
+   * @method initializer
+   * @public
+   * @param {Object} config
    */
   initializer : function(config) {
     Y.log('initializer','info','Y.Dialog');
@@ -36,10 +50,12 @@ Y.Dialog = Y.Base.create('dialog', Y.Overlay, [], {
    *   provided callback type with the returVal as the param. If
    *   none is provided, the cancel callback is fired.
    *
+   * @method hide
+   * @public
    * @param callbackType String
    */
   hide : function(callbackType) {
-    Y.log('initializer','info','Y.Dialog');
+    Y.log('hide','info','Y.Dialog');
     Y.one('body').set('tabIndex',-1).focus();
 
     Y.Dialog.superclass.hide.apply(this,arguments);
@@ -58,9 +74,12 @@ Y.Dialog = Y.Base.create('dialog', Y.Overlay, [], {
    * Override of default show(). Calls syncUI() to maintain
    *   centering before showing the dialog box. After showing,
    *   focuses on the default button.
+   *
+   * @method show
+   * @public
    */
   show : function() {
-    Y.log('initializer','info','Y.Dialog');
+    Y.log('show','info','Y.Dialog');
     this.get(ATTR_DRAGGABLE);
 
     this.handleEscape = Y.once('esc', Y.bind(function(){ this.hide(); }, this), Y.config.doc);
@@ -79,52 +98,56 @@ Y.Dialog = Y.Base.create('dialog', Y.Overlay, [], {
   /**
    * Adds content to the header container based on the placement
    *
-   * @param content HTML | Node | String
-   * @param placement (Optional)
+   * @method header
+   * @public
+   * @param {HTML | Node | String} content
+   * @param {Stirng} placement (Optional)
    *
-   * @see _standardizePlacement
    */
   header : function(content, placement) {
-    Y.log('initializer','info','Y.Dialog');
+    Y.log('header','info','Y.Dialog');
     this._setContent(Y.WidgetStdMod.HEADER, content, placement);
   },
 
   /**
    * Adds content to the body container based on the placement
    *
-   * @param content HTML | Node | String
-   * @param placement (Optional)
-   *
-   * @see _standardizePlacement
+   * @method body
+   * @public
+   * @param {HTML | Node | String} content 
+   * @param {String} placement (Optional)
    */
   body : function(content, placement) {
-    Y.log('initializer','info','Y.Dialog');
+    Y.log('body','info','Y.Dialog');
     this._setContent(Y.WidgetStdMod.BODY, content, placement);
   },
 
   /**
    * Adds content to the footer container based on the placement
    *
-   * @param content HTML | Node | String
-   * @param placement (Optional)
-   *
-   * @see _standardizePlacement
+   * @method footer
+   * @public
+   * @param {HTML | Node | String} content 
+   * @param {String} placement (Optional)
    */
   footer : function(content, placement) {
-    Y.log('initializer','info','Y.Dialog');
+    Y.log('footer','info','Y.Dialog');
     this._setContent(Y.WidgetStdMod.FOOTER, content, placement);
   },
 
   /**
    * Builds the dialog box and populates the content areas.
    *
-   * @param header HTML | Node | String
-   * @param body HTML | Node | String
-   * @param buttons array of Y.Button
+   * @method build
+   * @public
+   * @param {HTML | Node | String} header
+   * @param {HTML | Node | String} body
+   * @param {Array} buttons array of Y.Button
+   * @chainable
    * @return this
    */
   build : function(header, body, buttons) {
-    Y.log('initializer','info','Y.Dialog');
+    Y.log('build','info','Y.Dialog');
 	
     var i, l, btn;
 
@@ -157,8 +180,10 @@ Y.Dialog = Y.Base.create('dialog', Y.Overlay, [], {
   /**
    * Returns the callback function based on the type provided
    *
-   * @param type String
-   * @return Function | null
+   * @method getCallback
+   * @public
+   * @param {String} type
+   * @returns Function | null
    */
   getCallback : function(type) {
     Y.log('getCallback','info','Y.Dialog');
@@ -169,8 +194,10 @@ Y.Dialog = Y.Base.create('dialog', Y.Overlay, [], {
    * Sets the callback type to the callbacks array if the
    *   provided function is a valid function
    *
-   * @param type String
-   * @param fn Function
+   * @method addCallback
+   * @public
+   * @param {String} type 
+   * @param {Function} fn 
    */
   addCallback : function(type, fn) {
     Y.log('addCallback','info','Y.Dialog');
@@ -182,7 +209,9 @@ Y.Dialog = Y.Base.create('dialog', Y.Overlay, [], {
   /**
    * Sets the callback function type to null if found
    *
-   * @param type String
+   * @method removeCallback
+   * @public
+   * @param {String} type 
    */
   removeCallback : function(type) {
     Y.log('removeCallback','info','Y.Dialog');
@@ -194,6 +223,9 @@ Y.Dialog = Y.Base.create('dialog', Y.Overlay, [], {
   /**
    * Adds a close button to the header
    *
+   * @method addCloseButton
+   * @public
+   * @chainable
    * @returns this
    */
   addCloseButton : function() {
@@ -213,6 +245,9 @@ Y.Dialog = Y.Base.create('dialog', Y.Overlay, [], {
   /**
    * Removes all elements in the widget
    *
+   * @method purge
+   * @public
+   * @chainable
    * @return this
    */
   purge : function() {
@@ -220,18 +255,21 @@ Y.Dialog = Y.Base.create('dialog', Y.Overlay, [], {
     this.header(null);
     this.body(null);
     this.footer(null);
+	return this;
   },
 
   //  P R E   B U I L T  //
   /**
    * Sugar method to create an alert box
    *
-   * @param msg String
-   * @param title String | null
-   * @param cancelCallback Function | null
+   * @method alert
+   * @public
+   * @param {String} msg 
+   * @param {String | null} title 
+   * @param {Function | null} cancelCallback 
    */
   alert: function(msg, title, callback){
-    Y.log('initializer','info','Y.Dialog');
+    Y.log('alert','info','Y.Dialog');
     this.set(ATTR_ICON,'alert');
 
     this.addCallback(CALLBACK_CANCEL, callback || EMPTY_FN);
@@ -252,10 +290,12 @@ Y.Dialog = Y.Base.create('dialog', Y.Overlay, [], {
   /**
    * Sugar method to create a confirm box
    *
-   * @param msg String
-   * @param title String | null
-   * @param okCallback Function | null
-   * @param cancelCallback Function | null
+   * @method confirm
+   * @public
+   * @param {String} msg 
+   * @param {String | null} title 
+   * @param {Function | null} okCallback 
+   * @param {Function | null} cancelCallback 
    */
   confirm: function(msg, title, okCallback, cancelCallback){
     Y.log('initializer','info','Y.Dialog');
@@ -288,10 +328,12 @@ Y.Dialog = Y.Base.create('dialog', Y.Overlay, [], {
    * Sugar method to create a prompt box. Updates returnVal to
    *   the value of the input box.
    *
-   * @param msg String
-   * @param title String | null
-   * @param okCallback Function | null
-   * @param cancelCallback Function | null
+   * @method prompt
+   * @public
+   * @param {String} msg 
+   * @param {String | null} title 
+   * @param {Function | null} okCallback 
+   * @param {Function | null} cancelCallback 
    */
   prompt: function(msg, title, okCallback, cancelCallback){
     Y.log('initializer','info','Y.Dialog');
@@ -343,7 +385,9 @@ Y.Dialog = Y.Base.create('dialog', Y.Overlay, [], {
   /**
    * Generates a generic title similar to system dialog boxes
    *
-   * @return String
+   * @method _getDefaultTitle
+   * @protected
+   * @return {String}
    */
   _getDefaultTitle : function() {
     Y.log('_getDefaultTitle','info','Y.Dialog');
@@ -355,7 +399,9 @@ Y.Dialog = Y.Base.create('dialog', Y.Overlay, [], {
    *   makes the header the handle. Fired automatically when
    *   draggable is updated by the setter.
    *
-   * @param drag Boolean
+   * @method _updateDraggable
+   * @protected
+   * @param {Boolean} drag 
    */
   _updateDraggable : function(drag) {
     Y.log('_updateDraggable','info','Y.Dialog');
@@ -375,6 +421,13 @@ Y.Dialog = Y.Base.create('dialog', Y.Overlay, [], {
     }
   },
 
+  /**
+   * @method _setContent
+   * @protected
+   * @param {String} section
+   * @param {String} content
+   * @param {String} placement
+   */
   _setContent : function(section, content, placement) {
     Y.log('_setContent','info','Y.Dialog');
     this.setStdModContent(section, content, this._standardizePlacement(placement));
@@ -406,24 +459,39 @@ Y.Dialog = Y.Base.create('dialog', Y.Overlay, [], {
 },{
   ATTRS : {
   
+    /**
+	 * @attribute {Boolean} centered
+	 */
     centered : {
 	  value : true
 	},
 	
+    /**
+	 * @attribute {} callbacks
+	 */
     callbacks : {
       value : {}
     },
 	
+    /**
+	 * @attribute {Boolean} constrain
+	 */
     constrain : {
       value : true
     },
 	
+    /**
+	 * @attribute {Y.Button} defaultButton
+	 */
     defaultButton : {
       validator : function(val) {
         return (val instanceof Y.Button);
       }
     },
 	
+    /**
+	 * @attribute {Boolean} draggable
+	 */
     draggable : {
       value : true,
       validator : YL.isBoolean,
@@ -433,14 +501,23 @@ Y.Dialog = Y.Base.create('dialog', Y.Overlay, [], {
       }
     },
 	
+    /**
+	 * @attribute {Boolean} render
+	 */
     render : {
       value : true
     },
 	
+    /**
+	 * @attribute {} returnVal
+	 */
     returnVal : {
       value : null
     },
 	
+    /**
+	 * @attribute {String} icon
+	 */
     icon : {
       validator : YL.isString,
       setter : function(val) {
@@ -452,10 +529,16 @@ Y.Dialog = Y.Base.create('dialog', Y.Overlay, [], {
       }
     },
 	
+    /**
+	 * @attribute {Boolean} visible
+	 */
     visible : {
       value : false
     },
 	
+    /**
+	 * @attribute {Integer} zIndex
+	 */
     zIndex : {
       value : 20000
     }

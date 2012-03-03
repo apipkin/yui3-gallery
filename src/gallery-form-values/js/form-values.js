@@ -1,20 +1,47 @@
+/**
+ * @author Anthony Pipkin
+ * @class Y.Form.Values
+ * @module formValues
+ * @extends Y.Plugin.Base
+ */
+
 Y.namespace('Form').Values = Y.Base.create('formValues', Y.Plugin.Base, [], {
 
+  /**
+   * @property {Object} _values
+   * @protected
+   */ 
   _values : null,
 
+  /**
+   * @method initializer
+   * @public
+   */
   initializer : function () {
     this.update();
   },
 
+  /**
+   * @method update
+   * @public
+   */
   update : function() {
     this._setFormValues();
   },
 
+  /**
+   * @method getValues
+   * @public
+   */
   getValues : function(){
     this.update();
     return this.get('values');
   },
 
+  /**
+   * @method _setFormValues
+   * @protected
+   */
   _setFormValues : function(){
     var _values = {},
         f = this.get('host');
@@ -71,6 +98,9 @@ Y.namespace('Form').Values = Y.Base.create('formValues', Y.Plugin.Base, [], {
 },{
   NS : 'values',
   ATTRS : {
+    /**
+     * @attribute {Boolean} values
+     */
     values : {
       readonly : true
     }

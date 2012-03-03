@@ -1,9 +1,10 @@
 /**
  * A paginate plugin that handles item paging on the client. All items must be
  *   loaded into the datatable for the paginate plugin to page the items.
- * @class SDTPaginateClient
+ * @module sdt-paginate-client
+ * @class Y.Plugin.SDTPaginateClient
  * @extends Y.Plugin.Paginate.Base
- * @version 1.0.0
+ * @author Anthony Pipkin
  */
 Y.namespace('Plugin').SDTPaginateClient = Y.Base.create('sdt-paginate-client', Y.Plugin.Paginate.Base, [], {
 

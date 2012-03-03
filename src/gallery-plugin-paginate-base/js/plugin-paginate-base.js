@@ -1,9 +1,11 @@
 /**
  * Paginate Base is a base configuration plugin used to extract common logic
  *   from paginate plugins.
- * @class Paginate.Base
- * @extends Y.Plugin
- * @version 1.0.0
+ * @module paginate
+ * @submodule paginate-base
+ * @class Y.Paginate.Base
+ * @extends Y.Plugin.Base
+ * @author Anthony Pipkin
  */
 Y.namespace('Plugin.Paginate').Base = Y.Base.create('paginate', Y.Plugin.Base, [], {
 

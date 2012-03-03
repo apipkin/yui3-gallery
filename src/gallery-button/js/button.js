@@ -1,5 +1,7 @@
 /**
- *
+ * @author Anthony Pipkin
+ * @class Y.Button
+ * @module button
  * @version 1.3.0
  */
 
@@ -18,26 +20,58 @@ var YL = Y.Lang,
   HREF = 'href',
   TAB_INDEX = 'tabindex',
   ICON = 'icon',
+  BEFORE = 'before',
+  AFTER = 'after',
+  CHANGE = 'Change',
   TITLE = 'title',
   INNER_HTML = 'innerHTML';
 
 
 Y.Button = Y.Base.create('button',Y.Widget, [Y.WidgetChild], {
 
+  /**
+   * @property {String} BOUNDING_TEMPLATE
+   * @public
+   */
   BOUNDING_TEMPLATE : '<a />',
 
-  CONTENT_TEMPLATE : '<span class="yui3-icon"/>',
+  /**
+   * @property {String} CONTENT_TEMPLATE
+   * @public
+   */
+  CONTENT_TEMPLATE : '<span />',
 
+  /**
+   * @property {String} _className
+   * @protected
+   */
   _className : '',
 
+  /**
+   * @property {String} _mouseIsDown
+   * @protected
+   */
   _mouseIsDown : false,
 
+  /**
+   * @property {String} _mouseListener
+   * @protected
+   */
   _mouseListener : null,
   
+  /**
+   * Override of superclass _defaultCB to allow for srcNode and contentBox
+   * @method _defaultCB
+   * @protected
+   */
   _defaultCB : function() {
     return null;
   },
   
+  /**
+   * @method initializer
+   * @public
+   */
   initializer : function(config) {
     Y.log('initializer', 'info', 'Y.Button');
 
@@ -64,6 +98,8 @@ Y.Button = Y.Base.create('button',Y.Widget, [Y.WidgetChild], {
     } else {
         this.get(BOUNDING_BOX).set('tabIndex',0);
     }
+    
+    this._updateIcon();
   },
 
   /**
@@ -81,6 +117,8 @@ Y.Button = Y.Base.create('button',Y.Widget, [Y.WidgetChild], {
     bb.on('mouseup', this._mouseUp, this);
     bb.on('mousedown', this._mouseDown, this);
     bb.after('tabindexChange', this._afterTabindexChange, this);
+    this.after('iconPosition' + CHANGE, this._afterIconPositionChanged, this);
+    this.after(ICON + 'Template' + CHANGE, this._afterIconTemplateChanged, this);
   },
   
   /**
@@ -140,7 +178,8 @@ Y.Button = Y.Base.create('button',Y.Widget, [Y.WidgetChild], {
   //  P R O T E C T E D  //
 
   /**
-   *
+   * @method _defClickFn
+   * @protected
    */
   _defClickFn : function(e) {
     Y.log('_defClickFn', 'info', 'Y.Button');
@@ -224,6 +263,25 @@ Y.Button = Y.Base.create('button',Y.Widget, [Y.WidgetChild], {
   },
 
   /**
+   * @method _updateIcon
+   * @protected
+   */
+  _updateIcon : function(){
+    Y.log('_updateIcon', 'info', 'Y.Button');
+    var position = this.get('iconPosition'),
+      bb = this.get('boundingBox'),
+      iconNode = this._iconNode || Y.Node.create(this.get('iconTemplate'));
+      
+    if (position === AFTER) {
+      bb.append(iconNode);
+    } else {
+      bb.prepend(iconNode);
+    }
+    
+    this._iconNode = iconNode;
+  },
+    
+  /**
    * Adds or removes the disabled attribute to for the button and 
    *   updates disabled class on bounding box
    * @method _updateEnabled
@@ -246,6 +304,28 @@ Y.Button = Y.Base.create('button',Y.Widget, [Y.WidgetChild], {
 
   },
 
+  /**
+   * @method _afterIconPositionChanged
+   * @protected
+   */
+  _afterIconPositionChanged : function(e){
+    Y.log('_afterIconPositionChanged', 'info', 'Y.Button');
+    this._updateIcon();
+  },
+  
+  /**
+   * @method _afterIconTemplateChanged
+   * @protected
+   */
+  _afterIconTemplateChanged : function(e){
+    Y.log('_afterIconTemplateChanged', 'info', 'Y.Button');
+    if (this._iconNode) {
+      this._iconNode.remove(true);
+    }
+    this._iconNode = undefined;
+    this._updateIcon();
+  },
+    
   /**
    * Updates the default state
    * @method _afterDefaultChanged
@@ -367,11 +447,19 @@ Y.Button = Y.Base.create('button',Y.Widget, [Y.WidgetChild], {
     return function(){};
   },
   
+  /**
+   * @method _afterTabindexChange
+   * @protected
+   */
   _afterTabindexChange : function(e) {
     Y.log('_afterTabindexChange', 'info', 'Y.Button');
     this._updateTabindex(e.newVal);
   },
   
+  /**
+   * @method _updateTabindex
+   * @protected
+   */
   _updateTabindex : function(val) {
     Y.log('_updateTabindex', 'info', 'Y.Button');
     var bb = this.get(BOUNDING_BOX);
@@ -388,38 +476,77 @@ Y.Button = Y.Base.create('button',Y.Widget, [Y.WidgetChild], {
     PRESS : EVENT_PRESS
   },
   ATTRS : {
+      /**
+       * @attribute {String} label
+       */
       label : {
           value : '',
           validator : YL.isString,
           setter : '_labelSetterFn',
           lazyAdd : false
       },
+      /**
+       * @attribute {Function} callback
+       */
       callback : {
           validator : YL.isFunction
       },
+      /**
+       * @attribute {Boolean} enabled
+       */
       enabled : {
           value : true,
           validator : YL.isBoolean
       },
+      /**
+       * @attribute {Boolean} default
+       */
       DEFAULT : {
           value : false,
           validator : YL.isBoolean
       },
+      /**
+       * @attribute {String} icon
+       */
       icon : {
-        value : DEFAULT,
-        setter : '_iconSetterFn',
-        lazyAdd : false
+          value : DEFAULT,
+          setter : '_iconSetterFn',
+          lazyAdd : false
       },
+      /**
+       * @attribute {String} iconPosition
+       */
+      iconPosition : {
+          value : BEFORE
+      },
+      /**
+       * @attribute {String} iconTemplate
+       */
+      iconTemplate : {
+          value : '<span class="yui3-icon" />'
+      },
+      /**
+       * @attribute {String} href
+       */
       href : {
         value : null
       },
+      /**
+       * @attribute {String} title
+       */
       title : {
           validator : YL.isString,
           setter : '_titleSetterFn'
       },
+      /**
+       * @attribute {Integer} tabindex
+       */
       tabindex : {
           value : 0
       },
+      /**
+       * @attribute {String} type
+       */
       type : {
           value : 'push',
           validator : YL.isString,

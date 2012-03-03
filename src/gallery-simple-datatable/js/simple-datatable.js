@@ -2,9 +2,11 @@
 /**
  * Simple Datatable is a basic load and sort datatable
  *
- * @class SimpleDatatable
- * @extends Widget
+ * @module sdt
+ * @class Y.SimpleDatatable
+ * @extends Y.Widget
  * @version 1.5.1
+ * @author Anthony Pipkin
  */
 
 var YL = Y.Lang,

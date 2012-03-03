@@ -1,43 +1,20 @@
+/**
+ *
+ * @version 1.1
+ */
+
 Y.namespace('Text').Resizer = Y.Base.create('text-resize', Y.Plugin.Base, [], {
 
   initializer : function() {
     Y.log('initializer', 'info', 'Y.Text.Resizer');
 
     var host = this.get('host');
-
-    // set font to default
-    Y.delegate('click', function(e){
-      e.preventDefault();
-      this.reset();
-    }, host, '.text-resize-default', this);
-
-    // set font to min
-    Y.delegate('click', function(e){
-      e.preventDefault();
-      this.smallest();
-    }, host, '.text-resize-smallest', this);
-
-    // set font to max
-    Y.delegate('click', function(e){
-      e.preventDefault();
-      this.largest();
-    }, host, '.text-resize-largest', this);
-
-    // increment font size
-    Y.delegate('click', function(e){
-      e.preventDefault();
-      this.up();
-    }, host, '.text-resize-up', this);
-
-    /// decrement font size
-    Y.delegate('click', function(e){
-      e.preventDefault();
-      this.down();
-    }, host, '.text-resize-down', this);
-
+    
+    this._bindUI();
+    
     this.setSize(this._load() || this.get('baseSize'));
   },
-
+  
   reset : function() {
     Y.log('reset', 'info', 'Y.Text.Resizer');
     this.setSize(this.get('baseSize'));
@@ -76,6 +53,38 @@ Y.namespace('Text').Resizer = Y.Base.create('text-resize', Y.Plugin.Base, [], {
     this.set('currentSize', parseFloat(size, 10));
     this._save(size);
     this._update();
+  },
+
+  _bindUI : function(){
+    // set font to default
+    Y.delegate('click', function(e){
+      e.preventDefault();
+      this.reset();
+    }, host, '.text-resize-default', this);
+
+    // set font to min
+    Y.delegate('click', function(e){
+      e.preventDefault();
+      this.smallest();
+    }, host, '.text-resize-smallest', this);
+
+    // set font to max
+    Y.delegate('click', function(e){
+      e.preventDefault();
+      this.largest();
+    }, host, '.text-resize-largest', this);
+
+    // increment font size
+    Y.delegate('click', function(e){
+      e.preventDefault();
+      this.up();
+    }, host, '.text-resize-up', this);
+
+    /// decrement font size
+    Y.delegate('click', function(e){
+      e.preventDefault();
+      this.down();
+    }, host, '.text-resize-down', this);
   },
 
   _update : function() {

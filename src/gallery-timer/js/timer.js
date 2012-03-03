@@ -1,4 +1,15 @@
 /**
+ * Losely modeled after AS3's Timer class. Provides a simple interface start,
+ *   pause, resume, and stop a defined timer set with a custom callback method.
+ *
+ * @author Anthony Pipkin
+ * @version 1.1.0
+ * @module timer
+ * @class Y.Timer
+ * @extends Y.Base
+ */
+
+/**
  * Local constants
  */
 var STATUS_RUNNING = 'running',
@@ -12,15 +23,32 @@ var STATUS_RUNNING = 'running',
     EVENT_TIMER  = 'timer';
     
 
-/**
- * Y.Timer : Losely modeled after AS3's Timer class. Provides a
- *           simple interface start, pause, resume, and stop a
- *           defined timer set with a custom callback method.
- *
- * @author Anthony Pipkin
- * @version 1.1.0
- */
 Y.Timer = Y.Base.create('timer', Y.Base, [] , {
+  
+    /**
+     * Fires when Y.Timer is started
+     * @event start
+     */
+
+    /**
+     * Fires when Y.Timer is stopped
+     * @event stop
+     */
+
+    /**
+     * Fires when Y.Timer is paused
+     * @event pause
+     */
+
+    /**
+     * Fires when Y.Timer is resumed
+     * @event resume
+     */
+
+    /**
+     * Fires at every interval of Y.Timer
+     * @event timer
+     */
 
     //////   P U B L I C   //////
 
@@ -31,7 +59,7 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
      *
      * @method initializer
      * @protected
-     * @param confit {Object} Configuration object literal for
+     * @param config {Object} Configuration object literal for
      *     the Timer
      * @since 1.0.0
      */
@@ -114,11 +142,21 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
     /**
      * Local Date object for internal time measurement
      *
-     * @property
+     * @property {Date} _date
      * @protected
      * @since 1.0.0
      */
     _date : new Date(),
+    
+    
+    /**
+     * Internal timer
+     * 
+     * @property {Y.later} _timerObj
+     * @protected
+     * @since 1.0.0
+     */
+    _timerObj : null,
 
     /**
      * Checks to see if a new Timer is to be created. If so, calls
@@ -132,14 +170,20 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
      */
     _makeTimer : function() {
       Y.log('Timer::_makeTimer','info');
-      var id = null,
+      var timerObj = this._timerObj,
           repeat = this.get('repeatCount');
 
+      if (timerObj) {
+	timerObj.cancel();
+	timerObj = null;
+	this._timerObj = null;
+      }
+      
       if(repeat === 0 || repeat > this.get('step')) {
-        id = Y.later(this.get('length'), this, this._timer);
+        timerObj = Y.later(this.get('length'), this, this._timer);
       }
 
-      this.set('timer', id);
+      this.set('timer', timerObj);
       this.set('start', this._date.getTime());
     },
 
@@ -152,7 +196,15 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
      */
     _destroyTimer : function() {
       Y.log('Timer::_destroyTimer','info');
-      this.get('timer').cancel();
+      var timerObj = this._timerObj;
+      
+      if (timerObj) {
+	timerObj.cancel();
+	timerObj = null;
+	this._timerObj = null;
+      }
+      
+      this.set('timer', null);
       this.set('stop', this._date.getTime());
       this.set('step', 0);
     },
@@ -287,10 +339,10 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
     */
    _executeCallback : function() {
       Y.log('Timer::_executeCallback','info');
-	  var callback = this.get('callback');
-	  if (Y.Lang.isFunction(callback)) {
-        (this.get('callback'))();
-	  }
+      var callback = this.get('callback');
+      if (Y.Lang.isFunction(callback)) {
+	(this.get('callback'))();
+      }
    }
 
 },{
@@ -361,7 +413,7 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
 
         /**
          * Timer status
-         *  - 1.1.0 - Changed from state to STATUS_ state was left
+         *  - 1.1.0 - Changed from state to status. state was left
          *            from legacy code
          * @attribute status
          * @default STATUS_STOPPED

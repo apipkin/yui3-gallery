@@ -1,6 +1,7 @@
 /**
- * @class Xarno.Calendar
- * @extends Widget
+ * @module xarno-calendar
+ * @class Y.Xarno.Calendar
+ * @extends Y.Widget
  * @version 1.0.0
  */
   var EVENT_SELECT = 'select',

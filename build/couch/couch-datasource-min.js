@@ -1,0 +1,1 @@
+YUI.add("couch-datasource",function(a){a.namespace("Couch").DataSource=a.Base.create("couch-datasource",a.DataSource.IO,[],{},{});},"@VERSION@",{requires:["datasource"]});

@@ -5,10 +5,11 @@
  *   is removed. If closeSiblings is set to true, sibling &lt;li&gt;s will have
  *   the class name "open" removed.
  * @author Anthony Pipkin
- * @class ListExpander
+ * @module list-expander
+ * @class Y.Plugin.ListExpander
  * @extends Y.Plugin.Base
- * @version 1.1.0
  */
+
 Y.Plugin.ListExpander = Y.Base.create('list-expander', Y.Plugin.Base, [], {
 
   /**

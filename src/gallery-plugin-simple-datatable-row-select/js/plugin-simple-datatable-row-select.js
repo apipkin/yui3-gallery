@@ -1,16 +1,18 @@
+/**
+* Adds row select functionality to Simple Datatable
+*
+* @module simple-datatable-row-select
+* @class Y.Plugin.SDTRowSelect
+* @extends Plugin.Base
+* @version 1.3.0
+* @author Anthony Pipkin
+*/
 
 var SELECTED_ROWS = 'selectedRows',
     EVENTS = {
       ROW_SELECTED : 'rowSelected'
     };
 
- /**
- * Adds row select functionality to Simple Datatable
- *
- * @class SDTRowSelect
- * @extends Plugin.Base
- * @version 1.3.0
- */
 Y.Plugin.SDTRowSelect = Y.Base.create('simple-datatable-row-select', Y.Plugin.Base, [], {
 
   //  P U B L I C  //
