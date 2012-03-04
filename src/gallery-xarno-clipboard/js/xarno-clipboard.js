@@ -13,7 +13,6 @@
 
 		moveToAndCopy : function(target) {
 			Y.log('moveToAndCopy','info','Y.Xarno.Clipboard');
-
 			this.moveTo(target).copy(target);
 		},
 
@@ -34,13 +33,11 @@
 				width: target.get('offsetWidth'),
 				height: target.get('offestHeight')
 			});
-
 			return this;
 		},
 
 		copy : function(target) {
 			var copyTarget = this.get('clipTarget');
-
 			if (target !== null && target !== undefined) {
 				copyTarget = target;
 			} else {
@@ -50,13 +47,11 @@
 			if (copyTarget) {
 				this.setText( copyTarget.getContent() );
 			}
-
 			return this;
 		},
 
 		setText : function(text) {
 			this._swfCall('setText', [ text ]);
-
 			return this;
 		},
 
