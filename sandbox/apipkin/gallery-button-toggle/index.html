@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.1.2/build/yui/yui-min.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      YUI({
+        modules : {
+          'gallery-button' : {
+            fullpath : '../../../build/gallery-button/gallery-button-min.js',
+            requires : ["widget","event-mouseenter","widget-child"]
+          },
+          'gallery-button-toggle' : {
+            fullpath : '../../../build/gallery-button-toggle/gallery-button-toggle-min.js',
+            requires : ["gallery-button"]
+          }
+        }
+      }).use('gallery-button-toggle', function(Y){
+        var btn = new Y.ButtonToggle();
+        btn.set('callback', function(e){Y.log('clicked!!');});
+        btn.render();
+        btn.set('callback', function(e){Y.log('second!!');});
+      });
+    </script>
+  </body>
+</html>

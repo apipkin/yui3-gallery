@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple DataTable Row Select</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.3.0pr1/build/yui/yui-min.js"></script>
+    <style type="text/css">
+      .yui3-sdt-selected { background: #ffffcc;}
+    </style>
+  </head>
+  <body>
+    <button id="plugIt">Plug</button>
+    <button id="unplugIt">Unplug</button>
+    <script type="text/javascript">
+      YUI({
+        modules : {
+          'gallery-simple-datatable' : {
+            fullpath : '../../../build/gallery-simple-datatable/gallery-simple-datatable-min.js',
+            requires : ["node","widget","widget-child","event","event-mouseenter","substitute"]
+          },
+          'gallery-plugin-simple-datatable-row-select' : {
+            fullpath : '../../../build/gallery-plugin-simple-datatable-row-select/gallery-plugin-simple-datatable-row-select-debug.js',
+            requires : ['plugin', 'collection']
+          }
+        }
+      }).use('gallery-simple-datatable', 'gallery-plugin-simple-datatable-row-select',  function(Y){
+        var grid = new Y.SimpleDatatable();
+        grid.set('headers',{id:{label:'Id'}, title:'Title'});
+        grid.set('rows',[
+            {id:1,title:'Banana',__fileId:9},
+            {id:2,title:'Orange'},
+            {id:3,title:'Cherry'},
+            {id:4,title:'Grape Fruit'},
+            {id:5,title:'Watermelon'}
+        ]);
+        grid.render();
+        Y.one('#plugIt').on('click', function(e){
+          grid.plug(Y.Plugin.SDTRowSelect);
+        });
+        Y.one('#unplugIt').on('click', function(e){
+          grid.unplug(Y.Plugin.SDTRowSelect);
+        });
+
+      });
+    </script>
+  </body>
+</html>

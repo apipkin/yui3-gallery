@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.1.2/build/yui/yui-min.js"></script>
+  </head>
+  <body>
+    <div id="load-here"></div>
+    <script type="text/javascript">
+      YUI({
+        modules : {
+          'gallery-plugin-node-io' : {
+            fullpath : '../../../build/gallery-plugin-node-io/gallery-plugin-node-io-debug.js',
+            requires : ['plugin','node-base','node-pluginhost','io-base','base-build']
+          }
+        }
+      }).use('gallery-plugin-node-io', function(Y){
+        var n = Y.one('#load-here');
+          n.plug(Y.Plugin.NodeIo);
+          n.io.load('../');
+      });
+    </script>
+  </body>
+</html>

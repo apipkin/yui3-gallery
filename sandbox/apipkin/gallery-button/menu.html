@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.1.2/build/yui/yui-min.js"></script>
+    <link href="../skins/Xarno/base.css" type="text/css" rel="stylesheet" />
+    <link href="../skins/Xarno/icons.css" type="text/css" rel="stylesheet" />
+    <link href="../skins/Xarno/Smooth/button.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body class="yui3-skin-xarno yui3-skin-xarno-smooth">
+    <script type="text/javascript">
+      YUI({
+        modules : {
+          'gallery-button' : {
+            fullpath : '../../../build/gallery-button/gallery-button-min.js',
+            requires : ["widget","event-mouseenter","widget-child"]
+          }
+        }
+      }).use('gallery-button', function(Y){
+        var btn = new Y.Button({icon:'broom', label:"Single Array Menu Button", type: 'menu'});
+		btn.set('options', [
+			{value: 'apple', display: 'Apple'},
+			{value: 'banana', display: 'Banana'},
+			{value: 'cherry', display: 'Cherry'},
+			{value: 'grape-fruit', display: 'Grape Fruit'},
+			{value: 'watermelon', display: 'Watermelon'},
+		]);
+        btn.render();
+      });
+    </script>
+  </body>
+</html>

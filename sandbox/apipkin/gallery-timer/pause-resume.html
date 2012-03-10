@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timer - pause/resume</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.5.0pr2/build/yui/yui-min.js"></script>
+		<style>
+			.hidden {
+				display: none;
+			}
+    </style>
+  </head>
+	<body>
+		<div id="remaining"></div>
+		<button id="stop">Stop</button>
+		<button id="start">Start</button>
+		<button id="pause">Pause</button>
+		<button id="resume">Resume</button>
+
+    <script type="text/javascript">
+			YUI({
+				modules : {
+					'gallery-timer' : {
+						fullpath : '../../../build/gallery-timer/gallery-timer-debug.js',
+						requires : ['base-build','event-custom']
+					}
+				}
+			}).use('gallery-timer', 'node', function(Y){
+
+
+				var stopBtn = Y.one('#stop'),
+				startBtn = Y.one('#start'),
+				pauseBtn = Y.one('#pause'),
+				resumeBtn = Y.one('#resume'),
+				t = new Y.Timer({
+					length: 10000,
+              callback:myCallback
+            });
+				
+				t.after('statusChange', function(e){
+					switch (e.newVal) {
+						case 'stopped':
+							stopBtn.addClass('hidden');
+							startBtn.removeClass('hidden');
+							pauseBtn.addClass('hidden');
+							resumeBtn.addClass('hidden');
+							break;
+						case 'running':
+							stopBtn.removeClass('hidden');
+							startBtn.addClass('hidden');
+							pauseBtn.removeClass('hidden');
+							resumeBtn.addClass('hidden');
+							break;
+						case 'paused':
+							stopBtn.removeClass('hidden');
+							startBtn.addClass('hidden');
+							pauseBtn.addClass('hidden');
+							resumeBtn.removeClass('hidden');
+					} 
+					});
+
+				Y.one('body').delegate('click', function(e){
+					switch(e.currentTarget.get('id')){
+						case 'stop': t.stop(); break;
+						case 'start': t.start(); break;
+						case 'pause': t.pause(); break;
+						case 'resume': t.resume(); break;
+					}
+				}, 'button');
+
+
+				var i = setInterval(function(){
+					Y.one('#remaining').setContent(t.get('remaining'));
+					}, 100);
+
+				function myCallback(){
+					Y.log('>>> complete');
+				}
+
+				t.start();
+
+
+      });
+    </script>
+  </body>
+</html>

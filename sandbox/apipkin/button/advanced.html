@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button.Advanced</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.3.0/build/yui/yui-min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssfonts/fonts-min.css">
+    
+    <link href="../skins/Xarno/base.css" type="text/css" rel="stylesheet" />
+    <link href="../skins/Xarno/icons.css" type="text/css" rel="stylesheet" />
+    <link href="../skins/Xarno/Smooth/button.css" type="text/css" rel="stylesheet" />
+    <style>
+      .yui3-button { vertical-align: middle; }
+      #page {
+        width: 800px;
+        margin: 0 auto;
+      }
+      h1 { font-size: 1.4em; font-weight: bold; margin: 1em 0; color: #4278F5; }
+      h2 { font-size: 1.1em; font-style:italic; }
+      strong, strong > * { font-weight: bold; }
+      .example {
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background: #efefef;
+      }
+      .example h2 { color: #bbb; margin-top: -6px; margin-left: -6px; }
+    </style>
+  </head>
+  <body class="yui3-skin-xarno yui3-skin-xarno-smooth">
+    <div id="page">
+    <h1>Button.Advanced</h1>
+    
+    <p></p>
+    <div id="example1" class="example"><h2>Example</h2></div>
+    
+    
+    <script type="text/javascript">
+      YUI({
+        combine: false,
+        filter: 'raw',
+        modules : {
+          'button-base' : {
+            fullpath : '../../../build/button/button-base-debug.js',
+            requires : ['node', 'event', 'event-mouseenter','classnamemanager','attribute']
+          },
+          'button-advanced' : {
+            fullpath : '../../../build/button/button-advanced-debug.js',
+            requires : ['button-base', 'base-build', 'widget', 'widget-child']
+          }
+        }
+      }).use('button-advanced', function(Y){
+        var b = new Y.Button.Advanced({label: 'Button Advanced', icon:'gear'}).render('#example1');
+      });
+    </script>
+    </div>
+  </body>
+</html>

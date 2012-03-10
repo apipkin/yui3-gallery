@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.1.1/build/cssreset/reset-min.css">
+
+	<style>
+	  #listContainer {
+	  }
+	  ul {
+	    width: 160px;
+	  }
+    
+    li { margin-left: 20px; }
+    li > ul { display : none; }
+    li.open > ul { display : block; }
+    
+    li a {
+      border: 1px solid darkGray;
+      display : block;
+      background-color: lightGray;
+    }
+    li a span { 
+      display: block;
+      padding: 10px 20px;
+    }
+	</style>
+  <script src="http://yui.yahooapis.com/3.3.0/build/yui/yui-min.js"></script>
+</head>
+<body>
+  
+  <div id="listContainer">
+    
+    <ul>
+      <li><a><span>Option 1</span></a>
+        <ul>
+          <li><a><span>Option 1 A</span></a>
+            <ul>
+              <li><a><span>Option 1 A i</span></a></li>
+              <li><a><span>Option 1 A ii</span></a></li>
+              <li><a><span>Option 1 A iii</span></a></li>
+              <li><a><span>Option 1 A iv</span></a></li>
+            </ul>
+          </li>
+          <li><a><span>Option 1 B</span></a>
+            <ul>
+              <li><a><span>Option 1 B i</span></a></li>
+              <li><a><span>Option 1 B ii</span></a></li>
+              <li><a><span>Option 1 B iii</span></a></li>
+              <li><a><span>Option 1 B iv</span></a></li>
+            </ul>
+          </li>
+          <li><a><span>Option 1 C</span></a>
+            <ul>
+              <li><a><span>Option 1 C i</span></a></li>
+              <li><a><span>Option 1 C ii</span></a></li>
+              <li><a><span>Option 1 C iii</span></a></li>
+              <li><a><span>Option 1 C iv</span></a></li>
+            </ul>
+          </li>
+          <li><a><span>Option 1 D</span></a>
+            <ul>
+              <li><a><span>Option 1 D i</span></a></li>
+              <li><a><span>Option 1 D ii</span></a></li>
+              <li><a><span>Option 1 D iii</span></a></li>
+              <li><a><span>Option 1 D iv</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a><span>Option 2</span></a>
+        <ul>
+          <li><a><span>Option 2 A</span></a></li>
+          <li><a><span>Option 2 B</span></a></li>
+          <li><a><span>Option 2 C</span></a></li>
+          <li><a><span>Option 2 D</span></a></li>
+        </ul>
+      </li>
+      <li><a><span>Option 3</span></a>
+        <ul>
+          <li><a><span>Option 3 A</span></a></li>
+          <li><a><span>Option 3 B</span></a></li>
+          <li><a><span>Option 3 C</span></a></li>
+          <li><a><span>Option 3 D</span></a></li>
+        </ul>
+      </li>
+      <li><a><span>Option 4</span></a>
+        <ul>
+          <li><a><span>Option 4 A</span></a></li>
+          <li><a><span>Option 4 B</span></a></li>
+          <li><a><span>Option 4 C</span></a></li>
+          <li><a><span>Option 4 D</span></a></li>
+        </ul>
+      </li>
+    </ul>
+    
+  </div>
+
+
+<script>
+  
+  YUI({
+	combine: false,
+    modules : {
+          'gallery-list-expander' : {
+            fullpath : '../../../build/gallery-list-expander/gallery-list-expander-min.js',
+            requires : ['base','plugin', 'node','event']
+          }
+    }
+  }).use('gallery-list-expander', function(Y){
+    
+    Y.one('#listContainer').plug(Y.Plugin.ListExpander);
+    
+  });
+  
+  
+</script>
+</body>
+</html>

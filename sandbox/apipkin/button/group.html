@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button.Group :: Multiple or Always Selected</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.1.2/build/yui/yui-min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssfonts/fonts-min.css">
+    
+    <link href="../skins/Xarno/base.css" type="text/css" rel="stylesheet" />
+    <link href="../skins/Xarno/icons.css" type="text/css" rel="stylesheet" />
+    <link href="../skins/Xarno/Smooth/button.css" type="text/css" rel="stylesheet" />
+    <link href="../skins/Xarno/Smooth/button-group.css" type="text/css" rel="stylesheet" />
+    <style type="text/css">
+    .yui3-button { position: relative; }
+    .yui3-button-panel  { border: 1px solid #2a2a2a; padding: 5px; display: none; margin-top: 2px; }
+    .yui3-button-panel-visible { display: block; z-index: 9999; }
+    .yui3-button-group .yui3-button { vertical-align: middle; }
+
+    #page {
+      width: 800px;
+      margin: 0 auto;
+    }
+    h1 { font-size: 1.4em; font-weight: bold; margin: 1em 0; color: #4278F5; }
+    h2 { font-size: 1.1em; font-style:italic; }
+    strong, strong > * { font-weight: bold; }
+    .example {
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background: #efefef;
+    }
+    .example h2 { color: #bbb; margin-top: -6px; margin-left: -6px; }
+    </style>
+  </head>
+  <body class="yui3-skin-xarno yui3-skin-xarno-smooth">
+    <div id="page">
+    <h1>Button.Group :: Multiple or Always Selected</h1>
+    
+    <p>Setting <strong>multiple</strong> to true allows for more than one Button.Toggle in a group to be selected.</p>
+    <div id="example1" class="example"><h2>Example</h2></div>
+    
+    <p>Setting <strong>alwaysSelected</strong> to true prevents all the Button.Toggle buttons from being deselected.</p>
+    <div id="example2" class="example"><h2>Example</h2></div>
+    
+    <script type="text/javascript">
+      YUI({
+        gallery: 'gallery-2011.04.27-18-16',
+        combine: false,
+        filter: 'raw',
+        modules : {
+          'button-base' : {
+            fullpath : '../../../build/button/button-base-min.js',
+            requires : ['node', 'event', 'event-mouseenter','classnamemanager']
+          },
+          'button-advanced' : {
+            fullpath : '../../../build/button/button-advanced-min.js',
+            requires : ['button-base', 'base-build', 'widget', 'widget-child']
+          },
+          'button-toggle' : {
+            fullpath : '../../../build/button/button-toggle-min.js',
+            requires : ['button-advanced', 'widget-child', 'base-build', 'plugin']
+          },
+          'button-panel' : {
+            fullpath : '../../../build/button/button-panel-min.js',
+            requires : ['button-advanced','plugin','base-build']
+          },
+          'button-group' : {
+            fullpath : '../../../build/button/button-group-min.js',
+            requires : ['base-build', 'widget-child', 'widget-parent']
+          }
+        }
+      }).use('button-toggle', 'button-group', 'button-panel', 'gallerycss-xarno-skins', function(Y){
+        
+        var bt1 = new Y.Button.Toggle({
+            icon: 'edit-bold',
+            callback: function(){ Y.log('bold'); },
+            deselectedCallback : function() { Y.log('un-bold'); }
+        });
+        
+        var bt2 = new Y.Button.Toggle({
+            icon: 'edit-italic',
+            callback: function(){ Y.log('italic'); },
+            deselectedCallback : function() { Y.log('un-italic'); }
+        });
+        var bt3 = new Y.Button.Toggle({
+            icon: 'edit-underline',
+            callback: function(){ Y.log('underline'); },
+            deselectedCallback : function() { Y.log('un-underline'); }
+        });
+        var bg = new Y.Button.Group({label: 'Edit:', multiple: true, children: [bt1,bt2,bt3],render: '#example1'});
+        
+
+        var bt11 = new Y.Button.Toggle({
+            icon: 'align-left',
+            callback: function(){ Y.log('left'); },
+            deselectedCallback : function(){ Y.log('un-left'); }
+        });
+        var bt12 = new Y.Button.Toggle({
+            icon: 'align-center',
+            callback: function(){ Y.log('center'); },
+            deselectedCallback : function(){ Y.log('un-center'); }
+        });
+        var bt13 = new Y.Button.Toggle({
+            icon: 'align-right',
+            callback: function(){ Y.log('right'); },
+            deselectedCallback : function(){ Y.log('un-right'); }
+        });
+        var bg1 = new Y.Button.Group({
+            label: 'Align:', alwaysSelected:true, children: [bt11,bt12,bt13], render: '#example2'});
+        bg1.selectChild(0);
+        
+
+    });
+    </script>
+    </div>
+  </body>
+</html>

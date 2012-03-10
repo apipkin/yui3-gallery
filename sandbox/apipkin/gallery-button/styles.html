@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.1.2/build/yui/yui-min.js"></script>
+	<style>
+		#btn { display: inline; }
+		.yui3-button-content {
+			border: 1px solid #000000;
+			display: inline-block;
+			height: 1.6em;
+			line-height: 1.6em;
+			margin: 10px;
+			padding: 0 12px;
+			border-radius: 2px;
+			-moz-border-radius: 2px;
+			-webkit-border-radius: 2px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 14px;
+			cursor: pointer;
+		}
+		
+		.white-gloss .yui3-button-content {
+			border-color: #adb9c2;
+			-moz-box-shadow: inset 0 0 7px #ffffff;
+			-webkit-box-shadow: inset 0 0 7px #ffffff;
+			background-color: #e5ebee;
+			background: -moz-linear-gradient(center top, #f6f8f9 0%, #e5ebee 50%, #d7dee3 50%, #f2f5f7 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f6f8f9), color-stop(0.5, #e5ebee), color-stop(0.5, #d7dee3), color-stop(1, #f2f5f7));
+			color: #2a2a2a;
+			text-shadow: 1px 1px 0 rgba(255,255,255, .7);
+		}
+		.white-gloss .yui3-button:hover .yui3-button-content {
+		}
+		.white-gloss .yui3-button-pressed .yui3-button-content {
+			text-shadow: -1px -1px 0 rgba(255,255,255, .5);
+			background: -moz-linear-gradient(center bottom, #f6f8f9 0%, #e5ebee 50%, #d7dee3 50%, #f2f5f7 100%);
+			background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f6f8f9), color-stop(0.5, #e5ebee), color-stop(0.5, #d7dee3), color-stop(1, #f2f5f7));
+		}
+		
+		
+		
+		.orange-gloss .yui3-button-content {
+			border-color: #dc6b00;
+			-moz-box-shadow: inset 0 0 5px #ffffff;
+			-webkit-box-shadow: inset 0 0 5px #ffffff;
+			background-color: #ffa73d;
+			background: -moz-linear-gradient(center top, #ffa03c 0%, #ffa73d 50%, #ff7c00 50%, #ff7d00 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffa03c), color-stop(0.5, #ffa73d), color-stop(0.5, #ff7c00), color-stop(1, #ff7d00));
+			color: #2a2a2a;
+			text-shadow: 1px 1px 0 rgba(255,255,255, .7);
+		}
+		.orange-gloss .yui3-button:hover .yui3-button-content {
+		}
+		.orange-gloss .yui3-button-pressed .yui3-button-content {
+			text-shadow: -1px -1px 0 rgba(255,255,255, .5);
+			background: -moz-linear-gradient(center bottom, #ffa03c 0%, #ffa73d 49%, #ff7c00 51%, #ff7d00 100%);
+			background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ffa03c), color-stop(0.5, #ffa73d), color-stop(0.5, #ff7c00), color-stop(1, #ff7d00));
+		}
+		
+		
+	</style>
+  </head>
+  <body class="yui3-skin-xarno yui3-skin-xarno-smooth">
+	<select>
+		<option value="white-gloss">White Gloss</option>
+		<option value="orange-gloss">Orange Gloss</option>
+	</select>
+	<div id="btn"></div>
+    <script type="text/javascript">
+      YUI({
+        modules : {
+          'gallery-button' : {
+            fullpath : '../../../build/gallery-button/gallery-button-min.js',
+            requires : ["widget","event-mouseenter","widget-child"]
+          }
+        }
+      }).use('gallery-button', 'event-valuechange', function(Y){
+        var sel = Y.one('select'), btn = new Y.Button({label:"Button", url:'#'});
+        btn.render('#btn');
+		
+		function changeClass(e){
+			var s = sel;
+			if (e && e.currentTarget) {
+				s = e.currentTarget;
+			}
+			
+			Y.one('#btn').set('className', s.get('value'));
+		}
+		
+		Y.one('select').on('change', changeClass);
+		changeClass();
+		
+      });
+    </script>
+  </body>
+</html>

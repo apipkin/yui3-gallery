@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Editor Plus</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.5.0pr1/build/yui/yui-min.js"></script>
+    <style>
+      .yui3-gallery-editor-plus-content {
+        background: #eee;
+        border: 1px solid #d7d7d7;
+      }
+      .yui3-gallery-editor-plus .yui3-widget-bd {
+        position: relative;
+        left: -1px;
+      }
+      .yui3-gallery-editor-plus .yui3-widget-bd iframe {
+        border: 1px solid #d7d7d7;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+      YUI({
+combine: false,
+filter: 'raw',
+        modules : {
+          'gallery-editor-plus' : {
+            fullpath : '../../../build/gallery-editor-plus/gallery-editor-plus-debug.js',
+            requires : ['widget','widget-stdmod','base-build','editor']
+          }
+        }
+        }).use('gallery-editor-plus', function(Y){
+          var e = new Y.Xarno.EditorPlus({
+            content: '<strong>Strong</strong> foo'
+          });
+
+          e.render();
+      });
+    </script>
+  </body>
+</html>

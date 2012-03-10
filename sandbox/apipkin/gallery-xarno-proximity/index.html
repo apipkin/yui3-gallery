@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Xarno Proximity</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.2.0/build/cssreset/reset-min.css">
+
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>
+    <style>
+      .blob {
+        width: 200px;
+        height: 200px;
+        background: rgba(0,0,255,0.1);
+      }
+    </style>
+  </head>
+  <body class="">
+    <div class="blob">Gary</div>
+    <div class="blob">Larry</div>
+    <div class="blob">Marge</div>
+    <div class="blob">Maggie</div>
+    <div class="blob">George</div>
+    <script type="text/javascript">
+      YUI({
+		filter : 'raw',
+		combine : false,
+        modules : {
+          'gallery-xarno-proximity' : {
+            fullpath : '../../../build/gallery-xarno-proximity/gallery-xarno-proximity-debug.js',
+            requires : ['base-build', 'plugin', 'event']
+          }
+        }
+      }).use('node','dd-plugin', 'gallery-xarno-proximity', function(Y){
+
+          var blobs = Y.all('.blob'),
+              gary = blobs.item(0),
+              larry = blobs.item(1),
+              marge = blobs.item(2),
+              maggie = blobs.item(3),
+              george = blobs.item(4);
+
+
+          blobs.plug(Y.Xarno.Proximity);
+          blobs.plug(Y.Plugin.Drag);
+
+
+          gary.proximity.set('target', marge);
+          gary.dd.on('drag:end', function(e){
+            Y.log(gary.proximity.locate());
+          });
+
+      });
+    </script>
+  </body>
+</html>

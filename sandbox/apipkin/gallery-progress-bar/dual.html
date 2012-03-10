@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.3.0pr1/build/yui/yui-min.js"></script>
+	<style>
+        .yui3-progressbar {
+        	display: inline-block;
+        	margin: 10px;
+        	border: 2px solid #004395;
+        	border-radius: 5px;
+        	-moz-border-radius: 5px;
+        	-webkit-border-radius: 5px;
+        }
+        .yui3-progressbar .yui3-progressbar-content {
+            border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+        	background: url("background.gif") no-repeat scroll left center transparent;
+        	width: 200px;
+        	font-size: 13px;
+        	color: #333;
+        	font-family: Arial, Helvetica, sans-serif;
+        }
+        .yui3-progressbar .yui3-progressbar-label {
+        	position: absolute;
+        	line-height: 15px;
+        	padding-left: 3px; 
+        }
+        .yui3-progressbar .yui3-progressbar-slider {
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+        	background: url("active.gif") no-repeat scroll left center transparent;
+        	height: 15px;
+        	line-height: 15px;
+        	width: 0;
+        	position: relative;
+        	overflow: hidden;
+        	white-space: nowrap;
+        	color: yellow;
+        }
+
+	</style>
+  </head>
+  <body>
+    <script type="text/javascript">
+      YUI({
+        modules : {
+          'gallery-progress-bar' : {
+            fullpath : '../../../build/gallery-progress-bar/gallery-progress-bar-debug.js',
+            requires : ['widget','base-build','anim','substitute']
+          }
+        }
+      }).use('gallery-progress-bar', function(Y){
+            Y.on('domready',function(){
+        var pb1 = new Y.ProgressBar({
+            render: true , 
+            layout : '<div class="{labelClass}"></div><div class="{sliderClass}"><span class="{labelClass}"></span></div>'
+        });
+        pb1.setLabelAt(50, 'Initializing');
+
+        (function upIt() {
+            if(pb1.get('progress') < 100) {
+                Y.later(2000, this, function(e){
+                    pb1.increment(8.4);
+                    upIt();
+                });
+            }
+        })();
+
+    });
+      });
+    </script>
+  </body>
+</html>

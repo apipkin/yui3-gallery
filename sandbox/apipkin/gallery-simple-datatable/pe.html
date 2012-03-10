@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple DataTable</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.3.0pr1/build/yui/yui-min.js"></script>
+  </head>
+  <body>
+    <table cellpadding="0" cellspacing="0" border="0">
+	  <thead>
+		<tr>
+		  <th>Id</th>
+		  <th>Title</th>
+		</tr>
+	  </thead>
+	  <tbody>
+	    <tr><td>1</td><td>Banana</td></tr>
+	    <tr><td>2</td><td>Orange</td></tr>
+	    <tr><td>3</td><td>Cherry</td></tr>
+	    <tr><td>4</td><td>Grape Fruit</td></tr>
+	    <tr><td>5</td><td>Watermelon</td></tr>
+	  </tbody>
+	</table>
+    <script type="text/javascript">
+      YUI({
+        modules : {
+          'gallery-simple-datatable' : {
+            fullpath : '../../../build/gallery-simple-datatable/gallery-simple-datatable-debug.js',
+            requires : ["node","widget","widget-child","event","event-mouseenter","substitute"]
+          }
+        }
+      }).use('gallery-simple-datatable', function(Y){
+        var grid = new Y.SimpleDatatable({srcNode:Y.one('table')});
+		/*
+        grid.set('headers',{id:{label:'Id'}, title:'Title'});
+        grid.set('rows',[
+            {id:1,title:'Banana',__fileId:9},
+            {id:2,title:'Orange'},
+            {id:3,title:'Cherry'},
+            {id:4,title:'Grape Fruit'},
+            {id:5,title:'Watermelon'}
+        ]);
+		*/
+        grid.render();
+
+      });
+    </script>
+  </body>
+</html>

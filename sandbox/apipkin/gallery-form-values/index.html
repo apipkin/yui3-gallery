@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.1.2/build/yui/yui-min.js"></script>
+  </head>
+  <body>
+    <form action="#">
+      <select>
+        <option selected value="inlineVal">Inline Value</option>
+        <option selected>Paired Value</option>
+      </select>
+      <select multiple>
+        <option selected value="inlineVal">Inline Value</option>
+        <option selected>Paired Value</option>
+      </select>
+    </form>
+    <script type="text/javascript">
+      YUI({
+        modules : {
+          'gallery-form-values' : {
+            fullpath : '../../../build/gallery-form-values/gallery-form-values-debug.js',
+            requires : ['plugin','node-pluginhost','base-build']
+          }
+        }
+      }).use('gallery-form-values', function(Y){
+        var frm = Y.one('form');
+        frm.plug(Y.Form.Values);
+        Y.log(frm.values.getValues());
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timer</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.5.0pr2/build/yui/yui-min.js"></script>
+    <style>
+    #o {
+      background: red;
+      height: 20px;
+      width: 20px;
+      border-radius: 10px;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="o"></div>
+    <script type="text/javascript">
+      YUI({
+        modules : {
+          'gallery-timer' : {
+            fullpath : '../../../build/gallery-timer/gallery-timer-min.js',
+            requires : ['base-build','event-custom']
+          }
+        }
+      }).use('gallery-timer', 'node', function(Y){
+        var oNode = Y.one('#o'),
+            myCallback = function() {
+              oNode.setX(oNode.getX() + 1)
+              oNode.setContent(t.get('step'));
+            },
+            
+            t = new Y.Timer({
+              length:50,
+              repeatCount: 2000,
+              callback:myCallback
+            });
+
+
+        t.start();    
+      });
+    </script>
+  </body>
+</html>

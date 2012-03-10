@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Xarno Calendar w/ Controls</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.2.0/build/cssreset/reset-min.css">
+	
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.3.0/build/yui/yui-min.js"></script>
+	<style type="text/css">
+		#cal { margin: 20px; }
+	</style>
+  </head>
+  <body class="yui3-skin-xarno yui3-skin-xarno-smooth">
+	<div id="cal"></div>
+    <script type="text/javascript">
+      YUI({
+        modules : {
+		  'gallery-button' : {
+			fullpath : '../../../build/gallery-button/gallery-button-min.js',
+			requires : ['widget','event-mouseenter','widget-child']
+		  },
+		  'gallery-xarno-calendar' : {
+			fullpath : '../../../build/gallery-xarno-calendar/gallery-xarno-calendar-min.js',
+			requires : ["widget","base-build",'widget-stdmod']
+		  },
+		  'gallery-xarno-calendar-controls' : {
+			fullpath : '../../../build/gallery-xarno-calendar-controls/gallery-xarno-calendar-controls.js',
+			requires : ['plugin', 'base-build', 'gallery-button']
+		  },
+		  'gallerycss-xarno-skins' : {
+			fullpath : '../../../build/gallerycss-xarno-skins/gallerycss-xarno-skins.css',
+			type : 'css'
+		  }
+		}
+      }).use('gallery-xarno-calendar', 'gallery-xarno-calendar-controls','gallerycss-xarno-skins', function(Y){
+        var c = new Y.Xarno.Calendar({dateSelected: (new Date())});
+
+        c.plug(Y.Plugin.Xarno.CalendarControls);
+		
+        c.render('#cal');
+
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button:: Simple</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.3.0/build/yui/yui-min.js"></script>
+    <link href="../skins/Xarno/base.css" type="text/css" rel="stylesheet" />
+    <link href="../skins/Xarno/icons.css" type="text/css" rel="stylesheet" />
+    <link href="../skins/Xarno/Smooth/button.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body class="yui3-skin-xarno yui3-skin-xarno-smooth">
+    
+    <a href="#" target="_blank"><span>Push &lt;A&gt;</span></a>
+    
+    <a href="http://www.yahoo.com/" target="_blank"><span>Link &lt;A&gt;</span></a>
+    
+    <button><span>Push &lt;Button&gt;</span></button>
+    
+    <form>
+      <textarea>input:text</textarea>
+        
+      <input type="button" value="Push &lt;Input:Button&gt;" />
+      <input type="submit" value="Submit &lt;Input:Submit&gt;" />
+      <input type="reset" value="Reset &lt;Input:Reset&gt;" />
+      
+    </form>
+    
+    <script type="text/javascript">
+      YUI({
+        modules : {
+          'button-base' : {
+            fullpath : '../../../build/button/button-base-debug.js',
+            requires : ['node', 'event', 'event-mouseenter','classnamemanager']
+          },
+          'button-simple' : {
+            fullpath : '../../../build/button/button-simple-debug.js',
+            requires : ['button-base', 'base-build', 'plugin', 'classnamemanager']
+          }
+        }
+      }).use('button-simple', function(Y){
+        
+        var btns = Y.all('a, button, input');
+        btns.plug(Y.Button.Simple, {'icon':'broom'});
+        
+      });
+    </script>
+  </body>
+</html>

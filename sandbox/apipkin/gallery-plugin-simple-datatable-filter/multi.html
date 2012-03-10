@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple DataTable Filter</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.3.0pr1/build/yui/yui-min.js"></script>
+  </head>
+  <body>
+	<label>Title: <input type="text" id="filterTitle" /></label>
+	<label>Color: <input type="text" id="filterColor" /></label>
+	
+    <script type="text/javascript">
+      YUI({
+        modules : {
+          'gallery-simple-datatable' : {
+            fullpath : '../../../build/gallery-simple-datatable/gallery-simple-datatable-debug.js',
+            requires : ["node","widget","widget-child","event","event-mouseenter","substitute"]
+          },
+          'gallery-plugin-simple-datatable-filter' : {
+            fullpath : '../../../build/gallery-plugin-simple-datatable-filter/gallery-plugin-simple-datatable-filter-debug.js',
+            requires : ['plugin','base-build']
+          }
+        }
+      }).use('gallery-simple-datatable', 'gallery-plugin-simple-datatable-filter',  function(Y){
+        var grid = new Y.SimpleDatatable();
+        grid.set('headers',{id:{label:'Id', resizable:false}, title:'Title', color: 'Color'});
+        grid.set('rows',[
+            {id:1,title:'Banana',__fileId:9, color: 'Yellow'},
+			{id:2,title:'Orange', color: 'Orange'},
+			{id:3,title:'Cherry', color: 'Red'},
+			{id:4,title:'Grape Fruit', color: 'Pink'},
+			{id:5,title:'Watermelon', color: 'Green'}
+        ]);
+        grid.render();
+        grid.plug(Y.Plugin.SDTFilter);
+		
+		Y.one('#filterTitle').on('keyup', function(e) {
+			grid.filter.filterOn('title',e.currentTarget.get('value'));
+		});
+		
+		Y.one('#filterColor').on('keyup', function(e) {
+			grid.filter.filterOn('color',e.currentTarget.get('value'));
+		});
+		
+
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.2.0/build/cssreset/reset-min.css">
+    <link href="../skins/Xarno/base.css" type="text/css" rel="stylesheet" />
+    <link href="../skins/Xarno/icons.css" type="text/css" rel="stylesheet" />
+    <link href="../skins/Xarno/Growl/button.css" type="text/css" rel="stylesheet" />
+    <link href="../skins/Xarno/Growl/notify.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.2.0/build/yui/yui-min.js"></script>
+  </head>
+  <body class="yui3-skin-xarno yui3-skin-xarno-growl">
+    <script type="text/javascript">
+      YUI({
+        gallery : 'gallery-2010.09.01-19-12',
+        modules : {
+          'gallery-notify' : {
+            fullpath : '../../../build/gallery-notify/gallery-notify-debug.js',
+            requires : ['base','anim','substitute','widget','widget-parent','widget-child','gallery-timer','event-mouseenter','gallery-effects','gallery-button']
+          },
+          'gallery-timer' : {
+            fullpath : '../../../build/gallery-timer/gallery-timer-min.js',
+            requires : ['base','event-custom']
+          },
+          'gallery-button' : {
+            fullpath : '../../../build/gallery-button/gallery-button-min.js',
+            requires : ["widget","event-mouseenter","widget-child"]
+          }
+        }
+      }).use('gallery-notify', function(Y){
+        var n = new Y.Notify({prepend:true, timeout: 10000000});
+        n.render();
+        n.add({'message': 'Notify Rocks!'});
+        n.addMessage('Notify Still Rocks!', 'error');
+      });
+    </script>
+  </body>
+</html>

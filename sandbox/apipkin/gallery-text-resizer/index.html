@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text Resizer</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.2.0/build/yui/yui.js"></script>
+  </head>
+  <body>
+    <ul id="size">
+        <li><a href="#" class="text-resize-down">Down</a></li>
+        <li><a href="#" class="text-resize-up">Up</a></li>
+        <li><a href="#" class="text-resize-smallest">Smallest</a></li>
+        <li><a href="#" class="text-resize-largest">Largest</a></li>
+        <li><a href="#" class="text-resize-default">Default</a></li>
+    </ul>
+    <script type="text/javascript">
+      YUI({
+        combine: false,
+        filter: 'raw',
+        modules : {
+          'gallery-text-resizer' : {
+            fullpath : '../../../build/gallery-text-resizer/gallery-text-resizer-debug.js',
+            requires : ['node','event','cookie','base-build','plugin']
+          }
+        }
+      }).use('gallery-text-resizer', function(Y){
+        Y.one('ul').plug(Y.Text.Resizer);
+      });
+    </script>
+  </body>
+</html>

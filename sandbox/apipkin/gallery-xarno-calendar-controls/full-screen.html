@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Xarno Calendar w/ Controls</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.2.0/build/cssreset/reset-min.css">
+    <link href="../skins/Xarno/base.css" rel="stylesheet" type="text/css">
+    <link href="../skins/Xarno/icons.css" rel="stylesheet" type="text/css">
+    <link href="../skins/Xarno/Smooth/button.css" rel="stylesheet" type="text/css">
+    <link href="../skins/Xarno/calendar.css" rel="stylesheet" type="text/css">
+    <link href="../skins/Xarno/calendar-controls.css" rel="stylesheet" type="text/css">
+	
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.3.0/build/yui/yui-min.js"></script>
+	<style type="text/css">
+		#cal { margin: 20px; width: 400px; height: 300px; }
+	</style>
+  </head>
+  <body class="yui3-skin-xarno yui3-skin-xarno-smooth">
+	<div id="cal"></div>
+    <script type="text/javascript">
+      YUI({
+        modules : {
+            'gallery-button' : {
+              fullpath : '../../../build/gallery-button/gallery-button-min.js',
+              requires : ['widget','event-mouseenter','widget-child']
+            },
+            'gallery-xarno-calendar' : {
+              fullpath : '../../../build/gallery-xarno-calendar/gallery-xarno-calendar-min.js',
+              requires : ["widget","base-build",'widget-stdmod']
+            },
+          'gallery-xarno-calendar-controls' : {
+              fullpath : '../../../build/gallery-xarno-calendar-controls/gallery-xarno-calendar-controls-debug.js',
+              requires : ['plugin', 'base-build', 'gallery-button']
+          }
+        }
+      }).use('gallery-xarno-calendar', 'gallery-xarno-calendar-controls', function(Y){
+        var c = new Y.Xarno.Calendar({dateSelected: (new Date())});
+
+        c.plug(Y.Plugin.Xarno.CalendarControls);
+		
+        c.render('#cal');
+
+      });
+    </script>
+  </body>
+</html>

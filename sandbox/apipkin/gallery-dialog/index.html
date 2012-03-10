@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.3.0/build/yui/yui-min.js"></script>
+    <link href="../skins/Xarno/base.css" type="text/css" rel="stylesheet" />
+    <link href="../skins/Xarno/icons.css" type="text/css" rel="stylesheet" />
+    <link href="../skins/Xarno/Smooth/base.css" type="text/css" rel="stylesheet" />
+    <link href="../skins/Xarno/Smooth/button.css" type="text/css" rel="stylesheet" />
+    <link href="../skins/Xarno/Smooth/dialog.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body class="yui3-skin-xarno yui3-skin-xarno-smooth">
+    <form><input id="promptText" type="text" value="Y.Dialog"></form>
+    <script type="text/javascript">
+      YUI({
+        filter: 'raw',
+        combine: false,
+        gallery : 'gallery-2010.08.25-19-45',
+        modules : {
+          'gallery-button' : {
+            fullpath : '../../../build/gallery-button/gallery-button-debug.js',
+            requires : ["widget","event-mouseenter","widget-child"]
+          },
+          'gallery-dialog' : {
+            fullpath : '../../../build/gallery-dialog/gallery-dialog-debug.js',
+            requires : ['gallery-overlay-extras','gallery-button','overlay','widget-anim','node','gallery-event-nav-keys','dd-plugin']
+          }
+        }
+      }).use('gallery-dialog', function(Y){
+        var d = new Y.Dialog();
+
+        var a = new Y.Button({label:'Alert',callback: function() {
+            d.alert("Sample!",null,function(){Y.log('Alert OK Clicked!');});
+        }});
+        a.render();
+
+        var b = new Y.Button({label:'Confirm',callback: function() {
+            d.confirm("Are you sure?",null,function(){Y.log('Confirm OK Clicked!');},function(){Y.log('Confirm Canceled!');});
+        }});
+        b.render();
+
+        var c = new Y.Button({label:'Prompt',callback: function() {
+            d.prompt("What is your name?",null,function(returnVal){Y.log('Confirm OK Clicked!');Y.one('#promptText').set('value',returnVal);},function(){Y.log('Confirm Canceled!');});
+        }});
+        c.render();
+
+      });
+    </script>
+  </body>
+</html>

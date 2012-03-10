@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.1.2/build/yui/yui-min.js"></script>
+    <style>
+      .yui3-button-selected {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+      YUI({
+        modules : {
+          'gallery-button' : {
+            fullpath : '../../../build/gallery-button/gallery-button-debug.js',
+            requires : ["widget","event-mouseenter","widget-child"]
+          },
+          'gallery-button-toggle' : {
+            fullpath : '../../../build/gallery-button-toggle/gallery-button-toggle-debug.js',
+            requires : ["gallery-button"]
+          },
+          'gallery-button-group' : {
+            fullpath : '../../../build/gallery-button-group/gallery-button-group-debug.js',
+            requires : ['widget-parent','widget-child']
+          }
+        }
+      }).use('gallery-button-toggle', 'gallery-button-group', function(Y){
+        var bt1 = new Y.ButtonToggle({icon: 'edit-bold', label: 'Bold'});
+        var bt2 = new Y.ButtonToggle({icon: 'edit-italic', label:'Italic'});
+        var bt3 = new Y.ButtonToggle({icon: 'edit-underline', label:'Underline'});
+        var bg = new Y.ButtonGroup({label: 'Edit:', multiple: true, children: [bt1,bt2,bt3],render: true});
+
+
+        var bt11 = new Y.ButtonToggle({icon: 'align-left', label: 'Left Justify'});
+        var bt12 = new Y.ButtonToggle({icon: 'align-center', label: 'Center Justify'});
+        var bt13 = new Y.ButtonToggle({icon: 'align-right', label: 'Right Justify'});
+        var bg1 = new Y.ButtonGroup({label: 'Align:', alwaysSelected:true, children: [bt11,bt12,bt13], render: true});
+        bg1.selectChild(0);
+     });
+    </script>
+  </body>
+</html>

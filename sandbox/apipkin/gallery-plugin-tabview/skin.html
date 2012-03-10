@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Plugin TabView</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.2.0/build/yui/yui-min.js"></script>
+  </head>
+  <body class="yui3-skin-xarno">
+    <dl>
+      <dt><a href="#tabA" name="tabA">Tab A</a></dt>
+      <dd><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porta iaculis justo, at tempor purus euismod quis. Pellentesque tempus pretium arcu eu sollicitudin. Curabitur varius, lorem eu fermentum sollicitudin, erat ipsum tincidunt lacus, id consequat orci ligula nec quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer ut turpis nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse cursus turpis erat, nec vestibulum neque. Integer ut ullamcorper odio. Quisque metus nibh, imperdiet ac blandit pretium, hendrerit a ipsum. Morbi nulla erat, mollis eu faucibus at, porttitor at orci. Nunc et mauris vitae nunc dictum blandit ut in quam. Ut non pulvinar ipsum. Nam ut sapien sem, nec faucibus lectus. Duis euismod elementum ligula, eget elementum diam consequat id. Nulla hendrerit dui magna. Proin vel ligula velit, non semper sem. Maecenas at eleifend urna. Nulla at elit felis, at tempus tortor.</p></dd>
+      <dt><a href="#tabB">Tab B</a></dt>
+      <dd><p>Curabitur odio enim, tristique et commodo non, adipiscing vel arcu. Sed auctor, tortor non semper bibendum, magna urna vestibulum augue, sit amet tempor libero nisl nec massa. Ut sit amet tellus in arcu tempus lacinia sit amet eget eros. Morbi hendrerit venenatis elit at lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer posuere hendrerit orci a commodo. Quisque felis nisl, sollicitudin eget consectetur sit amet, interdum quis odio. Nunc leo ante, congue quis porttitor vitae, rutrum eu magna. Morbi elementum ultrices lectus quis auctor. Sed sit amet orci vitae orci pharetra vehicula sed sit amet lectus. Fusce sagittis malesuada lobortis. Mauris a nunc est. Aliquam arcu neque, tincidunt vel faucibus ut, posuere at nibh. Mauris at orci viverra urna eleifend volutpat ac non diam. Nam sed turpis a enim consequat pellentesque a sollicitudin turpis. Nullam ut diam et orci tincidunt sodales a a eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam mi quam, condimentum vel bibendum eget, commodo id mi. Morbi pretium, purus vitae fermentum gravida, ipsum mauris egestas erat, quis tincidunt ipsum dolor sit amet turpis.</p></dd>
+      <dt><a href="#tabC" name="tabC">Tab C</a></dt>
+      <dd><p>Phasellus a nibh lorem. In elementum purus eget arcu iaculis in consectetur dolor pharetra. Curabitur ultricies lectus eget lectus pulvinar volutpat. Sed vitae eros ac ligula sodales luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras tristique bibendum est. Quisque porta ullamcorper erat. Mauris dictum porta fermentum. Nulla sodales blandit lorem, sit amet posuere ante euismod ut. Morbi id orci felis, eget aliquet velit.</p></dd>
+    </dl>
+
+    <script type="text/javascript">
+      YUI({
+        modules : {
+          'gallery-plugin-tabview' : {
+            fullpath : '../../../build/gallery-plugin-tabview/gallery-plugin-tabview-debug.js',
+            requires : ['plugin','base-build','node','event','history']
+          },
+          'gallerycss-xarno-skins' : {
+            fullpath : '../../../build/gallerycss-xarno-skins/gallerycss-xarno-skins.css',
+            type : 'css'
+          }
+        }
+      }).use('gallery-plugin-tabview','gallerycss-xarno-skins', function(Y){
+        Y.one('dl').plug(Y.Plugin.TabView);
+      });
+    </script>
+  </body>
+</html>

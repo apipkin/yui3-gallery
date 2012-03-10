@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.3.0pr1/build/yui/yui-min.js"></script>
+	<style>
+		.yui3-progressbar {
+			display: inline-block;
+			margin: 10px;
+			border: 1px solid #fafafa;
+			-moz-border-radius: 5px;
+		}
+		.yui3-progressbar .yui3-progressbar-content {
+			-moz-border-radius: 4px;
+			width: 200px;
+			position: relative;
+		}
+		.yui3-progressbar .yui3-progressbar-label {
+			position: absolute;
+			top: 55px;
+		}
+		.yui3-progressbar .yui3-progressbar-slider {
+			-moz-border-radius: 3px;
+			background: url("stars.png") no-repeat scroll left center transparent;
+			height: 50px;
+			line-height: 50px;
+			width: 0;
+		}
+	</style>
+  </head>
+  <body>
+    <script type="text/javascript">
+      YUI({
+        modules : {
+          'gallery-progress-bar' : {
+            fullpath : '../../../build/gallery-progress-bar/gallery-progress-bar-debug.js',
+            requires : ['widget','base-build','anim','substitute']
+          }
+        }
+      }).use('gallery-progress-bar', function(Y){
+            Y.on('domready',function(){
+        var pb1 = new Y.ProgressBar({labelTemplate : '{label}', render: true , layout : '<div class="{labelClass}"></div><div class="{sliderClass}"></div>'});
+        pb1.setLabelAt(50, 'Initializing');
+
+        (function upIt() {
+            if(pb1.get('progress') < 100) {
+                Y.later(2500, this, function(e){
+                    pb1.increment(10);
+					pb1.set('label', 'Votes: ' + (pb1.get('progress') / 20) + ' out of 5');
+                    upIt();
+                });
+            }
+        })();
+
+    });
+      });
+    </script>
+  </body>
+</html>

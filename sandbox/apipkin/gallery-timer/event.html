@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timer</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.2.0pr2/build/yui/yui-min.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      YUI({
+        modules : {
+          'gallery-timer' : {
+            fullpath : '../../../build/gallery-timer/gallery-timer-min.js',
+            requires : ['base-build','event-custom']
+          }
+        }
+      }).use('gallery-timer', function(Y){
+        var myCallback = function() {
+              Y.log('Timer interval reached', 'info');
+            },
+            t = new Y.Timer({length:2005,repeatCount:2, callback: function(){}});
+
+        t.on('timer:start',function(e){Y.log('timer started!!!','info')});
+        t.on('timer:timer',function(e){Y.log('timer interval!!!','info')});
+        t.on('timer:stop',function(e){Y.log('timer stopped!!!','info')});
+
+        t.start();    
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.1.2/build/yui/yui-min.js"></script>
+  </head>
+  <body>
+    <div id="collapsable" style="border:1px solid red;">
+          <h1>Collapse Plugin Demo</h1>
+          <p>Nunc a urna sed nibh semper sollicitudin in ut risumi tincidunt nec sodales libero condimentum.</p>
+      </div>
+    <script type="text/javascript">
+      YUI({
+        modules : {
+          'gallery-plugin-collapse' : {
+            fullpath : '../../../build/gallery-plugin-collapse/gallery-plugin-collapse-debug.js',
+            requires : ['plugin','node-pluginhost','anim-easing','base-build']
+          }
+        }
+      }).use('gallery-plugin-collapse', function(Y){
+        var oBtn = Y.Node.create('<button>Open</button>'),
+            cBtn = Y.Node.create('<button>Close</button>'),
+            tBtn = Y.Node.create('<button>Toggle</button>'),
+            n = Y.one('#collapsable');
+
+        tBtn.on('click', function(){ n.collapse.toggle(); });
+        Y.one('body').prepend(tBtn);
+
+        cBtn.on('click', function(){ n.collapse.close(); });
+        Y.one('body').prepend(cBtn);
+
+        oBtn.on('click', function(){ n.collapse.open(); });
+        Y.one('body').prepend(oBtn);
+
+        n.plug(Y.Plugin.Collapse);
+      });
+    </script>
+  </body>
+</html>

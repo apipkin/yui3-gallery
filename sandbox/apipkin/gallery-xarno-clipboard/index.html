@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://yui.yahooapis.com/3.3.0/build/yui/yui-min.js"></script>
+</head>
+<body>
+
+
+<div class="xarno-clipboard-copy">Click me <strong>to</strong> copy: A</div>
+
+<div class="xarno-clipboard-copy">Click me to copy: B</div>
+<textarea></textarea>
+
+
+<script>
+
+YUI({
+	combine: false,
+	filter: 'raw',
+	modules : {
+		'gallery-xarno-clipboard' : {
+		  fullpath : '../../../build/gallery-xarno-clipboard/gallery-xarno-clipboard-min.js',
+		  requires : ['node','event','base-build','swf']
+		}
+	}
+}).use('gallery-xarno-clipboard', function(Y) {
+
+	var cb = new Y.Xarno.Clipboard();
+	
+	Y.one('body').delegate('mouseover', function(e){
+		cb.moveToAndCopy(e.currentTarget);
+	}, '.xarno-clipboard-copy');
+
+});
+</script>
+</body>
+</html>

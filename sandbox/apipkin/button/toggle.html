@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button:: Toggle</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.3.0/build/yui/yui-min.js"></script>
+    <link href="../skins/Xarno/base.css" type="text/css" rel="stylesheet" />
+    <link href="../skins/Xarno/icons.css" type="text/css" rel="stylesheet" />
+    <link href="../skins/Xarno/Smooth/button.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body class="yui3-skin-xarno yui3-skin-xarno-smooth">
+    
+    
+    <script type="text/javascript">
+      YUI({
+        combine: false,
+        filter: 'raw',
+        modules : {
+          'button-base' : {
+            fullpath : '../../../build/button/button-base-min.js',
+            requires : ['node', 'event', 'event-mouseenter','classnamemanager']
+          },
+          'button-advanced' : {
+            fullpath : '../../../build/button/button-advanced-min.js',
+            requires : ['button-base', 'base-build', 'widget']
+          },
+          'button-toggle' : {
+            fullpath : '../../../build/button/button-toggle-debug.js',
+            requires : ['button-advanced', 'base-build', 'plugin', 'widget-child']
+          }
+        }
+      }).use('button-toggle', function(Y){
+        var btn = new Y.Button.Toggle({
+          label : 'Toggle Button',
+          callback: function(e){ Y.log('callback'); },
+          deselectedCallback: function(e){ Y.log('deselect'); }
+        }).render();
+        
+        Y.later(2000, this, function(){
+          btn.set('selected', 1);
+        });
+       
+      });
+    </script>
+  </body>
+</html>

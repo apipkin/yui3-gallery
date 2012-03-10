@@ -140,16 +140,6 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
     //////   P R O T E C T E D   //////
 
     /**
-     * Local Date object for internal time measurement
-     *
-     * @property {Date} _date
-     * @protected
-     * @since 1.0.0
-     */
-    _date : new Date(),
-    
-    
-    /**
      * Internal timer
      * 
      * @property {Y.later} _timerObj
@@ -157,6 +147,15 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
      * @since 1.0.0
      */
     _timerObj : null,
+
+		/**
+		 * Resume length
+		 *
+		 * @property _remainingLength
+		 * @protected
+		 * @since 1.2.0
+		 */
+		_remainingLength: null,
 
     /**
      * Checks to see if a new Timer is to be created. If so, calls
@@ -174,17 +173,20 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
           repeat = this.get('repeatCount');
 
       if (timerObj) {
-	timerObj.cancel();
-	timerObj = null;
-	this._timerObj = null;
-      }
-      
-      if(repeat === 0 || repeat > this.get('step')) {
-        timerObj = Y.later(this.get('length'), this, this._timer);
+				timerObj.cancel();
+				timerObj = null;
+				this._timerObj = null;
       }
 
+			length = this._remainingLength || this.get('length');
+
+      if(repeat === 0 || repeat > this.get('step')) {
+        timerObj = Y.later(length , this, this._timer);
+      }
+
+			this._timerObj = timerObj;
       this.set('timer', timerObj);
-      this.set('start', this._date.getTime());
+      this.set('start', (new Date()).getTime());
     },
 
     /**
@@ -196,17 +198,25 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
      */
     _destroyTimer : function() {
       Y.log('Timer::_destroyTimer','info');
-      var timerObj = this._timerObj;
+      var timerObj = this._timerObj,
+					length = this._remainingLength || this.get('length');
       
       if (timerObj) {
-	timerObj.cancel();
-	timerObj = null;
-	this._timerObj = null;
+				timerObj.cancel();
+				timerObj = null;
+				this._timerObj = null;
       }
       
       this.set('timer', null);
-      this.set('stop', this._date.getTime());
+      this.set('stop', (new Date()).getTime());
       this.set('step', 0);
+
+			Y.log(this.get('status'));
+			if (this.get('status') == STATUS_STOPPED) {
+				this._remainingLength = null;
+			} else {
+				this._remainingLength = length - (this.get('stop') - this.get('start'));
+			}
     },
 
     /**
@@ -226,7 +236,9 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
 
       this.set('step', ++step);
 
-      if(repeat > 0 && repeat <= step) {
+			this._remainingLength = null;
+
+      if(repeat > 0 && repeat <= step) { // repeat at 0 is infinite loop
         this.stop();
       }else{
         this._makeTimer();
@@ -245,11 +257,12 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
      */
     _afterStatusChange : function(e){
       Y.log('Timer::_afterStatusChange','info');
-      switch (this.get('status')) {
+      switch(e.newVal) {
         case STATUS_RUNNING:
           this._makeTimer();
           break;
-        case STATUS_STOPPED: // overflow intentional
+        case STATUS_STOPPED:
+					this._remainingLength = null; // overflow intentional
         case STATUS_PAUSED:
           this._destroyTimer();
           break;
@@ -310,11 +323,7 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
      */
     _defResumeFn : function(e) {
       Y.log('Timer::_defResumeFn','info');
-      var remaining = this.get('length') - (this.get('stop') - this.get('start'));
-      Y.later(remaining, this, function(){
-        this._executeCallback();
-        this.set('status',STATUS_RUNNING);
-      });
+			this.set('status',STATUS_RUNNING);
     },
 
     /**
@@ -341,9 +350,34 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
       Y.log('Timer::_executeCallback','info');
       var callback = this.get('callback');
       if (Y.Lang.isFunction(callback)) {
-	(this.get('callback'))();
+				(this.get('callback'))();
       }
-   }
+   },
+
+	 /**
+		* Returns the time from `now` if the timer is running and returns remaining
+		* 	time from `stop` if the timer has stopped.
+		* @method _remainingGetter
+		* @protected
+		* @since 1.2.0
+		*/
+	 _remainingGetter: function(){
+			Y.log('Timer::_remainingGetter', 'info');
+			var status = this.get('status'),
+					length = this._remainingLength || this.get('length'),
+					d = new Date(),
+					t = d.getTime();
+
+			if (status === STATUS_STOPPED) {
+				return 0;
+			}
+			
+			if (status === STATUS_PAUSED) {
+				t = this.get('stop');
+			}
+
+			return this.get('length') - ( t - this.get('start'));
+	 }
 
 },{
     /**
@@ -382,6 +416,18 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
                 return parseInt(val,10);
             }
         },
+
+				/**
+				 * Get remaining milliseconds
+				 *
+				 * @attribute remaining
+				 * @type Number
+				 * @since 1.2.0
+				 */
+				remaining: {
+					readonly: true,
+					getter: '_remainingGetter'
+				},
 
         /**
          * Number of times the Timer should fire before it stops
@@ -500,3 +546,4 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
         TIMER  : EVENT_TIMER
     }
 });
+

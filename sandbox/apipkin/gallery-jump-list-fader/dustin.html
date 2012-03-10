@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.1.2/build/yui/yui-min.js"></script>
+    <style type="text/css">
+.layout_public-art strong { font-weight: bold; }
+.layout_public-art .browse { display: block; background: #f1f1f2; padding: 8px 12px; border-top: 1px solid #4c484d; border-bottom: 1px solid #4c484d; position: relative; overflow: hidden; }
+.layout_public-art select { width: 170px; height: 21px; padding: 2px; text-transform: uppercase; }
+.layout_public-art select + select { margin-left: 24px; }
+.layout_public-art button { margin-left: 20px; }
+.layout_public-art .view_collection { float: right; margin-top: 12px; text-transform: uppercase; background: #4c484d; border: none; padding: 3px 4px; color: #fff !important; display: block; text-decoration: none !important; }
+.layout_public-art .view_all { float: right; margin-top: 12px; text-transform: uppercase; background: #4c484d; border: none; padding: 3px 4px; color: #fff !important; display: block; text-decoration: none !important; }
+.layout_public-art ul { margin-top: 20px; }
+.layout_public-art li + li { margin-top: 8px; }
+.layout_public-art .swatch { display: inline-block; vertical-align: middle; width: 36px; height: 20px; border: 1px solid #888; background: #f5dadd; margin-right: 6px; }
+.layout_public-art .label { display: inline-block; vertical-align: middle; }
+.layout_public-art li + li .swatch { background: #ccecef; }
+
+.layout_public-art .work { display: block; background-color: #f1f1f2; padding: 8px 12px; border: 1px solid #ccc; position: relative; margin-top: 3em; overflow: hidden; }
+.layout_public-art .work span { display: block; }
+.layout_public-art .thumbnail { width: 152px; height: 98px; float: left; margin-right: 1em; text-align: center; }
+.layout_public-art .quick_info { overflow: hidden; margin-bottom: 1em; }
+.layout_public-art .title { font-weight: bold; }
+.layout_public-art .date { margin-bottom: 1em; }
+.layout_public-art .more_info { float: right; display: none; }
+.layout_public-art .no-results { margin-top: 1em; }
+.layout_public-art .collection-art { background-image: url(../../../media/com_publicart/images/collection-art-swatch.gif); background-repeat: no-repeat; background-position: right top; }
+.layout_public-art .art-on-loan { background-image: url(../../../media/com_publicart/images/art-on-loan-swatch.gif); background-repeat: no-repeat; background-position: right top; }
+.layout_public-art .resume { text-transform: lowercase; }
+
+.public-art-gallery #article { width: auto; padding-right: 0; }
+.public-art-gallery #adsWrapper { display: none; }
+.layout_public-art .gallery #article { width: 735px; }
+.layout_public-art .gallery .pagination ul { margin: 0; }
+.layout_public-art .gallery .pagination li { margin: 0; text-transform: uppercase; display: inline-block; *display: inline; *zoom: 1; }
+.layout_public-art .gallery .pagination li + li { margin-left: 12px; }
+.layout_public-art .gallery .pagination a { width: 30px; text-decoration: none !important; text-align: center; background: #f1f1f2; display: block; }
+.layout_public-art .gallery .pagination .active a { background: #ccc; }
+.layout_public-art .gallery .page { position: absolute; left: -9999px; }
+.layout_public-art .gallery .active { position: static; }
+.layout_public-art .gallery .work { width: 92px; margin: 34px 0 0 34px; padding: 0; vertical-align: top; display: inline-block; *display: inline; *zoom: 1; border: none; background: none; }
+.layout_public-art .gallery .col2 .work { width: 350px; margin-left: 35px; }
+.layout_public-art .gallery .col3 .work { width: 222px; }
+.layout_public-art .gallery .col4 .work { width: 158px; }
+.layout_public-art .gallery .col5 .work { width: 119px; margin-left: 35px; }
+.layout_public-art .gallery .first { margin-left: 0 !important; }
+.layout_public-art .gallery .thumbnail { width: 92px; height: 92px; float: none; margin: 0; background: #f1f1f2; border: 1px solid #ccc; }
+.layout_public-art .gallery .col2 .thumbnail { width: 348px; height: 348px; }
+.layout_public-art .gallery .col3 .thumbnail { width: 220px; height: 220px; }
+.layout_public-art .gallery .col4 .thumbnail { width: 156px; height: 156px; }
+.layout_public-art .gallery .col5 .thumbnail { width: 117px; height: 117px; }
+.layout_public-art .gallery .meta { padding: 1px; margin-top: 0.5em; }
+.layout_public-art .gallery .date { margin: 0; }
+.layout_public-art .gallery .more_info { display: block; float: none; }
+
+.layout_public-art .profile { display: block; background-color: #f1f1f2; padding: 8px 12px; border: 1px solid #ccc; position: relative; margin-top: 3em; overflow: hidden; }
+.layout_public-art .profile .work { background: none; border: none; padding: 0; margin-top: 1em; }
+.layout_public-art .profile .works { margin-top: 3em; }
+.layout_public-art .profile h3 { margin-bottom: 1em; text-transform: none !important; }
+.layout_public-art .profile span { display: block; }
+.layout_public-art .profile .bio { margin-top: 1em; }
+.layout_public-art .profile img { float: left; margin-right: 1em; }
+
+.layout_public-art .list h2 { padding: 0 2px !important; }
+.layout_public-art .list ul { overflow: hidden; }
+.layout_public-art .list li { margin: 0; float: left; display: block; }
+.layout_public-art .list ul a { display: block; padding: 4px 0; width: 18px; text-align: center; text-decoration: none !important; background: #ccc; }
+.layout_public-art .list .back-to-top { text-transform: lowercase; float: right; }
+.layout_public-art .list .section { margin-top: 3em; clear: both; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 4px 0; }
+.layout_public-art .list .profile { margin-top: 4px; border: none; /*height: 1.3636em;*/ }
+.layout_public-art .list .first {}
+
+.yui3-js-enabled .layout_public-art select + select { margin-left: 24px; width: 246px; }
+.yui3-js-enabled .layout_public-art button { display: none; }
+.yui3-js-enabled .layout_public-art .more_info { display: block; }
+.yui3-js-enabled .gallery .meta { display: none; }
+
+/* additional lightbox styles */
+#imageData #caption { text-transform: uppercase; font-weight: normal; margin-bottom: 1em; display: inline-block; }
+#imageData #caption span { text-transform: none; }
+#imageData #caption a { color: #666; text-decoration: none; font-weight: normal; }    
+    
+    </style>
+  </head>
+  <body>
+<div class="layout_public-art">
+	<div class="list">
+		<ul id="jump-list">
+			<li>
+				<a href="#a" class="active">A</a>
+			</li><li>
+				<a href="#b">B</a>
+			</li><li>
+				<a href="#c">C</a>
+			</li><li>
+				<a href="#d">D</a>
+			</li><li>
+				<a href="#e">E</a>
+			</li><li>
+				<a href="#f">F</a>
+			</li><li>
+				<a href="#g">G</a>
+			</li><li>
+				<a href="#h">H</a>
+			</li><li>
+				<a href="#i">I</a>
+			</li><li>
+				<a href="#j">J</a>
+			</li><li>
+				<a href="#k">K</a>
+			</li><li>
+				<a href="#l">L</a>
+			</li><li>
+				<a href="#m">M</a>
+			</li><li>
+				<a href="#n">N</a>
+			</li><li>
+				<a href="#o">O</a>
+			</li><li>
+				<a href="#p">P</a>
+			</li><li>
+				<a href="#q">Q</a>
+			</li><li>
+				<a href="#r">R</a>
+			</li><li>
+				<a href="#s">S</a>
+			</li><li>
+				<a href="#t">T</a>
+			</li><li>
+				<a href="#u">U</a>
+			</li><li>
+				<a href="#v">V</a>
+			</li><li>
+				<a href="#w">W</a>
+			</li><li>
+				<a href="#x">X</a>
+			</li><li>
+				<a href="#y">Y</a>
+			</li><li>
+				<a href="#z">Z</a>
+			</li>		</ul>
+		<div class="profiles" id="jump-to-container">
+												<div class="jump-group" id="yui_3_3_0_1_1304603224069112">
+						<div class="section" id="yui_3_3_0_1_1304603224069111">
+							<h2 id="a">A</h2>
+							<div class="profile first">
+	<div class="artist_info">
+		<h3>Adams, Ron</h3><span class="email"><strong>Email:</strong> lewadams@cybermesa.com</span><span class="website"><strong>Website:</strong> www.ronadams.studiopassport.com</span><a class="resume" href="http://lh/~tricia/dustin/fulton-county-arts-council/Adams, Ron.doc">Download Artist Resumé</a>
+	</div>
+	
+</div>						</div>
+						<a href="#jump-list" class="back-to-top" style="visibility: visible;">Show All</a>
+					</div>
+																<div class="jump-group" style="overflow: hidden; height: 0px; opacity: 0;">
+						<div class="section">
+							<h2 id="b">B</h2>
+							<div class="profile first">
+	<div class="artist_info">
+		<h3>Berroa, Felix</h3><span class="phone"><strong>Phone:</strong> 678-355-1473</span><span class="email"><strong>Email:</strong> felbere@hotmail.com</span><span class="website"><strong>Website:</strong> www.felixberroa.com</span><div class="bio"><strong>Bio:</strong><p>"I began drawing and carving wood and common stones during my childhood in the 50s. From the beginning, it was faces, the human figure, self-portraits, or just a pretty girl who would catch my eye.</p>
+<p>My later work had been realistic, but during the last stage of my studies at the Escuela Nacional de Bellas Artes, in the Dominican Republic, my work began to transform into what it is today.</p>
+<p>My ability was forged by a team of some of the most recognized artists of the Dominican Republic and Puerto Rico.</p>
+<p>In my art, "the lines" wish to be seen in order to more definitely mark the 'expressions' of our joy, dreams, and suffering. The idea of those 'small lines' was taken primarily from my work as an etcher. By observing the Old Masters of that discipline (Durer, Rembrandt, and others), I assimilated the sort of line that they used to achieve volume and shadow in their forms. I adapted to enhance the expressions, not only in the faces of my characters, but in their bodies.</p>
+<p>My characters are mostly women and children because I dedicate my attention to those human beings considered in the society as "weakest". They are actually the most tender and beautiful, the givers and receivers of life.</p></div><a class="resume" href="http://lh/~tricia/dustin/fulton-county-arts-council/Berroa, Felix.doc">Download Artist Resumé</a>
+	</div>
+	<div class="works"><div class="work"><a title="Cajun&lt;br /&gt;&lt;span&gt;2007&lt;/span&gt;" rel="lightbox[registry]" href="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2F01_BERROACajun.jpg&amp;w=800&amp;h=600&amp;m=max&amp;tr=1"><img title="" alt="" src="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2F01_BERROACajun.jpg&amp;w=152&amp;h=98&amp;m=max&amp;tr=1"></a><div class="details"><strong>Cajun</strong><br>2007<br>Painting/Mural<br>40" x 46"</div></div><div class="work"><a title="Fertilization of a Woman&lt;br /&gt;&lt;span&gt;2009&lt;/span&gt;" rel="lightbox[registry]" href="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2F02_BERROAFertilization+of+a+Woman.jpg&amp;w=800&amp;h=600&amp;m=max&amp;tr=1"><img title="" alt="" src="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2F02_BERROAFertilization+of+a+Woman.jpg&amp;w=152&amp;h=98&amp;m=max&amp;tr=1"></a><div class="details"><strong>Fertilization of a Woman</strong><br>2009<br>Painting/Mural<br>79" x 48"</div></div><div class="work"><a title="Two Divas Passages" rel="lightbox[registry]" href="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2F03_BERROATwo+Divas+Passages.jpg&amp;w=800&amp;h=600&amp;m=max&amp;tr=1"><img title="" alt="" src="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2F03_BERROATwo+Divas+Passages.jpg&amp;w=152&amp;h=98&amp;m=max&amp;tr=1"></a><div class="details"><strong>Two Divas Passages</strong><br></div></div><div class="work"><a title="" rel="lightbox[registry]" href="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2F04_BERROA.jpg&amp;w=800&amp;h=600&amp;m=max&amp;tr=1"><img title="" alt="" src="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2F04_BERROA.jpg&amp;w=152&amp;h=98&amp;m=max&amp;tr=1"></a><div class="details"></div></div></div>
+</div><div class="profile">
+	<div class="artist_info">
+		<h3>Brown, Charles A.</h3><div class="bio"><strong>Bio:</strong><p>Charles A. Brown's paintings are featured in over thirty private collections in the U.S. His paintings are included in the collection of New Mexico State Energy and Feather Stone Gallery.</p></div>
+	</div>
+	<div class="works"><div class="work"><a title="Sunrise&lt;br /&gt;&lt;span&gt;1998&lt;/span&gt;" rel="lightbox[registry]" href="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2FBrown.Charles+A.-1998_Sunrise_4web.jpg&amp;w=800&amp;h=600&amp;m=max&amp;tr=1"><img title="" alt="" src="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2FBrown.Charles+A.-1998_Sunrise_4web.jpg&amp;w=152&amp;h=98&amp;m=max&amp;tr=1"></a><div class="details"><strong>Sunrise</strong><br>1998<br>Painting/Mural<br></div></div></div>
+</div>						</div>
+						<a href="#jump-list" class="back-to-top" style="visibility: hidden;">Show All</a>
+					</div>
+																							<div class="jump-group" style="overflow: hidden; height: 0px; opacity: 0;">
+						<div class="section">
+							<h2 id="d">D</h2>
+							<div class="profile first">
+	<div class="artist_info">
+		<h3>Dillehay, Kyle</h3><div class="bio"><strong>Bio:</strong><p>Kyle Dillehay is a graduate of Auburn University and holds a M.F.A. in sculpture from Georgia State University. His public commissions include the North Springs Rapid Transit Station, a project funded by MARTA, and a sculpture in downtown Atlanta commissioned by the Chik-fil-A Corporation. He has exhibited his work at City Gallery Chastain, Washburn University in Kansas, and Johnson Atelier in New Jersey. Dillehay taught at Georgia State University and Kennesaw State University. In 2006, he relocated to Tacoma, Washington where he teaches sculpture at Tacoma Community College.</p></div>
+	</div>
+	<div class="works"><div class="work"><a title="Tribal Masks&lt;br /&gt;&lt;span&gt;2003&lt;/span&gt;" rel="lightbox[registry]" href="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2FDillehay.Kyle-2003_Tribal+Masks_4web.jpg&amp;w=800&amp;h=600&amp;m=max&amp;tr=1"><img title="" alt="" src="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2FDillehay.Kyle-2003_Tribal+Masks_4web.jpg&amp;w=152&amp;h=98&amp;m=max&amp;tr=1"></a><div class="details"><strong>Tribal Masks</strong><br>2003<br>Sculpture<br></div></div></div>
+</div>						</div>
+						<a href="#jump-list" class="back-to-top" style="visibility: hidden;">Show All</a>
+					</div>
+																																					<div class="jump-group" style="overflow: hidden; height: 0px; opacity: 0;">
+						<div class="section">
+							<h2 id="h">H</h2>
+							<div class="profile first">
+	<div class="artist_info">
+		<h3>Haugen, Donald</h3><div class="bio"><strong>Bio:</strong><p>Don Haugen focuses his work completely on figurative bronze pieces with the goal of honing the craft to perfection. Near the beginning of his professional career, he was honored as the first-place winner of the prestigious James Wilbur Johnston International Figure Sculpture Competition. His work can be found throughout the United States and Europe in numerous private collections and on public display. Some of these include the International Olympic Archives, the Reagan Library, and the Jimmy Carter Library.</p></div>
+	</div>
+	<div class="works"><div class="work"><a title="Young Artist&lt;br /&gt;&lt;span&gt;2001&lt;/span&gt;" rel="lightbox[registry]" href="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2FHaugen.Donald+and+Stern.Teena+Marie-2001_Young+Artist_4web.jpg&amp;w=800&amp;h=600&amp;m=max&amp;tr=1"><img title="" alt="" src="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2FHaugen.Donald+and+Stern.Teena+Marie-2001_Young+Artist_4web.jpg&amp;w=152&amp;h=98&amp;m=max&amp;tr=1"></a><div class="details"><strong>Young Artist</strong><br>2001<br>Sculpture<br></div></div></div>
+</div>						</div>
+						<a href="#jump-list" class="back-to-top" style="visibility: hidden;">Show All</a>
+					</div>
+																							<div class="jump-group" style="overflow: hidden; height: 0px; opacity: 0;">
+						<div class="section">
+							<h2 id="j">J</h2>
+							<div class="profile first">
+	<div class="artist_info">
+		<h3>Johnson, Gregory</h3><div class="bio"><strong>Bio:</strong><p>Gregory Johnson was born in Chicago, Illinois. His early training includes the Art Institute of Chicago and Bowling Green State University. Later, he won the Elizabeth Stein Award of Art Excellence Scholarship, and traveled to Illinois State University, where Johnson studied sculpture, painting, and art history. In 1981, he moved to the Southeast where he has created public art works in Cumming in Forsyth County, Blairesville in Union County, Blue Ridge in Fannin County, Dahlonega in Lumpkin County, Athens Classic Center, Fayetteville, Thomaston, Barnesville, and Gainesville. Other works are located in numerous museums, corporate and private collections throughout the United States, Europe, Costa Rica, and the Middle East.</p></div>
+	</div>
+	<div class="works"><div class="work"><a title="Walking in Grandma's Shoes&lt;br /&gt;&lt;span&gt;2001&lt;/span&gt;" rel="lightbox[registry]" href="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2FJohnson.Gregory-2001_Walking+in+Grandma%27s+Shoes_4web.jpg&amp;w=800&amp;h=600&amp;m=max&amp;tr=1"><img title="" alt="" src="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2FJohnson.Gregory-2001_Walking+in+Grandma%27s+Shoes_4web.jpg&amp;w=152&amp;h=98&amp;m=max&amp;tr=1"></a><div class="details"><strong>Walking in Grandma's Shoes</strong><br>2001<br>Sculpture<br></div></div></div>
+</div>						</div>
+						<a href="#jump-list" class="back-to-top" style="visibility: hidden;">Show All</a>
+					</div>
+																<div class="jump-group" style="overflow: hidden; height: 0px; opacity: 0;">
+						<div class="section">
+							<h2 id="k">K</h2>
+							<div class="profile first">
+	<div class="artist_info">
+		<h3>Knapp, Cynthia</h3><div class="bio"><strong>Bio:</strong><p>Cynthia Knapp has lived and worked in Atlanta, Georgia for over twenty-five years. She has exhibited widely throughout the U.S. and in Europe, in both solo and group exhibitions. Her paintings, drawings and sculpture are included in numerous private, corporate and public collections, such as IBM, Inc.; Hyatt, Inc.; the Coca-Cola Company; King and Spaulding; and Brenau University. She has completed several private commissions and public art projects - for the Ridgewood Center in Raleigh, North Carolina; the Kingsgate Conference Center at the University of Cincinnati, Ohio; and the Airport Art Program at Hartsfield-Jackson International Airport in Atlanta, among others.</p></div>
+	</div>
+	<div class="works"><div class="work"><a title="Ribbons and Pipelines for Ocee&lt;br /&gt;&lt;span&gt;2004&lt;/span&gt;" rel="lightbox[registry]" href="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2FKnapp.Cynthia-2004_Ribbons+and+Pipelines+for+Ocee_4web.jpg&amp;w=800&amp;h=600&amp;m=max&amp;tr=1"><img title="" alt="" src="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2FKnapp.Cynthia-2004_Ribbons+and+Pipelines+for+Ocee_4web.jpg&amp;w=152&amp;h=98&amp;m=max&amp;tr=1"></a><div class="details"><strong>Ribbons and Pipelines for Ocee</strong><br>2004<br>Site-Specific/Site-Integrated/Urban Design<br></div></div></div>
+</div>						</div>
+						<a href="#jump-list" class="back-to-top" style="visibility: hidden;">Show All</a>
+					</div>
+																<div class="jump-group" style="overflow: hidden; height: 0px; opacity: 0;">
+						<div class="section">
+							<h2 id="l">L</h2>
+							<div class="profile first">
+	<div class="artist_info">
+		<h3>Landesberg, Amy</h3><div class="bio"><strong>Bio:</strong><p>Amy Landesberg is an accomplished artist and a practicing architect. She received a Master of Visual Arts from Georgia State University in 1981, and a Master of Architecture from the Yale School of Architecture in 1991. Her work is in the collections of the High Museum of Art, MOCA GA, and the Hyatt Regency Hotel in Atlanta. She has taught architecture at Yale, Columbia University, Tulane University, Ohio State University, Georgia Institute of Technology, and in the Interior Design Department at Georgia State University. Landesberg has received many awards including SAF/NEA fellowships in Painting and Sculpture, and the Moulton Andrus Award for Excellence in Art and Architecture. As an architect, she has completed projects for Kiang Gallery, Beth Jacob Synagogue, and several private homes.</p></div>
+	</div>
+	<div class="works"><div class="work"><a title="SUN...orange, green, blue and blue&lt;br /&gt;&lt;span&gt;2005&lt;/span&gt;" rel="lightbox[registry]" href="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2FLandesberg.Amy-2005_SUN%E2%80%A6orange%2C+green%2C+blue+and+blue_4web.jpg&amp;w=800&amp;h=600&amp;m=max&amp;tr=1"><img title="" alt="" src="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2FLandesberg.Amy-2005_SUN%E2%80%A6orange%2C+green%2C+blue+and+blue_4web.jpg&amp;w=152&amp;h=98&amp;m=max&amp;tr=1"></a><div class="details"><strong>SUN...orange, green, blue and blue</strong><br>2005<br>Sculpture<br></div></div></div>
+</div>						</div>
+						<a href="#jump-list" class="back-to-top" style="visibility: hidden;">Show All</a>
+					</div>
+																														<div class="jump-group" style="overflow: hidden; height: 0px; opacity: 0;">
+						<div class="section">
+							<h2 id="o">O</h2>
+							<div class="profile first">
+	<div class="artist_info">
+		<h3>Odeleye, Ayokunle</h3><div class="bio"><strong>Bio:</strong><p>Ayoknule Odeleye has served as an educator in the metro Atlanta area for more then 25 years, working with a variety of students from the middle school to university levels. Currently, he is a professor of art at Kennesaw State University, Georgia. Odeleye has been the recipient of several public art commissions, including a recent project grant from the Alaska State Council on the Arts in Anchorage, Alaska. His extensive list of public art commissions also include projects for the Dallas Area Rapid Transit Authority; City of Atlanta Office of Cultural Affairs; Morehouse College; Baltimore City College; St. Petersburg Bureau of Cultural Affairs; and Willmington, N.C.'s 1898 Foundation. He received both his Master's of Fine Arts and Bachelor's of Arts Education from Howard University in Washington, D.C.</p></div>
+	</div>
+	<div class="works"><div class="work"><a title="The Library Panels&lt;br /&gt;&lt;span&gt;2000&lt;/span&gt;" rel="lightbox[registry]" href="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2FOdeleye.Ayokunle-2000_The+Library+Panels_4web.JPG&amp;w=800&amp;h=600&amp;m=max&amp;tr=1"><img title="" alt="" src="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2FOdeleye.Ayokunle-2000_The+Library+Panels_4web.JPG&amp;w=152&amp;h=98&amp;m=max&amp;tr=1"></a><div class="details"><strong>The Library Panels</strong><br>2000<br>Other (Metals)<br></div></div></div>
+</div>						</div>
+						<a href="#jump-list" class="back-to-top" style="visibility: hidden;">Show All</a>
+					</div>
+																														<div class="jump-group" style="overflow: hidden; height: 0px; opacity: 0;">
+						<div class="section">
+							<h2 id="r">R</h2>
+							<div class="profile first">
+	<div class="artist_info">
+		<h3>Rittenberry, Harold</h3><div class="bio"><strong>Bio:</strong><p>Harold Rittenberry is a renowned self-taught artist based in Athens, Georgia. He has been exhibiting his work since 1994 and participated in exhibitions held throughout the South, including a solo exhibition, "Spirit Yard," at the Georgia Museum of Art in Athens. Rittenberry was one of twelve artists featured in the Folk Art Park commissioned for the 1996 Olympic Games by the Corporation of Olympic Development in Atlanta. Rittenberry also exhibited in Celebrating the Creative Spirit: Contemporary Southeastern Furniture, a traveling exhibition organized by the Mobile Art Museum that toured six southeastern museums   between 1998 and 2001. He collaborated with artist Robert Clements on another   Fulton County commission installed at East Point Library.</p></div>
+	</div>
+	<div class="works"><div class="work"><a title="Screen, Benches and Chairs&lt;br /&gt;&lt;span&gt;2000&lt;/span&gt;" rel="lightbox[registry]" href="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2FRittenberry.Harold-2000_Screen%2C+Benches+and+Chairs_4web.jpg&amp;w=800&amp;h=600&amp;m=max&amp;tr=1"><img title="" alt="" src="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2FRittenberry.Harold-2000_Screen%2C+Benches+and+Chairs_4web.jpg&amp;w=152&amp;h=98&amp;m=max&amp;tr=1"></a><div class="details"><strong>Screen, Benches and Chairs</strong><br>2000<br>Other (Metals)<br></div></div></div>
+</div>						</div>
+						<a href="#jump-list" class="back-to-top" style="visibility: hidden;">Show All</a>
+					</div>
+																<div class="jump-group" style="overflow: hidden; height: 0px; opacity: 0;">
+						<div class="section">
+							<h2 id="s">S</h2>
+							<div class="profile first">
+	<div class="artist_info">
+		<h3>Stern, Teena Marie</h3><div class="bio"><strong>Bio:</strong><p>Sculptor Teena Stern began her career as a professional dancer. She graduated from Carnegie-Mellon University and toured for 11 years with the Carl Ratcliff Dance Theatre. Upon her retirement from dance in 1981, Teena pursued her interest in sculpture, studying in Washington, D.C., New York, and Italy. Her sculptures can be found in collections throughout the United States, including public commissions for Life of Georgia, The Carter Presidential Center, and the Woodruff Art Center.</p></div>
+	</div>
+	<div class="works"><div class="work"><a title="Young Artist&lt;br /&gt;&lt;span&gt;2001&lt;/span&gt;" rel="lightbox[registry]" href="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2FHaugen.Donald+and+Stern.Teena+Marie-2001_Young+Artist_4web.jpg&amp;w=800&amp;h=600&amp;m=max&amp;tr=1"><img title="" alt="" src="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2FHaugen.Donald+and+Stern.Teena+Marie-2001_Young+Artist_4web.jpg&amp;w=152&amp;h=98&amp;m=max&amp;tr=1"></a><div class="details"><strong>Young Artist</strong><br>2001<br>Sculpture<br></div></div></div>
+</div>						</div>
+						<a href="#jump-list" class="back-to-top" style="visibility: hidden;">Show All</a>
+					</div>
+																<div class="jump-group" style="overflow: hidden; height: 0px; opacity: 0;">
+						<div class="section">
+							<h2 id="t">T</h2>
+							<div class="profile first">
+	<div class="artist_info">
+		<h3>Troy, Priscilla</h3><div class="bio"><strong>Bio:</strong><p>Priscilla Troy holds a bachelor of art degree from Georgia State University and has pursued graduate studies at the San Francisco Art Institute. She has exhibited her work primarily in the metro Atlanta area and in the San Francisco Bay area, including a one-person exhibit at City Gallery Chastain in 2001.</p></div>
+	</div>
+	<div class="works"><div class="work"><a title="Our Community and Soulkeeper&lt;br /&gt;&lt;span&gt;2000&lt;/span&gt;" rel="lightbox[registry]" href="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2FTroy.Priscilla-2000_Our+Community+and+Soulkeeper_4web.jpg&amp;w=800&amp;h=600&amp;m=max&amp;tr=1"><img title="" alt="" src="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2FTroy.Priscilla-2000_Our+Community+and+Soulkeeper_4web.jpg&amp;w=152&amp;h=98&amp;m=max&amp;tr=1"></a><div class="details"><strong>Our Community and Soulkeeper</strong><br>2000<br>Mixed Media<br></div></div></div>
+</div><div class="profile">
+	<div class="artist_info">
+		<h3>Turk, Gregor</h3><div class="bio"><strong>Bio:</strong><p>Gregor Turk received his B.A. from Rhodes College in Memphis, Tennessee and his M.F.A. from Boston University. Between degrees, he served as a Peace Corps Volunteer in Liberia, West Africa. Utilizing a variety of media, his work typically incorporates mapping imagery. In 2004, he completed another large permanent public art installation for the International Concourse at Hartsfield - Jackson Atlanta International Airport (Gates E-33 &ndash; E-36). For more information about the artist, visit: www.gregorturk.com.</p></div>
+	</div>
+	<div class="works"><div class="work"><a title="Birmingham Barns&lt;br /&gt;&lt;span&gt;2002&lt;/span&gt;" rel="lightbox[registry]" href="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2FTurk.Gregor-2002_Birmingham+Barns_4web.jpg&amp;w=800&amp;h=600&amp;m=max&amp;tr=1"><img title="" alt="" src="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2FTurk.Gregor-2002_Birmingham+Barns_4web.jpg&amp;w=152&amp;h=98&amp;m=max&amp;tr=1"></a><div class="details"><strong>Birmingham Barns</strong><br>2002<br>Site-Specific/Site-Integrated/Urban Design<br></div></div></div>
+</div>						</div>
+						<a href="#jump-list" class="back-to-top" style="visibility: hidden;">Show All</a>
+					</div>
+																														<div class="jump-group" style="overflow: hidden; height: 0px; opacity: 0;">
+						<div class="section">
+							<h2 id="w">W</h2>
+							<div class="profile first">
+	<div class="artist_info">
+		<h3>Wood, Michele</h3><div class="bio"><strong>Bio:</strong><p>Michele Wood holds a Bachelor of Arts degree from American Intercontinental University. Her work is in the collection of the Tubman Museum, Didi Museum (Nigeria), St. Louis University, and BET. She illustrated the children's book Going Back Home: An Artist Returns to the South, which received the 1997 American Book Award.</p></div>
+	</div>
+	<div class="works"><div class="work"><a title="I Have a Dream Reflection&lt;br /&gt;&lt;span&gt;1996&lt;/span&gt;" rel="lightbox[registry]" href="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2FWood.Michele-1996_I+Have+a+Dream+Reflection_4web.JPG&amp;w=800&amp;h=600&amp;m=max&amp;tr=1"><img title="" alt="" src="http://lh/~tricia/dustin/fulton-county-arts-council/components/com_publicart/thumber.php?src=../../images%2Fcollection%2FWood.Michele-1996_I+Have+a+Dream+Reflection_4web.JPG&amp;w=152&amp;h=98&amp;m=max&amp;tr=1"></a><div class="details"><strong>I Have a Dream Reflection</strong><br>1996<br>Painting/Mural<br></div></div></div>
+</div>						</div>
+						<a href="#jump-list" class="back-to-top" style="visibility: hidden;">Show All</a>
+					</div>
+																														</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+      YUI({
+        modules : {
+          'gallery-jump-list-fader' : {
+            fullpath : '../../../build/gallery-jump-list-fader/gallery-jump-list-fader-debug.js',
+            requires : ['node-pluginhost','anim-easing','event-base', 'event-delegate','plugin','base-build','collection']
+          }
+        }
+      }).use('gallery-jump-list-fader', function(Y){
+        Y.one('#jump-list').plug(Y.Plugin.JumpListFader,{ selection: Y.one('#a')});
+      });
+    </script>
+  </body>
+</html>

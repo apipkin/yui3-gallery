@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple DataTable Paginate Client</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.2.0/build/cssreset/reset-min.css">
+    <link href="../skins/Xarno/base.css" type="text/css" rel="stylesheet" />
+    <link href="../skins/Xarno/icons.css" type="text/css" rel="stylesheet" />
+    <link href="../skins/Xarno/Smooth/simple-datatable.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.3.0pr1/build/yui/yui-min.js"></script>
+  </head>
+  <body class="yui3-skin-xarno yui3-skin-xarno-smooth">
+    
+    <button id="first">First</button>
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+    <button id="last">Last</button>
+    <div id="grid"></div>
+    <script type="text/javascript">
+      YUI({
+        modules : {
+          'gallery-simple-datatable' : {
+            fullpath : '../../../build/gallery-simple-datatable/gallery-simple-datatable-min.js',
+            requires : ["node","widget","widget-child","event","event-mouseenter","substitute"]
+          },
+          'gallery-plugin-paginate-base' : {
+            fullpath : '../../../build/gallery-plugin-paginate-base/gallery-plugin-paginate-base-debug.js',
+            requires : ['plugin','base']
+          },
+          'gallery-plugin-simple-datatable-paginate-client' : {
+            fullpath : '../../../build/gallery-plugin-simple-datatable-paginate-client/gallery-plugin-simple-datatable-paginate-client-debug.js',
+            requires : ['gallery-plugin-paginate-base']
+          }
+        }
+      }).use('gallery-simple-datatable', 'gallery-plugin-simple-datatable-paginate-client',  function(Y){
+
+        var grid = new Y.SimpleDatatable();
+
+        grid.set('headers',{id:{label:'Id', resizable:false}, title:'Title'});
+        grid.set('rows',[
+          [ 1, 'Banana'],         [ 2, 'Carrot'],[ 3, 'Apple'],[ 4, 'Grapes'],[ 5, 'Strawberry'],[ 6, 'Blueberry'],[ 7, 'Raspberry'],[ 8, 'Cranberry'],[ 9, 'Lettuce'],[10, 'Tomato'],
+          [11, 'Potato'],         [12, 'Squash'],[13, 'Zucchini'],[14, 'Eggplant'],[15, 'Caulifowler'],[16, 'Onion'],[17, 'Orange'],[18, 'Grapefruit'],[19, 'Peas'],[20, 'Broccoli'],
+          [21, 'Corn'],           [22, 'Canteloupe'],[23, 'Honeydew'],[24, 'Watermelon'],[25, 'Kiwi'],[26, 'Plum'],[27, 'Peach'],[28, 'Nectarine'],[29, 'Blackberry'],[30, 'Fig'],
+          [31, 'Turnip'],         [32, 'Beet'],[33, 'Aspariagus'],[34, 'Mushroom'],[35, 'Bell Pepper'],[36, 'Banana Pepper'],[37, 'Jalapeno'],[38, 'Black Eyed Peas'],[39, 'Green Bean'],[40, 'Field Peas'],
+          [41, 'Cherry'],         [42, 'Sweet Potato'],[43, 'Cucumber'],[44, 'Tangerine'],[45, 'Pineapple'],[46, 'Starfruit'],[47, 'Passionfruit'],[48, 'Dragonfruit'],[49, 'Pomegranate'],[50, 'Snow Peas'],
+          [51, 'Sugar Snap Peas'],[52, 'Hominy Corn'],[53, 'Lima Bean'],[54, 'Olive'],[55, 'Muscadine'],[56, 'Scuppernong'],[57, 'Rhubarb'],[58, 'Rhudabega'],[59, 'Yam'],[60, 'Kidney Bean'],
+          [61, 'Black Bean'],     [62, 'Pinto Bean'],[63, 'Romain'],[64, 'Field Greens'],[65, 'Spinach'],[66, 'Collard Greens'],[67, 'Avacado'],[68, 'Plantain'],[69, 'Apricot'],[70, 'Vanilla'],
+          [71, 'Black Cherry'],   [72, 'Kumkwat'],[73, 'Lime'],[74, 'Lemon'],[75, 'Pear'],[76, 'Peanut'],[77, 'Walnut'],[78, 'Peacan'],[79, 'Brazilnut'],[80, 'Mustard Greens'],
+          [81, 'Cashew'],         [82, 'Almond'],[83, 'Pistachio'],[84, 'Macadamia'],[85, 'Raisin'],[86, 'Prune'],[87, 'Pickle'],[88, 'Habenero Pepper'],[89, 'Chili Pepper'],[90, 'Red Apple'],
+          [91, 'Crabapple'],      [92, 'Plum Tomato'],[93, 'Bosc Pear'],[94, 'Fuji Apple'],[95, 'Roma Tomato'],[96, 'Pimento'],[97, 'Granny Smith Apple'],[98, 'Cherry Tomato'],[99, 'Butter Beans']
+        ]);
+
+        grid.plug(Y.Plugin.SDTPaginateClient);
+        grid.render('#grid');
+
+        Y.one('#first').on('click', function(e){
+          grid.paginate.gotoFirstPage();
+        });
+
+        Y.one('#prev').on('click', function(e){
+          grid.paginate.gotoPrevPage();
+        });
+
+        Y.one('#next').on('click', function(e){
+          grid.paginate.gotoNextPage();
+        });
+
+        Y.one('#last').on('click', function(e){
+          grid.paginate.gotoLastPage();
+        });
+      });
+    </script>
+  </body>
+</html>

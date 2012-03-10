@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.1.2/build/yui/yui-min.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      YUI({
+        modules : {
+          'gallery-title' : {
+            fullpath : '../../../build/gallery-title/gallery-title-min.js',
+            requires : ['base','event','substitute','plugin-host']
+          },
+          'gallery-plugin-title-scroll' : {
+            fullpath : '../../../build/gallery-plugin-title-scroll/gallery-plugin-title-scroll-debug.js',
+            requires : ['plugin','gallery-timer']
+          }
+        }
+      }).use('gallery-title','gallery-plugin-title-scroll', function(Y){
+        var t = new Y.Title({title: 'spaces           '});
+        t.plug(Y.Plugin.TitleScroll);
+        t.scroll.start();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.1.2/build/yui/yui-min.js"></script>
+  </head>
+  <body>
+    <div id="page">
+      <ul id="jump-list">
+          <li><a href="#a">A</a></li>
+          <li><a href="#b">B</a></li>
+      </ul>
+      <div id="jump-to-container">
+        <div class="jump-group">
+          <h2 id="a">A</h2>
+          <dl>
+            <dt>Anthony</dt><dd></dd>
+            <dt>Andrew</dt><dd></dd>
+            <dt>Amber</dt><dd></dd>
+            <dt>Austin</dt><dd></dd>
+          </dl>
+          <a href="#jump-list" class="back-to-top">Back To Top</a>
+        </div>
+        <div class="jump-group">
+          <h2 id="b">B</h2>
+          <dl>
+            <dt>Brent</dt><dd></dd>
+            <dt>Ben</dt><dd></dd>
+            <dt>Bobby</dt><dd></dd>
+            <dt>Brenda</dt><dd></dd>
+          </dl>
+          <a href="#jump-list" class="back-to-top">Back To Top</a>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      YUI({
+        modules : {
+          'gallery-jump-list-fader' : {
+            fullpath : '../../../build/gallery-jump-list-fader/gallery-jump-list-fader-debug.js',
+            requires : ['node-pluginhost','anim-easing','event-base', 'event-delegate','plugin','base-build','collection']
+          }
+        }
+      }).use('gallery-jump-list-fader', function(Y){
+        Y.one('#jump-list').plug(Y.Plugin.JumpListFader,{ selection: Y.one('#a')});
+      });
+    </script>
+  </body>
+</html>

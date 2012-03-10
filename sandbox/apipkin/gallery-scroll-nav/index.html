@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.1.2/build/yui/yui-min.js"></script>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">Scroll To Top</a></li>
+      <li><a href="#bottom">Scroll To Bottom</a></li>
+    </ul>
+
+    <div style="height: 1200px"></div>
+    <div id="bottom"></div>
+
+    <script type="text/javascript">
+      YUI({
+        modules : {
+          'gallery-scroll-nav' : {
+            fullpath : '../../../build/gallery-scroll-nav/gallery-scroll-nav-debug.js',
+            requires : ['node','event','anim','plugin','base']
+          }
+        }
+      }).use('gallery-scroll-nav', function(Y){
+        Y.one('ul').plug(Y.Plugin.ScrollNav);
+      });
+    </script>
+  </body>
+</html>

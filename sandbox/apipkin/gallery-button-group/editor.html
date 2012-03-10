@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.1.2/build/yui/yui-min.js"></script>
+    <link href="../skins/Xarno/base.css" type="text/css" rel="stylesheet" />
+    <link href="../skins/Xarno/icons.css" type="text/css" rel="stylesheet" />
+    <link href="../skins/Xarno/Smooth/button.css" type="text/css" rel="stylesheet" />
+    <link href="../skins/Xarno/Smooth/button-group.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body class="yui3-skin-xarno yui3-skin-xarno-smooth">
+    <script type="text/javascript">
+      YUI({
+        modules : {
+          'gallery-button' : {
+            fullpath : '../../../build/gallery-button/gallery-button-debug.js',
+            requires : ["widget","event-mouseenter","widget-child"]
+          },
+          'gallery-button-toggle' : {
+            fullpath : '../../../build/gallery-button-toggle/gallery-button-toggle-debug.js',
+            requires : ["gallery-button"]
+          },
+          'gallery-button-group' : {
+            fullpath : '../../../build/gallery-button-group/gallery-button-group-debug.js',
+            requires : ['widget-parent','widget-child']
+          }
+        }
+      }).use('gallery-button-toggle', 'gallery-button-group', function(Y){
+        var bt1 = new Y.ButtonToggle({icon: 'edit-bold', title: 'Bold'});
+        var bt2 = new Y.ButtonToggle({icon: 'edit-italic', title:'Italic'});
+        var bt3 = new Y.ButtonToggle({icon: 'edit-underline', title:'Underline'});
+        var bg = new Y.ButtonGroup({label: '', multiple: true, children: [bt1,bt2,bt3],render: true});
+
+
+        var bt11 = new Y.ButtonToggle({icon: 'align-left', title: 'Left Justify'});
+        var bt12 = new Y.ButtonToggle({icon: 'align-center', title: 'Center Justify'});
+        var bt13 = new Y.ButtonToggle({icon: 'align-right', title: 'Right Justify'});
+        var bg1 = new Y.ButtonGroup({label: '', alwaysSelected:true, children: [bt11,bt12,bt13], render: true});
+        bg1.selectChild(0);
+     });
+    </script>
+  </body>
+</html>

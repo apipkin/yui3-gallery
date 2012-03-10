@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button.Panel</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.3.0/build/yui/yui-min.js"></script>
+    <style type="text/css">
+    .yui3-button { position: relative; }
+    .yui3-button-panel  { border: 1px solid #2a2a2a; padding: 5px; display: none; margin-top: 2px; }
+    .yui3-button-panel-visible { display: block; z-index: 9999; }
+    </style>
+  </head>
+  <body class="yui3-skin-xarno yui3-skin-xarno-smooth">
+    
+    <a href="http://www.yahoo.com" target="_blank">Yahoo!</a>
+    <script type="text/javascript">
+      YUI({
+        gallery: 'gallery-2011.04.27-18-16',
+        combine: false,
+        filter: 'raw',
+        modules : {
+          'button-base' : {
+            fullpath : '../../../build/button/button-base-debug.js',
+            requires : ['node', 'event', 'event-mouseenter','classnamemanager']
+          },
+          'button-advanced' : {
+            fullpath : '../../../build/button/button-advanced-debug.js',
+            requires : ['button-base', 'base-build', 'widget', 'widget-child']
+          },
+          'button-panel' : {
+            fullpath : '../../../build/button/button-panel-debug.js',
+            requires : ['button-advanced', 'base-build', 'plugin']
+          }
+        }
+      }).use('button-panel', 'gallerycss-xarno-skins', function(Y){
+        var btn = new Y.Button.Panel({
+          label : 'Panel Button',
+          panelContent : Y.one('a')
+        }).render();
+        
+      });
+    </script>
+  </body>
+</html>

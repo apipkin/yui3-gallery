@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.1.2/build/yui/yui-min.js"></script>
+    <link href="../skins/Xarno/base.css" type="text/css" rel="stylesheet">
+    <link href="../skins/Xarno/icons.css" type="text/css" rel="stylesheet">
+    <link href="../skins/Xarno/Smooth/button.css" type="text/css" rel="stylesheet">
+  </head>
+  <body class="yui3-skin-xarno yui3-skin-xarno-smooth">
+
+	<form action="#" method="GET">
+	<input type="text" value="" name="peTest">
+    <input id="myBtnA" type="submit" value="Submit">
+    <button id="myBtnB">My Button</button>
+    <button id="myBtnC" disabled>My Button - Disabled</button>
+	<input type="reset" id="myBtnD">
+	<a id="myBtnE" href="http://www.yahoo.com">Yahoo</a>
+	</form>
+
+    <script type="text/javascript">
+      YUI({
+        modules : {
+          'gallery-button' : {
+            fullpath : '../../../build/gallery-button/gallery-button.js',
+            requires : ["widget","event-mouseenter","widget-child"]
+          }
+        }
+      }).use('gallery-button', function(Y){
+        var btn = new Y.Button({ srcNode: Y.one('#myBtnA'), render:true, icon:'control-dbl-e'});
+        btn.set('callback', function(e){Y.log('Submit Prevented!');});
+		
+        new Y.Button({ srcNode: Y.one('#myBtnB'), type: 'submit', render:true});
+		
+        new Y.Button({ srcNode: Y.one('#myBtnC'), render:true});
+		
+        new Y.Button({ srcNode: Y.one('#myBtnD'), render:true, icon:'broom'});
+		
+        new Y.Button({ srcNode: Y.one('#myBtnE'), render:true });
+      });
+    </script>
+  </body>
+</html>
