@@ -65,7 +65,6 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
      */
     initializer : function(config){
       this.after('statusChange',this._afterStatusChange,this);
-	  //this.publish(EVENT_TIMER);
       this.publish(EVENT_START ,  { defaultFn : this._defStartFn });
       this.publish(EVENT_STOP ,   { defaultFn : this._defStopFn });
       this.publish(EVENT_PAUSE ,  { defaultFn : this._defPauseFn });
@@ -178,15 +177,14 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
 				this._timerObj = null;
       }
 
-			length = this._remainingLength || this.get('length');
-
       if(repeat === 0 || repeat > this.get('step')) {
-        timerObj = Y.later(length , this, this._timer);
+        timerObj = Y.later(this._remainingLength, this, this._timer);
       }
 
 			this._timerObj = timerObj;
       this.set('timer', timerObj);
       this.set('start', (new Date()).getTime());
+			this.set('stop', this.get('start'));
     },
 
     /**
@@ -198,8 +196,7 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
      */
     _destroyTimer : function() {
       Y.log('Timer::_destroyTimer','info');
-      var timerObj = this._timerObj,
-					length = this._remainingLength || this.get('length');
+      var timerObj = this._timerObj;
       
       if (timerObj) {
 				timerObj.cancel();
@@ -211,12 +208,8 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
       this.set('stop', (new Date()).getTime());
       this.set('step', 0);
 
-			Y.log(this.get('status'));
-			if (this.get('status') == STATUS_STOPPED) {
-				this._remainingLength = null;
-			} else {
-				this._remainingLength = length - (this.get('stop') - this.get('start'));
-			}
+			this._remainingLength = this._remainingLength - (this.get('stop') - this.get('start'));
+
     },
 
     /**
@@ -236,11 +229,11 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
 
       this.set('step', ++step);
 
-			this._remainingLength = null;
-
       if(repeat > 0 && repeat <= step) { // repeat at 0 is infinite loop
+				this._remainingLength = 0;
         this.stop();
       }else{
+				this._remainingLength = this.get('length');
         this._makeTimer();
       }
 
@@ -261,9 +254,8 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
         case STATUS_RUNNING:
           this._makeTimer();
           break;
-        case STATUS_STOPPED:
-					this._remainingLength = null; // overflow intentional
-        case STATUS_PAUSED:
+        case STATUS_STOPPED: // overflow intentional
+				case STATUS_PAUSED:
           this._destroyTimer();
           break;
       }
@@ -279,6 +271,8 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
     _defStartFn : function(e) {
       Y.log('Timer::_defStartFn','info');
       var delay = this.get('startDelay');
+
+			this._remainingLength = this.get('length');
 
       if(delay > 0) {
         Y.later(delay, this, function(){
@@ -298,6 +292,8 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
      */
     _defStopFn : function(e) {
       Y.log('Timer::_defStopFn','info');
+
+			this._remainingLength = 0;
       this.set('status', STATUS_STOPPED);
     },
 
@@ -364,19 +360,16 @@ Y.Timer = Y.Base.create('timer', Y.Base, [] , {
 	 _remainingGetter: function(){
 			Y.log('Timer::_remainingGetter', 'info');
 			var status = this.get('status'),
-					length = this._remainingLength || this.get('length'),
-					d = new Date(),
-					t = d.getTime();
+					length = this._remainingLength,
+					maxTime = (new Date()).getTime();
 
 			if (status === STATUS_STOPPED) {
 				return 0;
+			} else if (status === STATUS_PAUSED) {
+				return length;
+			} else {
+				return length - ( maxTime - this.get('start') );
 			}
-			
-			if (status === STATUS_PAUSED) {
-				t = this.get('stop');
-			}
-
-			return this.get('length') - ( t - this.get('start'));
 	 }
 
 },{

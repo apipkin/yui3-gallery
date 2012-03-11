@@ -39,7 +39,8 @@
 				
 				t.after('statusChange', function(e){
 					switch (e.newVal) {
-						case 'stopped':
+					case 'stopped':
+					Y.log('updated to stopped');
 							stopBtn.addClass('hidden');
 							startBtn.removeClass('hidden');
 							pauseBtn.addClass('hidden');
@@ -70,8 +71,8 @@
 
 
 				var i = setInterval(function(){
-					Y.one('#remaining').setContent(t.get('remaining'));
-					}, 100);
+						Y.one('#remaining').setContent(t.get('remaining'));
+					}, 10);
 
 				function myCallback(){
 					Y.log('>>> complete');
