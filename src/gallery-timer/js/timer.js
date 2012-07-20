@@ -3,7 +3,7 @@
 *   pause, resume, and stop a defined timer set with a custom callback method.
 * @module timer
 * @author Anthony Pipkin
-* @version 1.1.0
+* @version 1.2.0
 */
 /**
 * Losely modeled after AS3's Timer class. Provides a simple interface start,
