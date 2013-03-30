@@ -1,0 +1,13 @@
+{
+    "color-picker": {
+        "requires": [
+            "widget",
+            "base-build",
+            "color",
+            "color-hsl",
+            "color-hsv",
+            "slider"
+        ],
+        "skinnable": true
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name"       : "color-picker",
+    "displayName": "Gallery: color-picker",
+    "description": "*Summary Goes Here*",
+    "author"     : [ "apipkin" ],
+    "use"        : [ "color-picker" ],
+
+    "tags": [ "gallery" ],
+
+    "examples": []
+}

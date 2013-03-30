@@ -1,0 +1,10 @@
+{
+    "name": "color-picker",
+    "builds": {
+        "color-picker": {
+            "jsfiles": [
+                "js/color-picker.js"
+            ]
+        }
+    }
+}

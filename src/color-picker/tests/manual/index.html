@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <title>color-picker</title>
+    <script src="/build/yui/yui.js"></script>
+    <meta charset="utf-8" />
+</head>
+<body class="yui3-skin-sam">
+
+
+<script>
+YUI({
+    modules: {
+        'color-picker': {
+            fullpath: '../build/color-picker/color-picker.js',
+            requires: ['widget', 'base-build', 'color', 'color-hsl', 'color-hsv', 'slider'],
+            skinnable: true
+        }
+    },
+    filter: (window.location.search.match(/[?&]filter=([^&]+)/) || [])[1] || 'raw'
+}).use('color-picker', function(Y) {
+    var cp = new Y.ColorPicker();
+
+    cp.render();
+
+    cp.after('colorChange', function (e) {
+        console.log(e.newVal);
+        Y.one('body').setStyle('background', e.newVal);
+    });
+});
+</script>
+</body>
+</html>
