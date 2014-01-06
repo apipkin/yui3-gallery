@@ -58,6 +58,7 @@ Y.namespace('Form').Values = Y.Base.create('formValues', Y.Plugin.Base, [], {
           case 'input:hidden' :
           case 'input:file' :
           case 'input:password' :
+		  case 'input:number' :
           case 'textarea:'    :
           case 'textarea:textarea'    :
           case 'select:'      :
